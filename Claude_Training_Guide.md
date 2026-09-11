@@ -1,9 +1,9 @@
-# Claude: Six-Module Hands-on Workshop
-## Trainer guide • copy-paste prompts • practical checks
+# 🔰 Claude: Six-Module Hands-on Workshop
+## 🔵 Trainer guide • copy-paste prompts • practical checks
 
 **Audience:** Non-technical and office users. **Suggested demo budget:** 4½ hours, plus breaks and additional learner practice. These are planning estimates, not guaranteed task runtimes.
 
-## Start here
+## 🔵 Start here
 
 Keep this guide open. Use only `Practice_Files`; save everything learners generate in `Outputs`. Do not upload the entire original archive.
 
@@ -16,7 +16,7 @@ Keep this guide open. Use only `Practice_Files`; save everything learners genera
 | 5 | Research and UI/UX/accessibility review | A two-case website audit report | 40 min |
 | 6 | Claude Code, requirements and testing | A small highlight-saving extension | 60 min |
 
-### Your six practice files
+### 🔴 Your six practice files
 
 All paths below are inside `Practice_Files`.
 
@@ -31,17 +31,18 @@ All paths below are inside `Practice_Files`.
 
 **Do not treat filenames as evidence of contents.** Some trainer receipt filenames do not match the vendor inside.
 
-### Before class: five checks
+### 🔴 Before class: five checks
+### 🔴 Initial Preparation
 
-1. Sign in to Claude; test an attachment and a small downloadable file. Check **Settings → Capabilities** when file creation is unavailable. Account and organizational settings can affect access. [1]
-2. Test Projects, Skills, Cowork and Claude Code on the demo account. Use desktop access for the local-folder exercise; keep the app available while local files are needed. [2][3][4]
-3. For Module 5, test actual browser interaction and screenshots—not just web search. Prepare Chrome/browser access and open the two case-study websites in advance. [2]
-4. Use a dedicated training folder/account and no sensitive information. Review privacy and memory controls; grant only necessary access. Keep approval for changes. Local file access does not mean all processing stays local. [2][5]
-5. Rehearse once. Missing advanced features mean a trainer demonstration or a clearly labeled fallback—not a promise that every account supports every action.
+1. Sign in to Claude, go to Settings → Capabilities and test file uploads and downloads.
+2. Test Projects, Skills, Cowork and Claude Code; keep the desktop app ready for local files.
+3. Test browser interactions and screenshots; open both case-study websites.
+4. Use a dedicated training folder with non-sensitive files; review privacy, memory and permissions, and require approval for changes.
+5. Rehearse once and prepare clearly labelled alternatives for unavailable features.
 
 **Delivery rhythm:** Explain the goal → paste one prompt → inspect the result → perform the stated check. Ask learners to predict one result before revealing it.
 
-### Session instruction — paste once in each new task
+### 🔴 Session instruction — paste once in each new task
 
 ```text
 This is a classroom exercise. Use only the files, folders and websites I specify.
@@ -54,13 +55,13 @@ Create only requested outputs; explain any unavailable capability briefly.
 
 ---
 
-## Module 1 — Prompting, Privacy and Context
+## 🔵 Module 1 — Prompting, Privacy and Context
 
 **Teach:** Goal → context → constraints → output → verification. Briefly show new chats, attachments, model/effort controls and voice input where available. Explain that a Project holds task-specific instructions/reference material; memory is separate and may affect later conversations. [3][5]
 
 **Prepare:** Open a new chat. No files required.
 
-### Prompt 1 — Write and refine a business email
+### 🔴 Prompt 1 — Write and refine a business email
 
 ```text
 Draft an email for this fictional training client:
@@ -77,7 +78,7 @@ Draft only; do not send. Then list the facts you used for verification.
 
 **Check:** Correct name, course, amount and date; no fabricated payment instructions.
 
-### Set up a Project
+### 🔴 Set up a Project
 
 Create a private Project named **Claude Workshop**. Put the following in its instructions; attach only the files needed for the current exercise.
 
@@ -93,13 +94,13 @@ checking the result.
 
 ---
 
-## Module 2 — Document Analysis and Interactive Artifacts
+## 🔵 Module 2 — Document Analysis and Interactive Artifacts
 
 **Teach:** Source-grounded extraction, percentage change, assumptions and testing an interactive output. An Artifact is a standalone piece of content or an interactive tool that can be refined separately from the conversation. [6]
 
 **Prepare:** Attach `01_Electricity_Bills.pdf`. It contains two fictional bills, not real tariffs or tax rules.
 
-### Prompt 2 — Compare the bills
+### 🔴 Prompt 2 — Compare the bills
 
 ```text
 Read both pages of the attached electricity-bill PDF. Create a comparison table
@@ -115,7 +116,7 @@ increased usage. Flag missing or unclear information. Answer in chat only.
 
 **Check:** July **INR 1,870**; August **INR 2,222**; increase **INR 352 / 18.82%**. Usage increases from **200 to 240 kWh / 20%**. Both periods have 31 days.
 
-### Prompt 3 — Build a bill calculator
+### 🔴 Prompt 3 — Build a bill calculator
 
 ```text
 Create a single self-contained HTML Artifact named Bill_Calculator.html using
@@ -139,13 +140,13 @@ you actually ran, and mark browser tests not run as untested.
 
 ---
 
-## Module 3 — Receipts, Excel and Connectors
+## 🔵 Module 3 — Receipts, Excel and Connectors
 
 **Teach:** Read the document, not its filename; one row per receipt; traceable extraction; formula-based summaries; read access versus permission to change files.
 
 **Prepare:** Attach the three PDFs in `02_Receipts`. Do not attach the complete receipt archive.
 
-### Prompt 4 — Generate an expense workbook
+### 🔴 Prompt 4 — Generate an expense workbook
 
 ```text
 Read the three attached receipts. Create Expenses.xlsx with two sheets:
@@ -176,7 +177,7 @@ three original files. Provide the downloadable .xlsx and a short change summary.
 
 **Expected:** **3 records; INR 2,140**. Office Supplies is the largest category. Open Excel and inspect a formula, a conditional-formatting rule and the chart.
 
-### Prompt 5 — Organize the same receipts through Google Drive
+### 🔴 Prompt 5 — Organize the same receipts through Google Drive
 
 **Setup:** Copy only those three PDFs to a new Drive folder named `Claude_Workshop_Receipts`. Connect Google Drive through Claude's connectors, review permissions and supply that folder's URL. Connector capabilities and document extraction have limits; upload a file directly when its content cannot be retrieved. [7]
 
@@ -201,13 +202,13 @@ and do not create duplicates. Return links to the created files and a count.
 
 ---
 
-## Module 4 — Cowork, Presentations and Reusable Skills
+## 🔵 Module 4 — Cowork, Presentations and Reusable Skills
 
 **Teach:** Cowork handles multi-step tasks; a Skill records a reusable procedure; a connector supplies tool/data access. Briefly explain plugins as packages of capabilities—do not install extra plugins during this workshop. [2][4]
 
 **Prepare:** Start a new Cowork task. Attach the validated `Expenses.xlsx` and `03_Presentation_Reference.pptx`. Where local folder access is needed, use only a dedicated copy of these inputs and an output folder. Approve the requested access, not access to the entire computer.
 
-### Prompt 6 — Create a management presentation
+### 🔴 Prompt 6 — Create a management presentation
 
 ```text
 Use Expenses.xlsx as the only source of business figures. Use the attached
@@ -234,7 +235,7 @@ that could not be performed.
 
 **Trainer note:** Minimal text, clear pacing and controlled reveals are adapted from the trainer's supplied teaching/animation guidelines. Animations are not a core requirement here.
 
-### Prompt 7 — Package the repeatable procedure as a Skill
+### 🔴 Prompt 7 — Package the repeatable procedure as a Skill
 
 ```text
 Turn the approved expense-briefing procedure into a custom Skill named
@@ -256,20 +257,20 @@ unnecessary scripts. Give me an importable ZIP and summarize its contents.
 
 ---
 
-## Module 5 — Research and UI/UX/Accessibility Audit
+## 🔵 Module 5 — Research and UI/UX/Accessibility Audit
 
 **Teach:** UI = interface; UX = usability; AX here = accessibility. Web search supports source research; interaction and screenshot evidence require browser access. This is a preliminary review, not security testing or accessibility certification. [9][10]
 
 **Prepare:** Use Claude's available browser-capable workflow, such as Cowork with permitted browser access. Keep only the practice sites open. Do not log in, submit forms, purchase, or change a site.
 
-### Case A — W3C's before-and-after accessibility demonstration
+### 🔴 Case A — W3C's before-and-after accessibility demonstration
 
 - Before: https://www.w3.org/WAI/demos/bad/before/home.html
 - After: https://www.w3.org/WAI/demos/bad/after/home.html
 
 This is an intentionally contrasting, older teaching example based on WCAG 2.0—not a comprehensive current-standard compliance benchmark. [10]
 
-### Prompt 8 — Compare and document evidence
+### 🔴 Prompt 8 — Compare and document evidence
 
 ```text
 Perform a limited UI/UX and accessibility review of these two teaching pages:
@@ -294,13 +295,13 @@ If screenshots or interactions are unavailable, stop and ask me for evidence
 instead of presenting a text-only fetch as a visual audit.
 ```
 
-### Case B — Books to Scrape
+### 🔴 Case B — Books to Scrape
 
 https://books.toscrape.com/
 
 A second domain with a demonstration catalogue, suitable for a bounded product-browsing exercise. Treat it as a sandbox, not a real shop. [11]
 
-### Prompt 9 — Apply the method to an ecommerce layout
+### 🔴 Prompt 9 — Apply the method to an ecommerce layout
 
 ```text
 Apply the same evidence and safety rules to https://books.toscrape.com/.
@@ -324,13 +325,13 @@ from untested hypotheses. Return the updated document, not a second report.
 
 ---
 
-## Module 6 — Claude Code and a Small Application
+## 🔵 Module 6 — Claude Code and a Small Application
 
 **Teach:** A Product Requirements Document (PRD) defines the product; `CLAUDE.md` can hold project working instructions. Plan first, approve scope, build and test. [12]
 
 **Prepare:** Create `Outputs/HighlightHub_Lite`. Open it in Claude Code and provide `04_HighlightHub_Trainer_PRD.md`. Treat it as reference, not executable code. No installation of the trainer's completed extension is needed.
 
-### Prompt 10 — Create a smaller classroom specification
+### 🔴 Prompt 10 — Create a smaller classroom specification
 
 ```text
 Read the attached trainer PRD. Propose a smaller classroom version named
@@ -351,7 +352,7 @@ the proposed permissions and file structure. Do not implement yet. Wait for
 approval.
 ```
 
-### Prompt 11 — Implement the approved scope
+### 🔴 Prompt 11 — Implement the approved scope
 
 ```text
 Implement the approved Classroom_PRD.md in this workspace. Use Chrome Manifest
@@ -376,7 +377,7 @@ and which require manual Chrome testing. Do not install the extension for me.
 
 ---
 
-## Delivery controls and completion check
+## 🔵 Delivery controls and completion check
 
 **Keep the live path short:** Use one receipt-organization route, three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example are optional—not additional required labs.
 
@@ -397,7 +398,7 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 
 **Finish by checking:** Bill calculations; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
 
-## Source and feature notes
+## 🔵 Source and feature notes
 
 **Trainer sources:** The user-supplied Codebasics video at https://www.youtube.com/watch?v=eHS0WIWNtu0 and its transcript/resource archive. The three receipt files come from `3 Team Expenses`. The renamed presentation is `4 PPT Creation/Presentation Skill/time management and deep focus for AI engineers.pptx`; the renamed PRD is `5 Chrome extension/prd-highlighthub.md`. Presentation guidance also draws on the supplied `Art of teaching CB Principles.txt` and `How to animate.txt`.
 
