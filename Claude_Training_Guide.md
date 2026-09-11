@@ -29,6 +29,8 @@ Claude_Training_Pack/
 └── Outputs/  (generated files; empty before the exercises)
 ```
 
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/82fec647-8c2d-42f2-9ec3-92222886b133"/>
+
 ### 🔴 Your six practice files
 
 All paths below are inside `Practice_Files`. Replace the earlier two-bill PDF with the new combined PDF; the total remains **six practice files**. Keep the superseded bill file outside the active practice folder.
