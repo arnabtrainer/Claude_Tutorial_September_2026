@@ -329,13 +329,13 @@ three original files. Provide the downloadable .xlsx and a short change summary.
 **Session-specific adjustment:** The Claude response you shared reports file-copy support but no folder-creation action. **Prepare the destination folders yourself; let Claude copy and verify.** This is a workaround for that session, not a claim that every Google Drive connector lacks folder creation. Use only the actions actually exposed. [7]
 
 **Setup — do before the live demo:**
-1. Reuse your existing source folder with the three original PDFs; do not upload duplicates. For a fresh account, create `Claude_Workshop_Receipts` and upload only those PDFs.
+1. For the first time, create `Claude_Workshop_Receipts` and upload only those three PDFs.
 2. In the source folder’s parent location, use **New → Folder** to create `Claude_Workshop_Organized`. Inside it, create **Office Supplies**, **Food** and **Travel**. Reuse existing destination folders. [16]
 3. Open each category folder and copy its URL from the address bar. Connect Google Drive in Claude and review permissions; do not make folders public or change sharing settings.
 
 ```text
 Google Drive — same parent location/
-├── Claude_Workshop_Receipts/       (three originals; use your existing folder)
+├── Claude_Workshop_Receipts/       (keep three original PDFs here; use this as your existing folder)
 └── Claude_Workshop_Organized/
     ├── Office Supplies/
     ├── Food/
@@ -375,7 +375,7 @@ I approve the following copy plan. I have manually created all destination
 folders. Do not create any folders. Stop if a source differs from the plan.
 
 Source folder:
-https://drive.google.com/drive/u/0/folders/1kfH2D62qybZFAr5gDrxrp7-y3n7BmTZs
+[PASTE CLAUDE_WORKSHOP_RECEIPTS FOLDER URL]
 
 Destination folders:
 Office Supplies: [PASTE OFFICE SUPPLIES FOLDER URL]
