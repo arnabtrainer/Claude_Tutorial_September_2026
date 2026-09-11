@@ -5,7 +5,9 @@
 
 ## 🔵 Start here
 
-Keep this guide open. Use only `Practice_Files`; save everything learners generate in `Outputs`. Do not upload the entire original archive.
+Use this as your **single training guide**; `00_START_HERE.md` is no longer required. Transfer any personal notes before retiring the older guide. Use the six files in `Practice_Files`; the trainer’s full archive is not needed for these exercises. Do not upload the entire pack.
+
+**Outputs:** This folder starts empty. Save generated downloads there; for Cowork/Claude Code, specify the output location and verify the saved file. Module 3’s organized Drive copies stay on Google Drive, not automatically in local `Outputs`.
 
 | Module | What to demonstrate | Main result | Time |
 |---|---|---|---:|
@@ -17,12 +19,14 @@ Keep this guide open. Use only `Practice_Files`; save everything learners genera
 | 6 | Claude Code, requirements and testing | A small highlight-saving extension | 60 min |
 
 ```text
-Practice_Files/
-├── 01_Electricity_Bills_Oct2025_Sep2026.pdf
-├── 02_Receipts/  (the three PDFs listed below)
-├── 03_Presentation_Reference.pptx
-└── 04_HighlightHub_Trainer_PRD.md
-Outputs/  (save generated results here)
+Claude_Training_Pack/
+├── Claude_Training_Guide_Synced.md
+├── Practice_Files/
+│   ├── 01_Electricity_Bills_Oct2025_Sep2026.pdf
+│   ├── 02_Receipts/  (the three PDFs listed below)
+│   ├── 03_Presentation_Reference.pptx
+│   └── 04_HighlightHub_Trainer_PRD.md
+└── Outputs/  (generated files; empty before the exercises)
 ```
 
 ### 🔴 Your six practice files
@@ -40,14 +44,13 @@ All paths below are inside `Practice_Files`. Replace the earlier two-bill PDF wi
 
 **Do not treat filenames as evidence of contents.** Some trainer receipt filenames do not match the vendor inside.
 
-### 🔴 Before class: five checks
 ### 🔴 Initial Preparation
 
-1. Sign in to Claude, go to Settings → Capabilities and test file uploads and downloads.
+1. Sign in to Claude and test file uploads/downloads; check Settings → Capabilities if file creation is unavailable. [1]
 2. Test Projects, memory import, Skills, Cowork and Claude Code; sign in to ChatGPT for the transfer demo and keep the desktop app ready for local files.
 3. Test browser interactions and screenshots; open both case-study websites.
 4. Use a dedicated training folder with non-sensitive files; review privacy, memory and permissions, and require approval for changes.
-5. Rehearse once and prepare clearly labelled alternatives for unavailable features.
+5. Prepare the Module 3 Drive folders below, test the available read/copy actions and rehearse once. Use the local fallback only when needed.
 
 **Delivery rhythm:** Explain the goal → paste one prompt → inspect the result → perform the stated check. Ask learners to predict one result before revealing it.
 
@@ -96,9 +99,9 @@ for verification.
 
 ### ✅ Set up a Project
 
-Create a private Project named **Claude Workshop**.
+Create a private Project named **Claude Workshop**. **No files are required now.** Paste the description and instructions below; attach inputs only when their exercise begins.
 
-Put the following in its project description
+**Project description:**
 
 ```text
 A hands-on Claude training workspace for non-technical office users. Explore
@@ -107,7 +110,7 @@ website reviews and simple application development through guided exercises,
 reusable prompts and practical verification checks.
 ```
 
-Put the following in its instructions
+**Project instructions:**
 
 ```text
 Help me prepare practical training for non-technical office users. Use plain
@@ -116,6 +119,8 @@ outputs. State assumptions, flag missing information and finish each exercise
 with one verification check. Never assume a file or action succeeded without
 checking the result.
 ```
+
+**Attachments:** Modules 2–3 use files attached to their exercise chat; Module 4 uses the validated workbook and reference deck in Cowork; Module 5 uses website URLs; Module 6 uses the PRD in Claude Code. Do not upload everything to Project knowledge.
 
 **Trainer note:** Show where memory can be inspected or disabled. A new chat is not necessarily a complete context reset. [5]
 
@@ -126,11 +131,11 @@ checking the result.
 **Important:** This transfers useful memory and context—not all ChatGPT chats as separate Claude conversations. It does not recreate chat history or transfer attachments. [14]
 
 **Steps:**
-1. In Claude, open **Settings → Memory → Start import**. Older interfaces: **Settings → Capabilities → Memory → Start import**. [14]
-2. Copy the displayed prompt into ChatGPT. For class, use the fictional example below instead of exporting personal memories.
-3. Review the response. Remove sensitive, incorrect or outdated information; do not assume every past conversation is covered.
-4. Paste the approved text into Claude's import box and select **Add to memory**. [14]
-5. Inspect the imported entries and run the verification prompt below. Correct missing details or remove unwanted entries; imports are experimental and may be incomplete. [14]
+1. Open **Settings → Memory**. Inspect **Generate memory from chats**; enable it on the training account only when you agree to saving memory. **Search and reference chats** is a separate control. [5]
+2. Look for **Start import**. Older interfaces may place Memory under **Settings → Capabilities**. If the button is missing, reopen Memory or check the same account on Claude’s website; then use the fallback below if necessary. Enabling memory does not guarantee the import button will appear. [14]
+3. Copy the displayed prompt into ChatGPT. For class, use the fictional example below instead of exporting personal memories.
+4. Review the response and remove sensitive, incorrect or outdated details; do not assume every past conversation is covered.
+5. Paste the approved text into Claude’s import box and select **Add to memory**. Review the entries and run the verification prompt below; imports may be incomplete. [14]
 
 **Classroom prompt — paste in ChatGPT:**
 
@@ -286,7 +291,7 @@ boundary. Report tests actually run; mark browser tests not run as untested.
 
 **Teach:** Read the document, not its filename; one row per receipt; traceable extraction; formula-based summaries; read access versus permission to change files.
 
-**Prepare:** Attach the three PDFs in `02_Receipts`. Do not attach the complete receipt archive.
+**Prepare:** Start a new chat inside **Claude Workshop** and attach only the three PDFs in `Practice_Files/02_Receipts` for Prompt 4. Prompt 5 uses the same receipts in Google Drive; follow its separate folder setup below.
 
 ### ✅ Prompt 4 — Generate an expense workbook
 
@@ -321,24 +326,97 @@ three original files. Provide the downloadable .xlsx and a short change summary.
 
 ### ✅ Prompt 5 — Organize the same receipts through Google Drive
 
-**Setup:** Copy only those three PDFs to a new Drive folder named `Claude_Workshop_Receipts`. Connect Google Drive through Claude's connectors, review permissions and supply that folder's URL. Connector capabilities and document extraction have limits; upload a file directly when its content cannot be retrieved. [7]
+**Session-specific adjustment:** The Claude response you shared reports file-copy support but no folder-creation action. **Prepare the destination folders yourself; let Claude copy and verify.** This is a workaround for that session, not a claim that every Google Drive connector lacks folder creation. Use only the actions actually exposed. [7]
+
+**Setup — do before the live demo:**
+1. Reuse your existing source folder with the three original PDFs; do not upload duplicates. For a fresh account, create `Claude_Workshop_Receipts` and upload only those PDFs.
+2. In the source folder’s parent location, use **New → Folder** to create `Claude_Workshop_Organized`. Inside it, create **Office Supplies**, **Food** and **Travel**. Reuse existing destination folders. [16]
+3. Open each category folder and copy its URL from the address bar. Connect Google Drive in Claude and review permissions; do not make folders public or change sharing settings.
 
 ```text
-Use only this Google Drive folder: [PASTE THE TRAINING FOLDER URL].
-Read its three original receipt PDFs and propose a copy plan with source file,
-actual vendor, category and new filename. Use YYYY-MM-DD_Vendor_INR_Amount.pdf.
-Do not modify anything yet. Show the plan and wait for approval.
-
-After approval, create organized copies under a NEW sibling folder named
-Claude_Workshop_Organized, with category subfolders. Leave the originals
-untouched. Use only actions your connector actually supports; report missing
-capabilities instead of claiming success. On reruns, detect existing copies
-and do not create duplicates. Return links to the created files and a count.
+Google Drive — same parent location/
+├── Claude_Workshop_Receipts/       (three originals; use your existing folder)
+└── Claude_Workshop_Organized/
+    ├── Office Supplies/
+    ├── Food/
+    └── Travel/
 ```
 
-**Guidance:** Inspect the plan, then say **“Approve this copy plan only.”** Check three originals still exist and exactly three organized copies were created. A folder URL in a prompt is not itself a security boundary; keep the connected account limited to training data.
+**Use your folder URLs:** Both prompts below contain the source URL you supplied. Learners using another account must replace it with their own. In Step B, replace all three destination placeholders. No OneDrive setup is required.
 
-**Fallback:** Use the same task in Cowork with only the local training folder connected. Request an `Organized_Receipts` output folder and the same approval step. Do not run both routes during the live demo.
+#### Step A — Read and propose; make no changes
+
+```text
+Use only this Google Drive source folder:
+https://drive.google.com/drive/u/0/folders/1kfH2D62qybZFAr5gDrxrp7-y3n7BmTZs
+
+Read its three original PDFs: HP_ink_order.pdf, receipt_march.pdf and
+receipt_amazon.pdf. Use their contents, not filenames, to identify vendor,
+date, currency and total. Flag anything unreadable or inconsistent.
+
+Show a copy-plan table: source filename/file ID, actual vendor, receipt date,
+category, amount and proposed new filename. Use this filename format:
+YYYY-MM-DD_Vendor_INR_Amount.pdf, with two decimal places for amounts.
+
+I will supply existing destination-folder URLs after reviewing the plan.
+Check which read, search and copy actions your connector actually exposes.
+Report missing capabilities. Do not create folders, copy, rename, move,
+delete or change permissions yet. Wait for my explicit approval.
+```
+
+**Review:** Match the plan to the three-receipt check above. Expected names are in Step B. **Already received and reviewed this plan? Skip Step A and use Step B after preparing the folders.** Do not authorize placing renamed copies in the source folder.
+
+#### Step B — Approve and copy into the existing folders
+
+Paste this in the **same Claude conversation** after checking the plan and replacing the three placeholders:
+
+```text
+I approve the following copy plan. I have manually created all destination
+folders. Do not create any folders. Stop if a source differs from the plan.
+
+Source folder:
+https://drive.google.com/drive/u/0/folders/1kfH2D62qybZFAr5gDrxrp7-y3n7BmTZs
+
+Destination folders:
+Office Supplies: [PASTE OFFICE SUPPLIES FOLDER URL]
+Food: [PASTE FOOD FOLDER URL]
+Travel: [PASTE TRAVEL FOLDER URL]
+
+Copy and rename only these files:
+1. HP_ink_order.pdf -> Office Supplies/
+   2026-02-25_Flipkart_INR_860.00.pdf
+2. receipt_march.pdf -> Food/
+   2026-03-05_Dominos-Pizza_INR_780.00.pdf
+3. receipt_amazon.pdf -> Travel/
+   2026-03-15_Namma-Metro_INR_500.00.pdf
+
+Make actual PDF copies, not shortcuts or regenerated documents. Preserve
+contents and leave all originals untouched. Do not move, rename, delete or
+overwrite source files; do not change sharing or access unrelated folders.
+Use only actions your connector actually supports.
+
+Before each copy, check its destination for the expected filename. Skip a
+verified existing copy. If an existing file cannot be verified as the right
+receipt, or multiple matches exist, report a conflict; do not overwrite,
+delete or create another copy. After a timeout, recheck before retrying.
+
+After copying, re-list the source and destination folders. Verify original
+file IDs/names, destination locations, PDF copies and receipt contents where
+supported. Report checks you could not perform; do not invent verification.
+
+Return a table with source filename, destination category, final filename,
+file link and status: Created, Already present, Conflict or Failed. Report
+separate counts and account for all three receipts. Confirm originals remain
+untouched only to the extent actually checked. Report any blocked action.
+```
+
+**Check:** First successful run: **3 untouched originals + 3 organized copies**, one per category. Successful rerun: **0 new copies, 3 Already present, no conflicts/failures**. Existing confirmed copies are not failures. Manually open the returned links and inspect the folders.
+
+**Rerun prompt:** “Repeat the approved copy plan using the same folders. Verify existing copies first; create only missing copies. Do not overwrite or duplicate files. Report counts and links.”
+
+**Guidance:** Grant approval only for the listed copies. A URL in a prompt is not an access-control boundary; use a training account with limited data. The copies remain on Drive. Keep local `Outputs/Expenses.xlsx` from Prompt 4 for Module 4. No separate cloud report file is required.
+
+**Fallback:** If reading a PDF fails, attach that same PDF directly for extraction; retain its original Drive file ID for any supported copy. If copying is unavailable, stop the Drive route. Use Cowork with only the local receipts folder and `Outputs` connected, request a plan, then approve copies into `Outputs/Organized_Receipts` with the same category names and duplicate checks. Label this **local organization, not a cloud-connector demonstration**; do not run both routes live.
 
 **Optional Excel add-in:** With Claude for Excel installed, open `Expenses.xlsx` and ask: “Explain the Summary formulas with cell references; do not edit.” This is a separate add-in from Microsoft Copilot. [8]
 
@@ -521,7 +599,7 @@ and which require manual Chrome testing. Do not install the extension for me.
 
 ## 🔵 Delivery controls and completion check
 
-**Keep the live path short:** Use one receipt-organization route, three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example are optional—not additional required labs.
+**Keep the live path short:** Use the manually prepared Google Drive folders and the two-step Prompt 5, or the local fallback—not both. Keep three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example remain optional.
 
 **When a task stalls:**
 
@@ -538,7 +616,7 @@ outputs. Inspect them before editing. Summarize what is already complete and
 continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 ```
 
-**Finish by checking:** Imported context against the approved note; all 12 bills, the September-versus-August comparison and calculator tests; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
+**Finish by checking:** Imported context against the approved note; the 12-bill analysis and calculator tests; the three-receipt total; untouched originals, three organized copies and a duplicate-free rerun; presentation consistency; Skill reuse; website evidence; and extension tests. Save downloads in `Outputs`; organized cloud copies stay on Drive. Mark blocked or untested work honestly.
 
 ## 🔵 Source and feature notes
 
@@ -546,13 +624,13 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 
 **Workshop additions:** `01_Electricity_Bills_Oct2025_Sep2026.pdf` contains 12 fictional monthly bills across 24 pages, replacing the earlier two-bill PDF. The calculator follows its classroom slabs, FPPAS, fixed charge, meter rent, two rebates and rounding carry-forward—not the former flat-rate formula. Other additions are the reduced extension scope, approval/verification rules and replacement website exercises. The original trainer files in this pack are unchanged apart from the two stated filename changes. No prices, model names or universal account entitlements are hardcoded into the course.
 
-**Electricity verification for this revision:** The PDF page count, 12 monthly meter-reading differences, bill calculations, carry-forward continuity, period totals, comparison percentages and calculator test figures were checked against the new PDF. The HTML calculator itself is generated during the exercise; browser execution is not claimed.
+**Electricity checks retained:** The supplied guide records checks of the 24-page PDF, 12 monthly readings, calculations, carry-forward continuity, period totals and calculator test figures. Module 2 and its figures are unchanged in this update. The HTML calculator is generated during class; browser execution is not claimed.
 
 **Preparation status retained from the supplied guide:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
 
-**Context-transfer addition:** Module 1 now includes ChatGPT-to-Claude memory import, a fictional classroom prompt, verification and optional ChatGPT history backup. The added workflow was checked against official documentation on 11 September 2026; it has not been executed on your accounts. Other workshop content is retained from the supplied guide. [14] [15]
+**Current synchronization — 11 September 2026:** Added the manual Drive folder setup, approval/copy prompt, conflict handling and rerun checks based on your pasted connector response. Clarified Project attachments, missing memory-import controls and the single-guide/Outputs layout. The session’s tool limitation is user-reported, not independently tested; official documentation may describe additional capabilities. Memory and folder-setup references were reviewed for this edit. No Drive files or account settings were changed. [5][7][14][16]
 
-**Official references** — feature/setup guidance, checked 11 September 2026:
+**Official references** — retained feature/setup sources; memory and Drive guidance rechecked for this synchronization on 11 September 2026:
 
 [1]: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
 [2]: https://support.claude.com/en/articles/13364135-use-claude-cowork-safely
@@ -569,5 +647,6 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 [13]: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
 [14]: https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude
 [15]: https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt-history-and-data
+[16]: https://support.google.com/drive/answer/2375091?hl=en
 
-[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15]
+[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15] · [Create Google Drive folders][16]
