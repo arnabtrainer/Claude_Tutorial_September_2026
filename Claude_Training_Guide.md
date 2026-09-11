@@ -296,7 +296,7 @@ boundary. Report tests actually run; mark browser tests not run as untested.
 ### ✅ Prompt 4 — Generate an expense workbook
 
 ```text
-Read the three attached receipts. Create Expenses.xlsx with two sheets:
+Read all the attached receipts. Create Expenses.xlsx with two sheets:
 
 1. Register: Date, Vendor, Receipt_Number, Category, Currency, Total,
 Source_File and Review_Status. Use one row per receipt, not one row per line
