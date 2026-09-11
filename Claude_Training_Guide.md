@@ -348,7 +348,7 @@ Google Drive — same parent location/
 
 ```text
 Use only this Google Drive source folder:
-https://drive.google.com/drive/u/0/folders/1kfH2D62qybZFAr5gDrxrp7-y3n7BmTZs
+[PASTE CLAUDE_WORKSHOP_RECEIPTS FOLDER URL]
 
 Read its three original PDFs: HP_ink_order.pdf, receipt_march.pdf and
 receipt_amazon.pdf. Use their contents, not filenames, to identify vendor,
