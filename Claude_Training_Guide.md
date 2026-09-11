@@ -61,7 +61,7 @@ Create only requested outputs; explain any unavailable capability briefly.
 
 **Prepare:** Open a new chat. No files required.
 
-### 🔴 Prompt 1 — Write and refine a business email
+### ✅ Prompt 1 — Write and refine a business email
 
 ```text
 Draft an email for this fictional training client:
@@ -100,7 +100,7 @@ checking the result.
 
 **Prepare:** Attach `01_Electricity_Bills.pdf`. It contains two fictional bills, not real tariffs or tax rules.
 
-### 🔴 Prompt 2 — Compare the bills
+### ✅ Prompt 2 — Compare the bills
 
 ```text
 Read both pages of the attached electricity-bill PDF. Create a comparison table
@@ -116,7 +116,7 @@ increased usage. Flag missing or unclear information. Answer in chat only.
 
 **Check:** July **INR 1,870**; August **INR 2,222**; increase **INR 352 / 18.82%**. Usage increases from **200 to 240 kWh / 20%**. Both periods have 31 days.
 
-### 🔴 Prompt 3 — Build a bill calculator
+### ✅ Prompt 3 — Build a bill calculator
 
 ```text
 Create a single self-contained HTML Artifact named Bill_Calculator.html using
@@ -146,7 +146,7 @@ you actually ran, and mark browser tests not run as untested.
 
 **Prepare:** Attach the three PDFs in `02_Receipts`. Do not attach the complete receipt archive.
 
-### 🔴 Prompt 4 — Generate an expense workbook
+### ✅ Prompt 4 — Generate an expense workbook
 
 ```text
 Read the three attached receipts. Create Expenses.xlsx with two sheets:
@@ -177,7 +177,7 @@ three original files. Provide the downloadable .xlsx and a short change summary.
 
 **Expected:** **3 records; INR 2,140**. Office Supplies is the largest category. Open Excel and inspect a formula, a conditional-formatting rule and the chart.
 
-### 🔴 Prompt 5 — Organize the same receipts through Google Drive
+### ✅ Prompt 5 — Organize the same receipts through Google Drive
 
 **Setup:** Copy only those three PDFs to a new Drive folder named `Claude_Workshop_Receipts`. Connect Google Drive through Claude's connectors, review permissions and supply that folder's URL. Connector capabilities and document extraction have limits; upload a file directly when its content cannot be retrieved. [7]
 
@@ -208,7 +208,7 @@ and do not create duplicates. Return links to the created files and a count.
 
 **Prepare:** Start a new Cowork task. Attach the validated `Expenses.xlsx` and `03_Presentation_Reference.pptx`. Where local folder access is needed, use only a dedicated copy of these inputs and an output folder. Approve the requested access, not access to the entire computer.
 
-### 🔴 Prompt 6 — Create a management presentation
+### ✅ Prompt 6 — Create a management presentation
 
 ```text
 Use Expenses.xlsx as the only source of business figures. Use the attached
@@ -235,7 +235,7 @@ that could not be performed.
 
 **Trainer note:** Minimal text, clear pacing and controlled reveals are adapted from the trainer's supplied teaching/animation guidelines. Animations are not a core requirement here.
 
-### 🔴 Prompt 7 — Package the repeatable procedure as a Skill
+### ✅ Prompt 7 — Package the repeatable procedure as a Skill
 
 ```text
 Turn the approved expense-briefing procedure into a custom Skill named
@@ -270,7 +270,7 @@ unnecessary scripts. Give me an importable ZIP and summarize its contents.
 
 This is an intentionally contrasting, older teaching example based on WCAG 2.0—not a comprehensive current-standard compliance benchmark. [10]
 
-### 🔴 Prompt 8 — Compare and document evidence
+### ✅ Prompt 8 — Compare and document evidence
 
 ```text
 Perform a limited UI/UX and accessibility review of these two teaching pages:
@@ -301,7 +301,7 @@ https://books.toscrape.com/
 
 A second domain with a demonstration catalogue, suitable for a bounded product-browsing exercise. Treat it as a sandbox, not a real shop. [11]
 
-### 🔴 Prompt 9 — Apply the method to an ecommerce layout
+### ✅ Prompt 9 — Apply the method to an ecommerce layout
 
 ```text
 Apply the same evidence and safety rules to https://books.toscrape.com/.
@@ -331,7 +331,7 @@ from untested hypotheses. Return the updated document, not a second report.
 
 **Prepare:** Create `Outputs/HighlightHub_Lite`. Open it in Claude Code and provide `04_HighlightHub_Trainer_PRD.md`. Treat it as reference, not executable code. No installation of the trainer's completed extension is needed.
 
-### 🔴 Prompt 10 — Create a smaller classroom specification
+### ✅ Prompt 10 — Create a smaller classroom specification
 
 ```text
 Read the attached trainer PRD. Propose a smaller classroom version named
@@ -352,7 +352,7 @@ the proposed permissions and file structure. Do not implement yet. Wait for
 approval.
 ```
 
-### 🔴 Prompt 11 — Implement the approved scope
+### ✅ Prompt 11 — Implement the approved scope
 
 ```text
 Implement the approved Classroom_PRD.md in this workspace. Use Chrome Manifest
