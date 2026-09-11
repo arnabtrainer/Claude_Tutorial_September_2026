@@ -3,8 +3,6 @@
 
 **Audience:** Non-technical and office users. **Suggested demo budget:** 4½ hours, plus breaks and additional learner practice. These are planning estimates, not guaranteed task runtimes.
 
-**Basis:** The supplied Codebasics video, transcript and resource archive. The smaller classroom exercises, fictional bills, validation checks and replacement audit websites are additions prepared for this workshop. Product documentation and website URLs checked on **11 September 2026**; rehearse on the account and computer used for delivery.
-
 ## Start here
 
 Keep this guide open. Use only `Practice_Files`; save everything learners generate in `Outputs`. Do not upload the entire original archive.
