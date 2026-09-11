@@ -14,7 +14,7 @@ Use this as your **single training guide**; `00_START_HERE.md` is no longer requ
 | 1 | Prompting, privacy, Projects and context transfer | Email, reusable instructions and reviewed context | 25 min |
 | 2 | Twelve-month bill analysis and interactive Artifacts | Monthly comparison and a slab-based calculator | 45 min |
 | 3 | Receipts, Excel and connectors | Expense workbook, copy register and organized copies | 50 min |
-| 4 | Chat vs Cowork, checked presentations and Skills | A verified three-slide deck and reusable workflow | 50 min |
+| 4 | Project-based Cowork, checked presentations and Skills | A verified three-slide deck and reusable workflow | 50 min |
 | 5 | Research and UI/UX/accessibility review | A two-case website audit report | 40 min |
 | 6 | Claude Code, requirements and testing | A small highlight-saving extension | 60 min |
 
@@ -47,7 +47,7 @@ All paths below are inside `Practice_Files`. Replace the earlier two-bill PDF wi
 ### 🔴 Initial Preparation
 
 1. Sign in to Claude and test file uploads/downloads; check Settings → Capabilities if file creation is unavailable. [1]
-2. Test Projects, memory import, Skills, Cowork and Claude Code; sign in to ChatGPT for the transfer demo and keep the desktop app ready for local files.
+2. Test Projects, memory import, Skills and Claude Code; check Cowork inside **Claude Workshop**. Sign in to ChatGPT for the transfer demo; keep Desktop ready for local files.
 3. Test browser interactions and screenshots; open both case-study websites.
 4. Use a dedicated training folder with non-sensitive files; review privacy, memory and permissions, and require approval for changes.
 5. Prepare Module 3’s source/category folders, copy their URLs and test read/copy actions. Rehearse with three receipts; use the local fallback only when needed.
@@ -120,7 +120,7 @@ with one verification check. Never assume a file or action succeeded without
 checking the result.
 ```
 
-**Attachments:** Modules 2–3 use files attached to their exercise chat; Module 4 uses the validated workbook and reference deck in Cowork; Module 5 uses website URLs; Module 6 uses the PRD in Claude Code. Do not upload everything to Project knowledge.
+**Attachments:** Modules 2–3 use files attached to their exercise chat. Module 4 uses a **new Cowork session inside Claude Workshop**, with the validated workbook and reference deck attached to that session. Module 5 uses website URLs; Module 6 uses the PRD in Claude Code. Keep task-specific inputs out of shared Project knowledge; do not upload everything. [17][19]
 
 **Trainer note:** Show where memory can be inspected or disabled. A new chat is not necessarily a complete context reset. [5]
 
@@ -510,14 +510,21 @@ new-copy count for this batch and cumulative status counts, then stop.
 
 **Demonstration workflow:** Inspect → reconcile → create → review → correct → deliver. Show checks and approvals, not just the deck. Explain plugins briefly; do not install extras.
 
-### 🔴 Prepare — Start a Cowork Task
+### 🔴 Prepare — Start Cowork inside the Claude Workshop Project
 
-1. Open Claude Web or Desktop; select **Cowork** below the prompt box. No separate **New task** button is needed in your interface. [17]
-2. Click **+** and attach the validated `Outputs/Expenses.xlsx` from Prompt 4 and `Practice_Files/03_Presentation_Reference.pptx`. Confirm both uploads. Do not use the copy-plan CSV as the expense source.
-3. Submit the session instruction and **Prompt 6**. Review progress, approve only necessary access and resolve reported data issues before continuing.
-4. Download `Expense_Briefing.pptx` into `Outputs`, open it in PowerPoint and check all three slides. Run Prompt 7 in the same conversation only after reviewing the deck.
+1. Open **Projects → Claude Workshop** in Claude Web or Desktop. Start a **new conversation inside this existing Project**; do not reuse the Module 3 chat or create another Project.
+2. Select **Cowork** below the prompt box. Check that **Claude Workshop** remains selected. Name the session **Module 4 — Expense Presentation** where renaming is available. [17]
+3. Click **+** and attach the validated `Outputs/Expenses.xlsx` from Prompt 4 and `Practice_Files/03_Presentation_Reference.pptx`. Confirm both uploads. Do not use the copy-plan CSV as the expense source.
+4. Select **Manual / Ask before acting** where available. Keep change-capable tools on **Needs approval**; Manual mode does not override **Always allow** permissions. Approve only necessary access. [18]
+5. Paste the common **Session instruction**, followed by **Prompt 6**, and submit. Review progress and resolve reported data issues before continuing.
+6. Download `Expense_Briefing.pptx` into `Outputs`, open it in PowerPoint and verify all three slides against the workbook.
+7. After approving the deck, run **Prompt 7 in the same Cowork session** to package the workflow. Install the reviewed Skill separately, then test it in **fresh sessions** as described below.
 
-**Web or Desktop:** Web Cowork with attachments is sufficient when enabled. For direct local-folder access, start in Desktop, keep it open and connect only a dedicated input/output folder. Uploading files does not grant access to local folders. [17]
+**Project versus attachments:** The Project supplies standing workshop instructions/context. Attach the two inputs to this task only—not to shared **Project knowledge**. Reattach the current workbook for each reuse test; do not rely on previous chat attachments or remembered figures. [17][19]
+
+**Web or Desktop:** Web Cowork with attachments is sufficient when enabled. For direct local-folder access, start in Desktop, keep it open and connect only a dedicated input/output folder. Folder-based local Projects require Desktop. Uploading files does not grant access to local folders. [17]
+
+**If the selector is missing:** Use a standalone Cowork session with the same Project instructions, Session instruction and two files; label it **standalone Cowork**, not a Project session. If Cowork itself is unavailable, use the labelled Chat alternative below. Do not create duplicate Projects to work around the interface.
 
 ### ✅ Prompt 6 — Create and verify a management presentation
 
@@ -592,7 +599,11 @@ from the Skill. Provide the ZIP and a contents summary. Do not install it or
 claim it is enabled; I will inspect it first.
 ```
 
-**Install/test:** Inspect the ZIP, then use **Customize → Skills → + → Create skill → Upload a skill** and enable it where available. In a fresh task attach the workbook and say: **“Use workshop-expense-briefing to create and verify three slides from this workbook.”** Check its figures and verification summary. In another fresh task without a workbook, it should ask for one. Enable code execution/file creation for Skills. [4]
+**Install:** Inspect `workshop-expense-briefing.zip`, then use **Customize → Skills → + → Create skill → Upload a skill** and enable it where available. Enable code execution/file creation for Skills. Creating the ZIP does not install the Skill. [4]
+
+**Reuse test:** Start a **fresh Cowork session inside Claude Workshop**, attach the current validated `Expenses.xlsx`, and say: **“Use workshop-expense-briefing to create and verify three slides from this workbook.”** Check that it reads the supplied workbook and reports actual checks. Use the standalone fallback if Project-based Cowork is unavailable.
+
+**Missing-input test:** In another fresh session, request the same Skill without attaching a workbook. It should ask for one—not reuse figures or attachments from earlier tasks. Do not test reuse only in the conversation that created the Skill.
 
 **Save:** Keep the approved `Expense_Briefing.pptx` and `workshop-expense-briefing.zip` in `Outputs`. No additional practice inputs are required.
 
@@ -724,7 +735,7 @@ and which require manual Chrome testing. Do not install the extension for me.
 
 ## 🔵 Delivery controls and completion check
 
-**Keep the live path short:** Demonstrate Prompts 4–5 with the three supplied receipts; use Prompt 5’s same Step A/B workflow for larger folders only as additional practice. Choose Drive or the local fallback—not both. For Module 4, choose Cowork or the labelled Chat alternative—not both—and demonstrate the checks, not only deck creation. Keep three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example remain optional.
+**Keep the live path short:** Demonstrate Prompts 4–5 with the three supplied receipts; use Prompt 5’s same Step A/B workflow for larger folders only as additional practice. Choose Drive or the local fallback—not both. For Module 4, use the existing **Claude Workshop** Project and one Cowork session for Prompts 6–7; use fresh sessions for Skill tests. Choose this route or one labelled fallback—not both—and demonstrate the checks, not only deck creation. Keep three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example remain optional.
 
 **When a task stalls:**
 
@@ -741,7 +752,7 @@ outputs. Inspect them before editing. Summarize what is already complete and
 continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 ```
 
-**Finish by checking:** Imported context; the 12-bill analysis and calculator; Prompt 4’s three-receipt total; Prompt 5’s approved copies, unchanged originals and duplicate-free rerun; Module 4’s workbook reconciliation, slide checks/corrections and Skill reuse; website evidence; and extension tests. In Prompt 5, reconcile all N register rows by status and report unresolved items. Save the latest CSV and other downloads in `Outputs`; cloud copies stay on Drive. Mark blocked or untested work honestly.
+**Finish by checking:** Imported context; the 12-bill analysis and calculator; Prompt 4’s three-receipt total; Prompt 5’s approved copies, unchanged originals and duplicate-free rerun; Module 4’s Project/session setup, workbook reconciliation, slide checks/corrections and fresh-session Skill tests; website evidence; and extension tests. In Prompt 5, reconcile all N register rows by status and report unresolved items. Save the latest CSV and other downloads in `Outputs`; cloud copies stay on Drive. Mark blocked or untested work honestly.
 
 ## 🔵 Source and feature notes
 
@@ -753,9 +764,9 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 
 **Preparation status retained from the supplied guide:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
 
-**Current synchronization — 11 September 2026:** Updated Module 4 and its overview/completion notes from your latest attachment and the agreed Chat/Cowork clarification. Prompt 6 now follows inspect → reconcile → create → review → correct → deliver; Prompt 7 reuses that checked workflow. Entry steps match your screenshot’s Cowork selector; web/local-folder guidance is explicit. Modules 1–3 and 5–6, including the 12-bill figures and any-number-of-files Drive workflow, are unchanged. File-creation, Skills and Cowork environment guidance was checked against official sources [1][4][17]; the remaining references are retained. This is an instruction update, not a live test of your account or generated outputs.
+**Current synchronization — 11 September 2026:** Aligned Module 4 with the agreed **Claude Workshop → new Cowork session → task attachments → Prompt 6 → review → Prompt 7** sequence. Added Manual-approval guidance, a labelled standalone fallback and separate fresh-session Skill tests. Updated only related overview, preparation, attachment, completion and reference notes. All 11 numbered prompt bodies and Modules 2–3 and 5–6 are unchanged. Setup guidance was checked against official sources [4][17][18][19]; other content and references are retained from the supplied guide. This updates the instructions, not your account, Project, Drive files or generated outputs; no live Claude test is claimed.
 
-**Official references** — [1], [4] and [17] checked for Module 4 on 11 September 2026; other references retained from the supplied guide:
+**Official references** — [4], [17], [18] and [19] checked for this Project/Cowork setup update on 11 September 2026; other references retained from the supplied guide:
 
 [1]: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
 [2]: https://support.claude.com/en/articles/13364135-use-claude-cowork-safely
@@ -774,5 +785,7 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 [15]: https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt-history-and-data
 [16]: https://support.google.com/drive/answer/2375091?hl=en
 [17]: https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile
+[18]: https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
+[19]: https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects
 
-[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15] · [Create Google Drive folders][16] · [Cowork web/desktop setup][17]
+[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15] · [Create Google Drive folders][16] · [Cowork web/desktop setup][17] · [Cowork approvals][18] · [Project instructions and knowledge][19]
