@@ -14,7 +14,7 @@ Use this as your **single training guide**; `00_START_HERE.md` is no longer requ
 | 1 | Prompting, privacy, Projects and context transfer | Email, reusable instructions and reviewed context | 25 min |
 | 2 | Twelve-month bill analysis and interactive Artifacts | Monthly comparison and a slab-based calculator | 45 min |
 | 3 | Receipts, Excel and connectors | Expense workbook, copy register and organized copies | 50 min |
-| 4 | Cowork, presentations and Skills | A three-slide deck and reusable Skill | 50 min |
+| 4 | Chat vs Cowork, checked presentations and Skills | A verified three-slide deck and reusable workflow | 50 min |
 | 5 | Research and UI/UX/accessibility review | A two-case website audit report | 40 min |
 | 6 | Claude Code, requirements and testing | A small highlight-saving extension | 60 min |
 
@@ -506,54 +506,97 @@ new-copy count for this batch and cumulative status counts, then stop.
 
 ## 🔵 Module 4 — Cowork, Presentations and Reusable Skills
 
-**Teach:** Cowork handles multi-step tasks; a Skill records a reusable procedure; a connector supplies tool/data access. Briefly explain plugins as packages of capabilities—do not install extra plugins during this workshop. [2][4]
+**Teach:** Chat can create presentations and perform multi-step file work. Use Cowork to demonstrate delegation and task progress—not an exclusive PowerPoint or verification capability. A Skill saves the procedure; a connector supplies tool/data access. [1][4][17]
 
-**Prepare:** Start a new Cowork task. Attach the validated `Expenses.xlsx` and `03_Presentation_Reference.pptx`. Where local folder access is needed, use only a dedicated copy of these inputs and an output folder. Approve the requested access, not access to the entire computer.
+**Demonstration workflow:** Inspect → reconcile → create → review → correct → deliver. Show checks and approvals, not just the deck. Explain plugins briefly; do not install extras.
 
-### ✅ Prompt 6 — Create a management presentation
+### 🔴 Prepare — Start a Cowork Task
 
-```text
-Use Expenses.xlsx as the only source of business figures. Use the attached
-PowerPoint only as a visual reference, not as a source of facts.
+1. Open Claude Web or Desktop; select **Cowork** below the prompt box. No separate **New task** button is needed in your interface. [17]
+2. Click **+** and attach the validated `Outputs/Expenses.xlsx` from Prompt 4 and `Practice_Files/03_Presentation_Reference.pptx`. Confirm both uploads. Do not use the copy-plan CSV as the expense source.
+3. Submit the session instruction and **Prompt 6**. Review progress, approve only necessary access and resolve reported data issues before continuing.
+4. Download `Expense_Briefing.pptx` into `Outputs`, open it in PowerPoint and check all three slides. Run Prompt 7 in the same conversation only after reviewing the deck.
 
-Create Expense_Briefing.pptx with exactly three editable slides:
-1. Receipt count, total and period covered by the receipts.
-2. Category comparison using an editable chart linked to an embedded data table.
-3. Two evidence-based observations and two practical review actions.
+**Web or Desktop:** Web Cowork with attachments is sufficient when enabled. For direct local-folder access, start in Desktop, keep it open and connect only a dedicated input/output folder. Uploading files does not grant access to local folders. [17]
 
-Adapt the reference deck's visual simplicity without copying its logos,
-organization names or unrelated claims. Use one main message per slide,
-large readable text, limited content and short speaker notes. Label amounts
-INR. Do not infer recurring spending or trends from just three receipts.
-
-Keep titles visible. Prefer static slides for reliable delivery; if progressive
-reveals are needed, use separate slides only with my approval, keeping the
-three-slide requirement unless I approve changing it. Save the .pptx and check
-for overflow, inconsistent numbers and missing chart labels. State any checks
-that could not be performed.
-```
-
-**Check:** Exactly three slides; total **INR 2,140**; chart sums match the workbook; no borrowed brand claims. Open Slide Show and inspect legibility.
-
-**Trainer note:** Minimal text, clear pacing and controlled reveals are adapted from the trainer's supplied teaching/animation guidelines. Animations are not a core requirement here.
-
-### ✅ Prompt 7 — Package the repeatable procedure as a Skill
+### ✅ Prompt 6 — Create and verify a management presentation
 
 ```text
-Turn the approved expense-briefing procedure into a custom Skill named
-workshop-expense-briefing. Package a folder containing SKILL.md with a valid
-name and description, required inputs, steps and validation checks.
+Use Expenses.xlsx for business figures and 03_Presentation_Reference.pptx for
+visual style only. Preserve both originals. Do not access Drive, unrelated
+files or external business data.
 
-Require a fresh expense workbook each time. Never hardcode this workshop's
-vendors, amounts or dates. Require separate currency totals, exactly three
-editable slides, speaker notes and a final data/layout check. Stop and ask when
-inputs are missing. Do not include receipts, personal data, credentials or
-unnecessary scripts. Give me an importable ZIP and summarize its contents.
+Complete this workflow. Show a short task checklist and update it as you work.
+
+1. Inspect and reconcile the workbook.
+Calculate receipt count, date range and totals by currency/category from
+Register; exclude summary rows. Reconcile against Summary and its formulas.
+Check missing values and Review_Status flags. Report issues with sheet/cell
+references and pause for my decision when data conflicts or cannot be checked.
+Do not alter the workbook, guess figures or confuse unavailable formula results
+with confirmed discrepancies.
+
+2. Create Expense_Briefing.pptx with exactly three editable slides.
+Slide 1: receipt count, total and date range covered by the receipts.
+Slide 2: category comparison using a native editable PowerPoint chart with its
+own embedded data, not a screenshot or a live link to an external workbook.
+Slide 3: two evidence-based observations and two practical review actions.
+Use reconciled figures, not remembered values. Keep currencies separate; label
+this workbook's amounts INR. Do not infer trends or causes from three receipts.
+
+3. Apply the reference style.
+Use one main message per slide, readable text, visible titles and short speaker
+notes. Do not copy logos, organization names or unrelated claims. Keep slides
+static and the count at three unless I approve a change.
+
+4. Review and correct the actual output.
+Reopen the deck. Check slide count, figures against the workbook, chart
+data/labels, speaker notes and editability. Render and inspect for overflow,
+overlap and readability when supported. Correct slide errors and recheck.
+Pause on source-data issues; never alter the workbook to match the slides.
+
+5. Deliver.
+Return Expense_Briefing.pptx and a short chat table: check, result, correction
+and limitation. Report only tests actually performed; mark others Not checked,
+not Passed. Do not create a separate report, publish or send files.
 ```
 
-**Install/test:** Inspect the ZIP, then use **Customize → Skills → Create skill → Upload a skill** where available. Enable it. In a new task attach the workbook and say: **“Use workshop-expense-briefing to create three slides from this workbook.”** Check that it reads the attached input rather than repeating remembered figures. Also test without a workbook: it should ask for one. [4]
+**Check:** Three slides; **3 receipts / INR 2,140**; dates **25 February–15 March 2026**; categories **Office Supplies 860, Food 780, Travel 500**. Compare with the workbook, inspect editable chart data and open Slide Show. Review the reported checks and limitations.
 
-**Fallback:** Save the same instructions as a reusable prompt when Skill import is unavailable; do not call that an installed Skill.
+**Trainer note:** Retain the trainer's minimal-text design principles. Demonstrate verification and correction; keep the completion summary in chat, not an extra file.
+
+**Chat alternative:** Use the same prompt with file creation enabled; label it a **Chat-based workflow**, not a Cowork demonstration. Run only one route in class. [1]
+
+### ✅ Prompt 7 — Package the checked workflow as a Skill
+
+```text
+Create the Skill workshop-expense-briefing. Return workshop-expense-briefing.zip
+containing its folder and SKILL.md with valid YAML name and description.
+Include inputs, steps, stopping conditions and verification checks.
+
+Require a newly supplied workbook each run. Inspect Register, recalculate
+counts/date range/totals, reconcile Summary and review flags. Pause on missing
+inputs, conflicting data or unavailable checks. Preserve source files.
+
+Accept an optional style-reference deck; otherwise use neutral styling. Never
+hardcode workshop vendors, figures, dates, currency or receipt count. Keep
+currencies separate.
+
+Require exactly three editable slides: overview, category chart with embedded
+data, and two supported observations plus two review actions. Include speaker
+notes. Check, correct and recheck the deck; report performed versus untested
+checks in chat. Do not infer unsupported trends.
+
+Exclude source documents, personal data, credentials and unnecessary scripts
+from the Skill. Provide the ZIP and a contents summary. Do not install it or
+claim it is enabled; I will inspect it first.
+```
+
+**Install/test:** Inspect the ZIP, then use **Customize → Skills → + → Create skill → Upload a skill** and enable it where available. In a fresh task attach the workbook and say: **“Use workshop-expense-briefing to create and verify three slides from this workbook.”** Check its figures and verification summary. In another fresh task without a workbook, it should ask for one. Enable code execution/file creation for Skills. [4]
+
+**Save:** Keep the approved `Expense_Briefing.pptx` and `workshop-expense-briefing.zip` in `Outputs`. No additional practice inputs are required.
+
+**Fallback:** When Skill import is unavailable, save the procedure as a reusable prompt, not an installed Skill.
 
 **Optional, not live:** Ask Cowork to *draft* a weekly expense-review schedule without enabling it. Review access and intended actions before using any recurring automation.
 
@@ -681,7 +724,7 @@ and which require manual Chrome testing. Do not install the extension for me.
 
 ## 🔵 Delivery controls and completion check
 
-**Keep the live path short:** Demonstrate Prompts 4–5 with the three supplied receipts; use Prompt 5’s same Step A/B workflow for larger folders only as additional practice. Choose Drive or the local fallback—not both. Keep three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example remain optional.
+**Keep the live path short:** Demonstrate Prompts 4–5 with the three supplied receipts; use Prompt 5’s same Step A/B workflow for larger folders only as additional practice. Choose Drive or the local fallback—not both. For Module 4, choose Cowork or the labelled Chat alternative—not both—and demonstrate the checks, not only deck creation. Keep three-slide decks and at most three findings per website case. Plugins, schedules, Office add-ins and the original rent-versus-buy example remain optional.
 
 **When a task stalls:**
 
@@ -698,7 +741,7 @@ outputs. Inspect them before editing. Summarize what is already complete and
 continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 ```
 
-**Finish by checking:** Imported context; the 12-bill analysis and calculator; Prompt 4’s three-receipt total; Prompt 5’s approved copies, unchanged originals and duplicate-free rerun; presentation consistency; Skill reuse; website evidence; and extension tests. In Prompt 5, reconcile all N register rows by status and report unresolved items. Save the latest CSV and other downloads in `Outputs`; cloud copies stay on Drive. Mark blocked or untested work honestly.
+**Finish by checking:** Imported context; the 12-bill analysis and calculator; Prompt 4’s three-receipt total; Prompt 5’s approved copies, unchanged originals and duplicate-free rerun; Module 4’s workbook reconciliation, slide checks/corrections and Skill reuse; website evidence; and extension tests. In Prompt 5, reconcile all N register rows by status and report unresolved items. Save the latest CSV and other downloads in `Outputs`; cloud copies stay on Drive. Mark blocked or untested work honestly.
 
 ## 🔵 Source and feature notes
 
@@ -710,9 +753,9 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 
 **Preparation status retained from the supplied guide:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
 
-**Current synchronization — 11 September 2026:** Aligned Module 3 and its preparation/output/completion notes with the supplied any-number-of-files Step A/B workflow: automatic discovery, one reviewed register, category-folder mapping, approved batches, continuation, conflict handling and rerun checks. Prompt 4 and its three-receipt answer checks remain the classroom baseline for Module 4. Modules 1–2 and 4–6 are unchanged. The connector limitation remains user-reported, not independently tested. This edit changes instructions only; no Drive actions or live Claude tests were performed.
+**Current synchronization — 11 September 2026:** Updated Module 4 and its overview/completion notes from your latest attachment and the agreed Chat/Cowork clarification. Prompt 6 now follows inspect → reconcile → create → review → correct → deliver; Prompt 7 reuses that checked workflow. Entry steps match your screenshot’s Cowork selector; web/local-folder guidance is explicit. Modules 1–3 and 5–6, including the 12-bill figures and any-number-of-files Drive workflow, are unchanged. File-creation, Skills and Cowork environment guidance was checked against official sources [1][4][17]; the remaining references are retained. This is an instruction update, not a live test of your account or generated outputs.
 
-**Official references** — retained from the supplied guide; not independently rechecked for this wording synchronization:
+**Official references** — [1], [4] and [17] checked for Module 4 on 11 September 2026; other references retained from the supplied guide:
 
 [1]: https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude
 [2]: https://support.claude.com/en/articles/13364135-use-claude-cowork-safely
@@ -730,5 +773,6 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 [14]: https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude
 [15]: https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt-history-and-data
 [16]: https://support.google.com/drive/answer/2375091?hl=en
+[17]: https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile
 
-[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15] · [Create Google Drive folders][16]
+[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15] · [Create Google Drive folders][16] · [Cowork web/desktop setup][17]
