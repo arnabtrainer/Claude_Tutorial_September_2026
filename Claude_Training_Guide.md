@@ -61,22 +61,29 @@ Create only requested outputs; explain any unavailable capability briefly.
 
 **Prepare:** Open a new chat. No files required.
 
-### ✅ Prompt 1 — Write and refine a business email
+### ✅ Prompt 1 — Follow up on a delayed supplier delivery
 
 ```text
-Draft an email for this fictional training client:
-Name: Maya Sen. Course: Advanced Excel. Outstanding fee: INR 3,000.
-Payment due date: 20 September 2026. Sender: Learning Lab Training Team.
+Draft an email about this fictional business issue:
+Recipient: Maya Sen, Account Manager at OfficePro Supplies.
+Purchase order: PO-1042 for 20 office chairs.
+Agreed delivery date: 8 September 2026.
+Current status: The order has not arrived as of 11 September 2026.
+Sender: Procurement Team, Horizon Services.
 
-Write a clear subject and a polite body of no more than 100 words. Mention the
-course, amount and due date. Ask the learner to contact our team for payment
-instructions. Do not invent a payment link, bank account, late fee or receipt.
-Draft only; do not send. Then list the facts you used for verification.
+Write a clear subject and a polite but firm body of no more than 100 words.
+Mention the purchase order, items and missed delivery date. Request the
+current order status and a confirmed revised delivery date.
+
+Do not invent reasons for the delay, previous conversations, penalties or
+contractual terms. Draft only; do not send. Then list the facts you used
+for verification.
 ```
 
-**Refinement:** “Make the body warmer and reduce it to 60 words without changing any fact.”
+**Refinement:** “Make the tone more collaborative and reduce the body to 60 words without changing any fact or removing the request for a revised delivery date.”
 
-**Check:** Correct name, course, amount and date; no fabricated payment instructions.
+**Check:** Correct recipient, supplier, order number, quantity and dates; clear request for an update; no invented explanations or penalties.
+
 
 ### ✅ Set up a Project
 
