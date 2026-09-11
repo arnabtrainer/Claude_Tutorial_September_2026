@@ -42,7 +42,7 @@ All paths below are inside `Practice_Files`.
 
 **Delivery rhythm:** Explain the goal → paste one prompt → inspect the result → perform the stated check. Ask learners to predict one result before revealing it.
 
-### 🔴 Session instruction — paste once in each new task
+### ✅ Session instruction — paste once in each new task
 
 ```text
 This is a classroom exercise. Use only the files, folders and websites I specify.
@@ -78,7 +78,7 @@ Draft only; do not send. Then list the facts you used for verification.
 
 **Check:** Correct name, course, amount and date; no fabricated payment instructions.
 
-### 🔴 Set up a Project
+### ✅ Set up a Project
 
 Create a private Project named **Claude Workshop**. Put the following in its instructions; attach only the files needed for the current exercise.
 
