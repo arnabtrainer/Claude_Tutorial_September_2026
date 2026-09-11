@@ -9,7 +9,7 @@ Keep this guide open. Use only `Practice_Files`; save everything learners genera
 
 | Module | What to demonstrate | Main result | Time |
 |---|---|---|---:|
-| 1 | Prompting, privacy, Projects and memory | A useful email and reusable instructions | 25 min |
+| 1 | Prompting, privacy, Projects and context transfer | Email, reusable instructions and reviewed context | 25 min |
 | 2 | Document comparison and interactive Artifacts | Bill analysis and a working calculator | 45 min |
 | 3 | Receipts, Excel and connectors | An expense workbook and organized copies | 50 min |
 | 4 | Cowork, presentations and Skills | A three-slide deck and reusable Skill | 50 min |
@@ -35,7 +35,7 @@ All paths below are inside `Practice_Files`.
 ### 🔴 Initial Preparation
 
 1. Sign in to Claude, go to Settings → Capabilities and test file uploads and downloads.
-2. Test Projects, Skills, Cowork and Claude Code; keep the desktop app ready for local files.
+2. Test Projects, memory import, Skills, Cowork and Claude Code; sign in to ChatGPT for the transfer demo and keep the desktop app ready for local files.
 3. Test browser interactions and screenshots; open both case-study websites.
 4. Use a dedicated training folder with non-sensitive files; review privacy, memory and permissions, and require approval for changes.
 5. Rehearse once and prepare clearly labelled alternatives for unavailable features.
@@ -59,7 +59,7 @@ Create only requested outputs; explain any unavailable capability briefly.
 
 **Teach:** Goal → context → constraints → output → verification. Briefly show new chats, attachments, model/effort controls and voice input where available. Explain that a Project holds task-specific instructions/reference material; memory is separate and may affect later conversations. [3][5]
 
-**Prepare:** Open a new chat. No files required.
+**Prepare:** Open a new chat. For the context-transfer mini-demo, sign in to both ChatGPT and Claude using training accounts. No additional practice files required.
 
 ### ✅ Prompt 1 — Follow up on a delayed supplier delivery
 
@@ -98,6 +98,50 @@ checking the result.
 ```
 
 **Trainer note:** Show where memory can be inspected or disabled. A new chat is not necessarily a complete context reset. [5]
+
+### ✅ Import ChatGPT Context into Claude
+
+**Important:** This transfers useful memory and context—not all ChatGPT chats as separate Claude conversations. It does not recreate chat history or transfer attachments. [14]
+
+**Steps:**
+1. In Claude, open **Settings → Memory → Start import**. Older interfaces: **Settings → Capabilities → Memory → Start import**. [14]
+2. Copy the displayed prompt into ChatGPT. For class, use the fictional example below instead of exporting personal memories.
+3. Review the response. Remove sensitive, incorrect or outdated information; do not assume every past conversation is covered.
+4. Paste the approved text into Claude's import box and select **Add to memory**. [14]
+5. Inspect the imported entries and run the verification prompt below. Correct missing details or remove unwanted entries; imports are experimental and may be incomplete. [14]
+
+**Classroom prompt — paste in ChatGPT:**
+
+```text
+Prepare a concise context-transfer note for Claude using only this fictional
+workshop profile:
+Role: Office trainer. Audience: Non-technical office users.
+Preferred style: Plain English, short explanations and detailed practical prompts.
+Preferred outputs: Editable files with one verification check per exercise.
+
+Return one copyable block titled 'Fictional workshop preferences'. Do not use
+my real saved memories, unrelated chats or personal information. Do not claim
+this is a complete chat-history export.
+```
+
+**Verification prompt — paste in Claude after import:**
+
+```text
+What workshop preferences were retained from the import? List them briefly and
+flag anything missing or uncertain. Do not invent details or claim that all
+ChatGPT conversations were imported.
+```
+
+**Check:** Compare Claude's memory entries with the approved note. Confirm the audience, writing style and output preference; remove the fictional demo entries after class.
+
+**Fallback:** When import is unavailable, place the reviewed note in the **Claude Workshop** Project instructions. Label this manual context setup, not memory or chat-history migration.
+
+**Optional — back up ChatGPT history outside class:**
+1. In ChatGPT, open **Profile → Settings → Data controls → Export data → Export → Confirm export**. [15]
+2. Download and securely retain the ZIP when notified. Exports may take time; the download link expires after 24 hours. [15]
+3. Check the exported conversations. This is a backup, not a file that this Claude memory-import workflow restores as chat threads. Do not upload the entire archive for the classroom exercise. [14] [15]
+
+**For an ongoing project:** Separately review and copy its important decisions, open tasks and necessary non-sensitive files into the Claude Project. This is a manual handoff, not a restoration of the original conversation.
 
 ---
 
@@ -403,7 +447,7 @@ outputs. Inspect them before editing. Summarize what is already complete and
 continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 ```
 
-**Finish by checking:** Bill calculations; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
+**Finish by checking:** Imported context against the approved note; bill calculations; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
 
 ## 🔵 Source and feature notes
 
@@ -412,6 +456,8 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 **Workshop additions:** The fictional bill PDF, calculator specification, reduced extension scope, approval/verification rules and replacement website exercises. The original trainer files in this pack are unchanged apart from the two stated filename changes. No prices, model names or universal account entitlements are hardcoded into the course.
 
 **Preparation status:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
+
+**Context-transfer addition:** Module 1 now includes ChatGPT-to-Claude memory import, a fictional classroom prompt, verification and optional ChatGPT history backup. The added workflow was checked against official documentation on 11 September 2026; it has not been executed on your accounts. Other workshop content is retained from the supplied guide. [14] [15]
 
 **Official references** — feature/setup guidance, checked 11 September 2026:
 
@@ -428,5 +474,7 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 [11]: https://books.toscrape.com/
 [12]: https://support.claude.com/en/articles/14553240-give-claude-context-claude-md-and-better-prompts
 [13]: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world
+[14]: https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude
+[15]: https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt-history-and-data
 
-[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13]
+[File creation][1] · [Cowork safety][2] · [Projects][3] · [Skills][4] · [Memory][5] · [Artifacts][6] · [Google connectors][7] · [Excel add-in][8] · [Research][9] · [W3C demonstration][10] · [Books sandbox][11] · [Claude Code context][12] · [Chrome installation][13] · [Memory import][14] · [ChatGPT history export][15]
