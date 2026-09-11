@@ -10,19 +10,28 @@ Keep this guide open. Use only `Practice_Files`; save everything learners genera
 | Module | What to demonstrate | Main result | Time |
 |---|---|---|---:|
 | 1 | Prompting, privacy, Projects and context transfer | Email, reusable instructions and reviewed context | 25 min |
-| 2 | Document comparison and interactive Artifacts | Bill analysis and a working calculator | 45 min |
+| 2 | Twelve-month bill analysis and interactive Artifacts | Monthly comparison and a slab-based calculator | 45 min |
 | 3 | Receipts, Excel and connectors | An expense workbook and organized copies | 50 min |
 | 4 | Cowork, presentations and Skills | A three-slide deck and reusable Skill | 50 min |
 | 5 | Research and UI/UX/accessibility review | A two-case website audit report | 40 min |
 | 6 | Claude Code, requirements and testing | A small highlight-saving extension | 60 min |
 
+```text
+Practice_Files/
+├── 01_Electricity_Bills_Oct2025_Sep2026.pdf
+├── 02_Receipts/  (the three PDFs listed below)
+├── 03_Presentation_Reference.pptx
+└── 04_HighlightHub_Trainer_PRD.md
+Outputs/  (save generated results here)
+```
+
 ### 🔴 Your six practice files
 
-All paths below are inside `Practice_Files`.
+All paths below are inside `Practice_Files`. Replace the earlier two-bill PDF with the new combined PDF; the total remains **six practice files**. Keep the superseded bill file outside the active practice folder.
 
 | File | Use | Origin |
 |---|---|---|
-| `01_Electricity_Bills.pdf` | Two monthly bills in one PDF; Module 2 | **New, fictional classroom input** |
+| `01_Electricity_Bills_Oct2025_Sep2026.pdf` | 12 monthly bills, October 2025–September 2026; 24 pages, two per bill; Module 2 | **Fictional classroom input; replaces the two-bill example** |
 | `02_Receipts/receipt_amazon.pdf` | Receipt extraction; Module 3 | Trainer file, unchanged |
 | `02_Receipts/HP_ink_order.pdf` | Receipt extraction; Module 3 | Trainer file, unchanged |
 | `02_Receipts/receipt_march.pdf` | Receipt extraction; Module 3 | Trainer file, unchanged |
@@ -87,7 +96,18 @@ for verification.
 
 ### ✅ Set up a Project
 
-Create a private Project named **Claude Workshop**. Put the following in its instructions; attach only the files needed for the current exercise.
+Create a private Project named **Claude Workshop**.
+
+Put the following in its project description
+
+```text
+A hands-on Claude training workspace for non-technical office users. Explore
+effective prompting, document analysis, Excel reporting, presentation creation,
+website reviews and simple application development through guided exercises,
+reusable prompts and practical verification checks.
+```
+
+Put the following in its instructions
 
 ```text
 Help me prepare practical training for non-technical office users. Use plain
@@ -100,6 +120,8 @@ checking the result.
 **Trainer note:** Show where memory can be inspected or disabled. A new chat is not necessarily a complete context reset. [5]
 
 ### ✅ Import ChatGPT Context into Claude
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/74ff7736-6bc3-4033-8382-3e30d8a55428" />
 
 **Important:** This transfers useful memory and context—not all ChatGPT chats as separate Claude conversations. It does not recreate chat history or transfer attachments. [14]
 
@@ -147,47 +169,116 @@ ChatGPT conversations were imported.
 
 ## 🔵 Module 2 — Document Analysis and Interactive Artifacts
 
-**Teach:** Source-grounded extraction, percentage change, assumptions and testing an interactive output. An Artifact is a standalone piece of content or an interactive tool that can be refined separately from the conversation. [6]
+**Teach:** Source-grounded extraction, monthly comparisons, percentage change, slab-based charges, rebates and rounding. Create and test an interactive HTML calculator.
 
-**Prepare:** Attach `01_Electricity_Bills.pdf`. It contains two fictional bills, not real tariffs or tax rules.
+**Prepare:** Start a new chat inside **Claude Workshop** and attach `Practice_Files/01_Electricity_Bills_Oct2025_Sep2026.pdf`. It contains **12 fictional monthly bills, October 2025–September 2026: 24 pages, two per bill**. All rates and personal details are training examples, not actual utility tariffs or tax rules. Attach only this PDF—not the earlier bills or trainer answer key—and use the same chat for Prompts 2 and 3.
 
-### ✅ Prompt 2 — Compare the bills
+### ✅ Prompt 2 — Analyze and compare the monthly bills
 
 ```text
-Read both pages of the attached electricity-bill PDF. Create a comparison table
-for billing period, billing days, usage in kWh, unit rate, fixed charge,
-subtotal, tax and total. Cite the page supporting each month's values.
+Read all 24 pages of 01_Electricity_Bills_Oct2025_Sep2026.pdf: 12 monthly bills
+from October 2025 to September 2026, two pages per bill. Use only this file;
+do not apply real-world tariffs or the earlier two-bill example.
 
-Recalculate each total. Calculate August minus July, and the percentage change
-using July as the denominator, for both usage and total bill. Explain why those
-two percentages differ. Give three practical consumption-reduction ideas, but
-do not claim the bills identify particular appliances or prove the cause of
-increased usage. Flag missing or unclear information. Answer in chat only.
+Create a 12-row summary showing account month, billing days, usage in kWh,
+kWh per day, Net Amount, rounded e-payment payable, closing carry-forward
+and supporting PDF page numbers. Use the combined PDF's page numbers 1–24,
+not each bill's repeated 1-of-2 / 2-of-2 labels. Organize by account month,
+not issue date. Do not count consumption-history entries as additional bills.
+
+Verify meter-reading differences and recalculate each bill using its printed
+energy slabs, fixed charge, FPPAS, duty, meter rent, adjustments, rebates and
+rounding rules. Check October's opening carry-in is INR 0.00; from November
+onward, confirm each opening adjustment equals the previous month's closing
+carry-forward. Report discrepancies; do not invent a bill before this series.
+
+Calculate total annual consumption and the sum of rounded e-payment payable.
+Identify the highest and lowest months for consumption and payable amount.
+Exclude security deposits and previous-payment records. Do not treat the sum
+of Gross or Net Amount as annual cost: carried balances can be counted twice.
+Reconcile current-period charges less both rebates against rounded e-payments
+plus the final carry-forward, assuming zero opening carry-in and timely
+e-payment. Report these as simulated payable amounts, not actual payments.
+
+Compare September 2026 with August 2026 for usage, rounded e-payment payable
+and kWh per day. Calculate change as September minus August, and percentage
+change as change divided by August's value × 100. Use unrounded daily averages
+in calculations. Explain why the percentage changes differ.
+
+Give three practical consumption-reduction ideas, but do not claim these bills
+identify appliances or prove causes. Flag missing information. Answer in chat
+only and keep explanations brief.
 ```
 
-**Check:** July **INR 1,870**; August **INR 2,222**; increase **INR 352 / 18.82%**. Usage increases from **200 to 240 kWh / 20%**. Both periods have 31 days.
+**12-month check (October 2025–September 2026):** **646 kWh**; rounded e-payment payable totals **INR 4,240.00**. Opening carry-in is **INR 0.00**; final carry-forward is **INR 0.71**. Current-period charges after both rebates reconcile to **INR 4,240.71**. Highest: **June 2026 — 92 kWh / INR 590**. Lowest: **January 2026 — 24 kWh / INR 170**.
+
+**Page check:** October is on **PDF pages 1–2**; August on **21–22**; September on **23–24**. Compare September with August using the following values.
+
+| Measure                   | August 2026 | September 2026 |      September vs August |
+| ------------------------- | ----------: | -------------: | -----------------------: |
+| Billing days              |          31 |             30 |                   −1 day |
+| Usage                     |      69 kWh |         54 kWh |    **−15 kWh / −21.74%** |
+| Usage per day             |  2.2258 kWh |     1.8000 kWh |              **−19.13%** |
+| Rounded e-payment payable |  INR 450.00 |     INR 360.00 | **−INR 90.00 / −20.00%** |
+
+**Trainer note:** **Net Amount and rounded e-payment payable are different figures.** Carry-forward is an unpaid rounding balance, not an additional consumption charge. The PDF describes simulated payments, not evidence of actual payments.
 
 ### ✅ Prompt 3 — Build a bill calculator
 
 ```text
-Create a single self-contained HTML Artifact named Bill_Calculator.html using
-this fictional formula:
-Total = (usage_kWh × unit_rate + fixed_charge) × (1 + tax_percent / 100).
+Create a single self-contained HTML Artifact named Bill_Calculator.html,
+using the fictional rules in 01_Electricity_Bills_Oct2025_Sep2026.pdf and below.
+These rates remain fixed across all 12 bills.
 
-Provide labeled numeric inputs, a Calculate control, Reset and a breakdown of
-energy charge, fixed charge, tax and total. Defaults: 200 kWh, INR 8 per kWh,
-INR 100 fixed charge and 10% tax. Reject blank, non-numeric or negative inputs;
-accept zero. Use readable text and keyboard-operable controls. No external
-libraries, accounts, network calls or tracking. Mark all rates as fictional.
-Provide the downloadable HTML and a short test checklist. Report which tests
-you actually ran, and mark browser tests not run as untested.
+Inputs:
+- Usage U: whole-number kWh; default 48.
+- Opening carry-in C: INR, up to two decimal places; default 0.00.
+
+Keep these training rates fixed:
+Energy = min(U, 25) × 5.18 + max(U - 25, 0) × 5.69.
+Fixed charge = 1.8 kVA × INR 15 = INR 27.
+FPPAS = (Energy + Fixed charge) × 8.20%, rounded half-up to two decimals.
+Government duty = INR 0. Meter rent = INR 10.
+Gross = Energy + Fixed charge + FPPAS + Duty + Meter rent + C.
+Net Amount = Gross - INR 1.75 timely-payment rebate.
+Net Amount for e-payment = Net Amount - INR 1.75 additional rebate.
+Standard rounded payable = floor(Net Amount / 10) × 10.
+Rounded e-payment payable = floor(Net Amount for e-payment / 10) × 10.
+Closing carry-forward = Net Amount for e-payment - rounded e-payment payable.
+
+Assume timely e-payment. Explain that carry-forward uses the e-payment route
+and becomes the next month's opening carry-in. Do not apply the old flat-rate
+formula or add 10% tax.
+
+Provide Calculate and Reset controls. Show both energy slabs, every charge,
+both rebates and the separate payable amounts. Use decimal-safe arithmetic,
+two-decimal money formatting, readable text and keyboard-operable controls.
+
+Reject blank, non-numeric or negative inputs, fractional kWh and carry-in
+with more than two decimal places. Accept zero. Reset restores 48 kWh and
+INR 0.00 carry-in.
+
+Label the tool "SAMPLE — FOR TRAINING ONLY; not actual utility tariffs."
+Use no external libraries, accounts, network calls or tracking.
+Provide the downloadable HTML and a short test checklist. Test against the
+October, August and September bills, plus zero usage and the 25/26-unit
+boundary. Report tests actually run; mark browser tests not run as untested.
 ```
 
-**Guidance:** Open the downloaded HTML in a browser and change the inputs yourself.
+**Guidance:** Save the downloaded file as `Outputs/Bill_Calculator.html`, open it in a browser and enter the test values below. For each monthly test, enter **both** usage and carry-in; Reset returns to October’s values.
 
-**Check:** Default **1,870**; 240 kWh **2,222**; zero usage **110** with other defaults unchanged; negative usage rejected; Reset restores defaults.
+| Test                    |  Usage | Carry-in | Net Amount | Rounded e-payment payable | Closing carry-forward |
+| ----------------------- | -----: | -------: | ---------: | ------------------------: | --------------------: |
+| October 2025 — defaults | 48 kWh |     0.00 |     319.18 |                **310.00** |              **7.43** |
+| August 2026             | 69 kWh |     9.62 |     458.09 |                **450.00** |              **6.34** |
+| September 2026          | 54 kWh |     6.34 |     362.46 |                **360.00** |              **0.71** |
+| Zero-usage test         |  0 kWh |     0.00 |      37.46 |                 **30.00** |              **5.71** |
 
-**Scope choice:** This calculator is a smaller classroom alternative to the trainer's rent-versus-buy simulator. The original simulator remains an optional extension in the original archive, not a required file here.
+*All monetary values are INR. The zero-usage result is calculated from the training formula, not a separate bill.*
+
+**Additional checks:** At **25 kWh**, energy charge is **INR 129.50**; at **26 kWh**, it is **INR 135.19**. Negative or fractional usage is rejected; Reset restores defaults.
+
+**Scope choice:** This calculator remains a smaller classroom alternative to the trainer’s rent-versus-buy simulator. No additional practice file is required.
 
 ---
 
@@ -447,15 +538,17 @@ outputs. Inspect them before editing. Summarize what is already complete and
 continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 ```
 
-**Finish by checking:** Imported context against the approved note; bill calculations; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
+**Finish by checking:** Imported context against the approved note; all 12 bills, the September-versus-August comparison and calculator tests; the three-receipt total; presentation consistency; Skill reuse with fresh inputs; actual website evidence; and the extension acceptance tests. Save generated outputs in one place. Record any blocked exercise rather than marking it complete.
 
 ## 🔵 Source and feature notes
 
 **Trainer sources:** The user-supplied Codebasics video at https://www.youtube.com/watch?v=eHS0WIWNtu0 and its transcript/resource archive. The three receipt files come from `3 Team Expenses`. The renamed presentation is `4 PPT Creation/Presentation Skill/time management and deep focus for AI engineers.pptx`; the renamed PRD is `5 Chrome extension/prd-highlighthub.md`. Presentation guidance also draws on the supplied `Art of teaching CB Principles.txt` and `How to animate.txt`.
 
-**Workshop additions:** The fictional bill PDF, calculator specification, reduced extension scope, approval/verification rules and replacement website exercises. The original trainer files in this pack are unchanged apart from the two stated filename changes. No prices, model names or universal account entitlements are hardcoded into the course.
+**Workshop additions:** `01_Electricity_Bills_Oct2025_Sep2026.pdf` contains 12 fictional monthly bills across 24 pages, replacing the earlier two-bill PDF. The calculator follows its classroom slabs, FPPAS, fixed charge, meter rent, two rebates and rounding carry-forward—not the former flat-rate formula. Other additions are the reduced extension scope, approval/verification rules and replacement website exercises. The original trainer files in this pack are unchanged apart from the two stated filename changes. No prices, model names or universal account entitlements are hardcoded into the course.
 
-**Preparation status:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
+**Electricity verification for this revision:** The PDF page count, 12 monthly meter-reading differences, bill calculations, carry-forward continuity, period totals, comparison percentages and calculator test figures were checked against the new PDF. The HTML calculator itself is generated during the exercise; browser execution is not claimed.
+
+**Preparation status retained from the supplied guide:** Input bills and selected receipt figures were checked; copied trainer files were checked for byte-for-byte preservation. Website pages/documentation were opened. These are exercise instructions—not a claim that Claude sessions, live browser audits, generated slides or the extension were executed successfully on your account.
 
 **Context-transfer addition:** Module 1 now includes ChatGPT-to-Claude memory import, a fictional classroom prompt, verification and optional ChatGPT history backup. The added workflow was checked against official documentation on 11 September 2026; it has not been executed on your accounts. Other workshop content is retained from the supplied guide. [14] [15]
 
