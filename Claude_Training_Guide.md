@@ -63,6 +63,7 @@ Save the **combined teaching and safety instructions** under **Module 1 → Set 
 **Outside the Project:** Paste the same combined block once at the start of a standalone Chat/Cowork task or Claude Code session. Do not assume Project settings transfer there. Continue reviewing permissions and approving changes.
 
 ---
+---
 
 ## 🔵 Module 1 — Prompting, Privacy and Context
 
@@ -176,6 +177,7 @@ ChatGPT conversations were imported.
 
 **For an ongoing project:** Separately review and copy its important decisions, open tasks and necessary non-sensitive files into the Claude Project. This is a manual handoff, not a restoration of the original conversation.
 
+---
 ---
 
 ## 🔵 Module 2 — Document Analysis and Interactive Artifacts
@@ -291,6 +293,7 @@ boundary. Report tests actually run; mark browser tests not run as untested.
 
 **Scope choice:** This calculator remains a smaller classroom alternative to the trainer’s rent-versus-buy simulator. No additional practice file is required.
 
+---
 ---
 
 ## 🔵 Module 3 — Receipts, Excel and Connectors
@@ -509,6 +512,7 @@ new-copy count for this batch and cumulative status counts, then stop.
 **Optional Excel add-in:** With Claude for Excel installed, open `Expenses.xlsx` and ask: “Explain the Summary formulas with cell references; do not edit.” This is a separate add-in from Microsoft Copilot. [8]
 
 ---
+---
 
 ## 🔵 Module 4 — Cowork, Presentations and Reusable Skills
 
@@ -618,6 +622,7 @@ claim it is enabled; I will inspect it first.
 **Optional, not live:** Ask Cowork to *draft* a weekly expense-review schedule without enabling it. Review access and intended actions before using any recurring automation.
 
 ---
+---
 
 ## 🔵 Module 5 — Research and UI/UX/Accessibility Audit
 
@@ -685,6 +690,7 @@ from untested hypotheses. Return the updated document, not a second report.
 
 **Fallback:** Manually capture desktop/mobile screenshots and record keyboard-test observations, then attach them. Label the result **“Screenshot-based preliminary review; untested interactions excluded.”** No separate evidence folder is required; embed evidence in the report.
 
+---
 ---
 
 ## 🔵 Module 6 — Claude Code and a Small Application
