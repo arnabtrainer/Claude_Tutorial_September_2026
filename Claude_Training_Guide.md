@@ -769,8 +769,6 @@ continue only with [NEXT TASK]. Do not redo completed work or create duplicates.
 
 ## 🔵 Source and feature notes
 
-**Trainer sources:** The user-supplied Codebasics video at https://www.youtube.com/watch?v=eHS0WIWNtu0 and its transcript/resource archive. The three receipt files come from `3 Team Expenses`. The renamed presentation is `4 PPT Creation/Presentation Skill/time management and deep focus for AI engineers.pptx`; the renamed PRD is `5 Chrome extension/prd-highlighthub.md`. Presentation guidance also draws on the supplied `Art of teaching CB Principles.txt` and `How to animate.txt`.
-
 **Workshop additions:** `01_Electricity_Bills_Oct2025_Sep2026.pdf` contains 12 fictional monthly bills across 24 pages, replacing the earlier two-bill PDF. The calculator follows its classroom slabs, FPPAS, fixed charge, meter rent, two rebates and rounding carry-forward—not the former flat-rate formula. Other additions are the reduced extension scope, approval/verification rules and replacement website exercises. The original trainer files in this pack are unchanged apart from the two stated filename changes. No prices, model names or universal account entitlements are hardcoded into the course.
 
 **Electricity checks retained:** The supplied guide records checks of the 24-page PDF, 12 monthly readings, calculations, carry-forward continuity, period totals and calculator test figures. Module 2 and its figures are unchanged in this update. The HTML calculator is generated during class; browser execution is not claimed.
