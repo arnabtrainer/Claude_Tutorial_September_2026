@@ -567,17 +567,17 @@ checks only the remaining rows. Return the same updated register, links,
 new-copy count for this batch and cumulative status counts, then stop.
 ```
 
-**🔸 Checks:** For the supplied three receipts, the first successful run has **3 untouched originals + 3 organized copies**, one per category; a verified rerun creates **0 new copies** and reports **3 Already present**. For N PDFs, every original remains in the source, only approved rows are copied, and **Created + Already present + Conflict + Failed + Needs review + Pending = N**. Completion of approved work requires no Pending, Conflict or Failed rows; unresolved Needs review rows remain explicitly excluded. Open returned links and inspect the copies.
+**💠 Checks:** For the supplied three receipts, the first successful run has **3 untouched originals + 3 organized copies**, one per category; a verified rerun creates **0 new copies** and reports **3 Already present**. For N PDFs, every original remains in the source, only approved rows are copied, and **Created + Already present + Conflict + Failed + Needs review + Pending = N**. Completion of approved work requires no Pending, Conflict or Failed rows; unresolved Needs review rows remain explicitly excluded. Open returned links and inspect the copies.
 
-**🔸 Keep the outputs separate:** `Expenses.xlsx` is Prompt 4’s three-receipt analysis for Module 4. `File_Organization_Register.csv` is Prompt 5’s generated copy plan/progress log, not an expense-total report or an additional practice input. Keep one current local copy of each in `Outputs`; organized PDFs remain on Drive. Do not count those PDF copies as additional expenses. No separate cloud report is required.
+**💠 Keep the outputs separate:** `Expenses.xlsx` is Prompt 4’s three-receipt analysis for Module 4. `File_Organization_Register.csv` is Prompt 5’s generated copy plan/progress log, not an expense-total report or an additional practice input. Keep one current local copy of each in `Outputs`; organized PDFs remain on Drive. Do not count those PDF copies as additional expenses. No separate cloud report is required.
 
-**🔸 Guidance:** Approve only the reviewed rows and mapped folders. A folder URL is not an access-control boundary; use a limited training account. The source data and checks in other modules stay unchanged when you practice Prompt 5 on a larger folder.
+**💠 Guidance:** Approve only the reviewed rows and mapped folders. A folder URL is not an access-control boundary; use a limited training account. The source data and checks in other modules stay unchanged when you practice Prompt 5 on a larger folder.
 
-**🔸 Fallback:** If reading a PDF fails, attach the same PDF for extraction and retain its original Drive file ID for a supported copy. If copying is unavailable, stop the Drive route. In Cowork, connect only the local receipt folder and `Outputs`, then use the same plan/approval/batch rules for copies into `Outputs/Organized_Receipts`. Use source paths instead of Drive IDs and local paths instead of Drive links in the register. Label this **local organization, not a cloud-connector demonstration**; run only one route live.
+**💠 Fallback:** If reading a PDF fails, attach the same PDF for extraction and retain its original Drive file ID for a supported copy. If copying is unavailable, stop the Drive route. In Cowork, connect only the local receipt folder and `Outputs`, then use the same plan/approval/batch rules for copies into `Outputs/Organized_Receipts`. Use source paths instead of Drive IDs and local paths instead of Drive links in the register. Label this **local organization, not a cloud-connector demonstration**; run only one route live.
 
-**🔸 Optional Excel add-in:** With Claude for Excel installed, open `Expenses.xlsx` and ask: “Explain the Summary formulas with cell references; do not edit.” This is a separate add-in from Microsoft Copilot. [8]
+**💠 Optional Excel add-in:** With Claude for Excel installed, open `Expenses.xlsx` and ask: “Explain the Summary formulas with cell references; do not edit.” This is a separate add-in from Microsoft Copilot. [8]
 
-**🔸 Optional image-reading check:** Capture one existing receipt as a screenshot and attach it in a separate chat. Ask: “Extract vendor, date, currency and total; identify anything unreadable.” Compare against the original PDF. Do **not** add the screenshot as a fourth receipt or change `Expenses.xlsx` for Module 4. This demonstrates image input without another business dataset. [1]
+**💠 Optional image-reading check:** Capture one existing receipt as a screenshot and attach it in a separate chat. Ask: “Extract vendor, date, currency and total; identify anything unreadable.” Compare against the original PDF. Do **not** add the screenshot as a fourth receipt or change `Expenses.xlsx` for Module 4. This demonstrates image input without another business dataset. [1]
 
 ---
 
@@ -585,9 +585,9 @@ new-copy count for this batch and cumulative status counts, then stop.
 
 ## 🔵 Module 4 — Cowork, Presentations and Reusable Skills
 
-**🔸 Teach:** Delegate a bounded workflow and review the results. Ordinary conversations can also generate presentations; Cowork is not an exclusive PowerPoint capability. On accounts with the unified experience, these task capabilities are available without choosing a separate mode. A Skill makes the approved procedure reusable. [1][4][20]
+**💠 Teach:** Delegate a bounded workflow and review the results. Ordinary conversations can also generate presentations; Cowork is not an exclusive PowerPoint capability. On accounts with the unified experience, these task capabilities are available without choosing a separate mode. A Skill makes the approved procedure reusable. [1][4][20]
 
-**🔸 Demonstration workflow:** Inspect → reconcile → create → review → correct → deliver. Show checks and approvals, not just the deck. Explain plugins briefly; do not install extras.
+**💠 Demonstration workflow:** Inspect → reconcile → create → review → correct → deliver. Show checks and approvals, not just the deck. Explain plugins briefly; do not install extras.
 
 ### 🔴 Prepare — Start the task inside Claude Workshop
 
@@ -599,9 +599,9 @@ new-copy count for this batch and cumulative status counts, then stop.
 6. Paste **Prompt 6 directly**. Review the plan and any reported workbook discrepancy before allowing the task to continue.
 7. Download `Expense_Briefing.pptx` into `Outputs`, open it in PowerPoint and verify the three slides. Then run **Prompt 7 in this same conversation**. Install and test the Skill in separate fresh conversations.
 
-**🔸 Web versus local:** Upload/download delivery is sufficient for this exercise. Direct reading/writing of your computer's folders needs the permitted desktop route; provide only a dedicated input/output folder. Keep Desktop open when those local resources are needed. [17]
+**💠 Web versus local:** Upload/download delivery is sufficient for this exercise. Direct reading/writing of your computer's folders needs the permitted desktop route; provide only a dedicated input/output folder. Keep Desktop open when those local resources are needed. [17]
 
-**🔸 Project fallback:** If the task cannot use your Project, start a standalone conversation, paste the combined instructions once and attach the same two files. Label the route you actually used. Do not create another Project simply to find a missing mode selector.
+**💠 Project fallback:** If the task cannot use your Project, start a standalone conversation, paste the combined instructions once and attach the same two files. Label the route you actually used. Do not create another Project simply to find a missing mode selector.
 
 ### ✅ Prompt 6 — Create and verify a management presentation
 
@@ -645,11 +645,11 @@ and limitation. Report only tests actually performed; mark others Not checked,
 not Passed. Do not create a separate report, publish or send files.
 ```
 
-**🔸 Check:** Three slides; **3 receipts / INR 2,140**; dates **25 February–15 March 2026**; categories **Office Supplies 860, Food 780, Travel 500**. Compare with the workbook, inspect editable chart data and open Slide Show. Review the reported checks and limitations.
+**💠 Check:** Three slides; **3 receipts / INR 2,140**; dates **25 February–15 March 2026**; categories **Office Supplies 860, Food 780, Travel 500**. Compare with the workbook, inspect editable chart data and open Slide Show. Review the reported checks and limitations.
 
-**🔸 Trainer note:** Retain the trainer's minimal-text design principles. Demonstrate verification and correction; keep the completion summary in chat, not an extra file.
+**💠 Trainer note:** Retain the trainer's minimal-text design principles. Demonstrate verification and correction; keep the completion summary in chat, not an extra file.
 
-**🔸 Route check:** With the older selector, label Chat-only delivery accurately; with the newer unified interface, no mode distinction is needed. In either case show the actual task checks and generated file. Run one route, not duplicate demonstrations. [1][20]
+**💠 Route check:** With the older selector, label Chat-only delivery accurately; with the newer unified interface, no mode distinction is needed. In either case show the actual task checks and generated file. Run one route, not duplicate demonstrations. [1][20]
 
 ### ✅ Prompt 7 — Package the checked workflow as a Skill
 
@@ -676,22 +676,22 @@ from the Skill. Provide the ZIP and a contents summary. Do not install it or
 claim it is enabled; I will inspect it first.
 ```
 
-**🔸 Install the reviewed Skill:**
+**💠 Install the reviewed Skill:**
 1. Download and inspect `workshop-expense-briefing.zip`; confirm it contains `workshop-expense-briefing/SKILL.md`, with `name` and `description` in its YAML header. Do not install a package containing secrets or unexpected scripts.
 2. Open **Customize → Skills → + Add → Upload skill**, matching your screenshot. Some layouts nest this under **Create skill → Upload a skill**. Select the ZIP and enable the Skill. Check code execution/file creation if it is unavailable. Creating a ZIP does not install it. [4]
 3. If this name already exists from rehearsal, inspect/update that Skill deliberately rather than creating duplicates. Do not use **Customize → Skills → Code** to open the coding workspace.
 
-**🔸 Reuse test:** In a fresh **Claude Workshop** conversation (Cowork where shown), attach the current `Expenses.xlsx` and ask: **“Use workshop-expense-briefing to create and verify three slides from this newly attached workbook.”** Check both source reading and reported tests. To prove there are no hardcoded amounts, use an explicitly labelled test copy of the workbook later and preserve the validated original.
+**💠 Reuse test:** In a fresh **Claude Workshop** conversation (Cowork where shown), attach the current `Expenses.xlsx` and ask: **“Use workshop-expense-briefing to create and verify three slides from this newly attached workbook.”** Check both source reading and reported tests. To prove there are no hardcoded amounts, use an explicitly labelled test copy of the workbook later and preserve the validated original.
 
-**🔸 Missing-input test:** In another fresh conversation, attach no workbook and ask: **“Use workshop-expense-briefing. No workbook is supplied for this run; do not retrieve an earlier one. Ask for the required input.”** It should request the input, not repeat old figures.
+**💠 Missing-input test:** In another fresh conversation, attach no workbook and ask: **“Use workshop-expense-briefing. No workbook is supplied for this run; do not retrieve an earlier one. Ask for the required input.”** It should request the input, not repeat old figures.
 
-**🔸 Save:** Keep the approved `Expense_Briefing.pptx` and `workshop-expense-briefing.zip` in `Outputs`. No additional practice inputs are required.
+**💠 Save:** Keep the approved `Expense_Briefing.pptx` and `workshop-expense-briefing.zip` in `Outputs`. No additional practice inputs are required.
 
-**🔸 Fallback:** When Skill import is unavailable, save the procedure as a reusable prompt, not an installed Skill.
+**💠 Fallback:** When Skill import is unavailable, save the procedure as a reusable prompt, not an installed Skill.
 
-**🔸 Optional scheduling discussion:** Ask Claude to *describe* a weekly expense-review procedure, explicitly saying **“Do not create or enable a scheduled task.”** Explain which inputs must be refreshed and who approves the result. Scheduling and access are separate decisions; local-resource tasks still depend on an available desktop environment. [17]
+**💠 Optional scheduling discussion:** Ask Claude to *describe* a weekly expense-review procedure, explicitly saying **“Do not create or enable a scheduled task.”** Explain which inputs must be refreshed and who approves the result. Scheduling and access are separate decisions; local-resource tasks still depend on an available desktop environment. [17]
 
-**🔸 Workflow connection:** Project instructions → fresh workbook → reconciliation → editable presentation → human review → reusable Skill. This is an end-to-end workflow without requiring every Claude feature in one task.
+**💠 Workflow connection:** Project instructions → fresh workbook → reconciliation → editable presentation → human review → reusable Skill. This is an end-to-end workflow without requiring every Claude feature in one task.
 
 ---
 
@@ -701,14 +701,14 @@ claim it is enabled; I will inspect it first.
 
 **Teach:** UI = interface; UX = usability; AX here = accessibility. Web search supports source research; interaction and screenshot evidence require browser access. This is a preliminary review, not security testing or accessibility certification. [9][10]
 
-**🔸 Prepare — separate research from visual testing:**
+**💠 Prepare — separate research from visual testing:**
 1. Start a new **Claude Workshop** conversation named **Module 5 — Website Review**. Select Cowork only if your interface shows it.
 2. For broad source research, use **+ → Research** where available. In the unified experience, `/deep-research` is another documented entry. Older layouts require Web Search enabled; the unified layout can search without a toggle. [20][29]
 3. For the visual audit, use a desktop browser-capable task. The built-in browser requires Claude Desktop and permission. A text-only webpage fetch is not a screenshot or an interaction test. [30]
 4. Keep only the specified public practice sites open. A cookie-import dialog is unnecessary here: choose **Not now**. Do not sign in, donate, buy, submit forms or broaden site access.
 5. Run Prompt 8, review/download the report, then run Prompt 9 in the same conversation. Reattach the current report if it is no longer accessible.
 
-**🔸 Optional research warm-up — no new output file:**
+**💠 Optional research warm-up — no new output file:**
 
 ```text
 Using public W3C guidance only, research three beginner checks for an office
@@ -718,7 +718,7 @@ Separate current guidance from older teaching examples. Do not search my
 private apps or claim you have tested our case-study pages. Answer in chat.
 ```
 
-**🔸 Check:** Open at least one citation and confirm it supports the advice. Explain **thinking = reasoning**, **search/research = retrieving and combining information**, and **browser testing = observed interaction**. None substitutes for the others. Disable broad Research when moving to the tightly scoped site audit. [9][29]
+**💠 Check:** Open at least one citation and confirm it supports the advice. Explain **thinking = reasoning**, **search/research = retrieving and combining information**, and **browser testing = observed interaction**. None substitutes for the others. Disable broad Research when moving to the tightly scoped site audit. [9][29]
 
 ### 🔴 Case A — W3C's before-and-after accessibility demonstration
 
@@ -777,11 +777,11 @@ comparison: which lessons apply to a business website? Distinguish findings
 from untested hypotheses. Return the updated document, not a second report.
 ```
 
-**🔸 Check:** Two case sections, genuine evidence, reproducible steps and explicit limits. No made-up accessibility score. Absence of an obvious hover animation alone is not proof of a serious usability failure.
+**💠 Check:** Two case sections, genuine evidence, reproducible steps and explicit limits. No made-up accessibility score. Absence of an obvious hover animation alone is not proof of a serious usability failure.
 
-**🔸 Fallback:** Manually capture desktop/mobile screenshots and record keyboard-test observations, then attach them. Label the result **“Screenshot-based preliminary review; untested interactions excluded.”** No separate evidence folder is required; embed evidence in the report.
+**💠 Fallback:** Manually capture desktop/mobile screenshots and record keyboard-test observations, then attach them. Label the result **“Screenshot-based preliminary review; untested interactions excluded.”** No separate evidence folder is required; embed evidence in the report.
 
-**🔸 Browser check:** If Claude says it cannot take screenshots or operate the page, follow the screenshot fallback rather than asking it to invent findings. Keyboard and accessibility-tree checks require the corresponding tools; screenshots alone cannot establish them. For ordinary browser testing, desktop and mobile viewport emulation are checks of those viewports—not proof of behavior on every real device.
+**💠 Browser check:** If Claude says it cannot take screenshots or operate the page, follow the screenshot fallback rather than asking it to invent findings. Keyboard and accessibility-tree checks require the corresponding tools; screenshots alone cannot establish them. For ordinary browser testing, desktop and mobile viewport emulation are checks of those viewports—not proof of behavior on every real device.
 
 ---
 
@@ -789,9 +789,9 @@ from untested hypotheses. Return the updated document, not a second report.
 
 ## 🔵 Module 6 — Claude Code and a Small Application
 
-**🔸 Teach:** A PRD specifies the product; `CLAUDE.md` supplies coding-workspace instructions. A local Code session is not the same as the conversational **Claude Workshop** Project. Build only the approved scope, review file changes and separate automated checks from real Chrome acceptance tests. [12][23]
+**💠 Teach:** A PRD specifies the product; `CLAUDE.md` supplies coding-workspace instructions. A local Code session is not the same as the conversational **Claude Workshop** Project. Build only the approved scope, review file changes and separate automated checks from real Chrome acceptance tests. [12][23]
 
-**🔸 Result:** A local **HighlightHub Lite** Chrome extension that saves selected text, its source URL and timestamp, opens a dashboard and deletes individual entries. The original trainer PRD is reference material, not the exact specification of this smaller version.
+**💠 Result:** A local **HighlightHub Lite** Chrome extension that saves selected text, its source URL and timestamp, opens a dashboard and deletes individual entries. The original trainer PRD is reference material, not the exact specification of this smaller version.
 
 ### 🔴 A. Prepare the local working folder
 
@@ -805,7 +805,7 @@ Outputs/
     └── 04_HighlightHub_Trainer_PRD.md
 ```
 
-**🔸 Already rehearsed?** Inspect existing files before starting. Do not rerun the build over a working extension automatically. Resume verification, or preserve a backup and deliberately choose a separate fresh practice folder.
+**💠 Already rehearsed?** Inspect existing files before starting. Do not rerun the build over a working extension automatically. Resume verification, or preserve a backup and deliberately choose a separate fresh practice folder.
 
 ### 🔴 B. Open the correct Code screen — match your screenshots
 
@@ -818,7 +818,7 @@ Outputs/
 7. In the lower prompt area, inspect the model menu. Use an available model you rehearsed; exact model numbers shown in screenshots are not prerequisites. Check remaining Pro usage before a long build. [22][24]
 8. Open the permission-mode dropdown currently labelled **Auto** or **Accept edits** and select **Manual / Ask permissions** where offered. This is the recommended classroom mode. [31]
 
-**🔸 Your screen landmarks:**
+**💠 Your screen landmarks:**
 
 ```text
 Top-left workspace switch:        [speech bubbles] [</>]
@@ -827,7 +827,7 @@ Prompt box:                      Describe something to build, change, or fix
 Below/near the prompt box:        [Manual / Ask permissions]   [model / effort]
 ```
 
-**🔸 Ready check:** You are in Code, the environment is **Local**, the selected folder is **HighlightHub_Lite**, and the copied PRD exists there. You do not need GitHub, an API key, or the terminal route for this demonstration. Local execution still communicates with Claude's service; it is not an offline AI system.
+**💠 Ready check:** You are in Code, the environment is **Local**, the selected folder is **HighlightHub_Lite**, and the copied PRD exists there. You do not need GitHub, an API key, or the terminal route for this demonstration. Local execution still communicates with Claude's service; it is not an offline AI system.
 
 ### 🔴 C. Understand the permissions before sending a prompt
 
@@ -840,13 +840,13 @@ Below/near the prompt box:        [Manual / Ask permissions]   [model / effort]
 
 These are **permission modes**, not completion buttons. Do not enable **Bypass permissions**. Inspect any remembered approvals; selecting a mode is not a substitute for reviewing scope. [31]
 
-**🔸 Correction to the earlier guidance:** If Code already shows **Edited 6 files** and a `+… −…` change count, the files may already have been written. Open the change list and verify them in File Explorer. Do **not** click the **Accept edits** mode to “finalize” them. A specific pending edit may have its own approval card; that is a different control. [23][31]
+**💠 Correction to the earlier guidance:** If Code already shows **Edited 6 files** and a `+… −…` change count, the files may already have been written. Open the change list and verify them in File Explorer. Do **not** click the **Accept edits** mode to “finalize” them. A specific pending edit may have its own approval card; that is a different control. [23][31]
 
 ### 🔴 D. Supply instructions, then prepare requirements
 
 This local folder is separate from **Claude Workshop**. Paste the combined teaching-and-safety block from Module 1 once at the start of this Code session, then submit Prompt 10. Alternatively, keep that block in a reviewed `CLAUDE.md` in this working folder for reuse; do not rely on a Project description or another chat's attachments. [12]
 
-**🔸 Markdown basics:** A `.md` file is editable text. `#` starts a heading, `-` starts a list item, and triple backticks enclose a code block. Open the PRD in a text editor to review its requirements. If saving manually from Notepad, use **All files** and confirm the filename does not end in `.md.txt`.
+**💠 Markdown basics:** A `.md` file is editable text. `#` starts a heading, `-` starts a list item, and triple backticks enclose a code block. Open the PRD in a text editor to review its requirements. If saving manually from Notepad, use **All files** and confirm the filename does not end in `.md.txt`.
 
 ### ✅ Prompt 10 — Create a smaller classroom specification
 
@@ -883,9 +883,9 @@ If Classroom_PRD.md already exists, read it and propose changes; ask before
 replacing it. Do not implement the extension yet. Wait for my approval.
 ```
 
-**🔸 Review now:** Open `Classroom_PRD.md`. Check the feature scope, permissions and six tests. The labels above are this edition's mapping: **AT-5 = empty selection; AT-6 = full restart**. If your earlier generated README uses different numbers, reconcile by test description before recording results; do not silently relabel past tests.
+**💠 Review now:** Open `Classroom_PRD.md`. Check the feature scope, permissions and six tests. The labels above are this edition's mapping: **AT-5 = empty selection; AT-6 = full restart**. If your earlier generated README uses different numbers, reconcile by test description before recording results; do not silently relabel past tests.
 
-**🔸 Approve:** “I approve the reviewed Classroom_PRD.md and its permission scope. Implement it using Prompt 11; do not add features.” Then submit Prompt 11 in the same Code session, approving only the relevant file/command requests.
+**💠 Approve:** “I approve the reviewed Classroom_PRD.md and its permission scope. Implement it using Prompt 11; do not add features.” Then submit Prompt 11 in the same Code session, approving only the relevant file/command requests.
 
 ### ✅ Prompt 11 — Implement the approved scope
 
@@ -921,7 +921,7 @@ summary and the checks actually run. State limitations. Ask before destructive
 changes or new permissions. Do not import browser cookies or submit websites.
 ```
 
-**🔸 Expected layout after implementation** — names other than the manifest can differ if the manifest references the actual files correctly:
+**💠 Expected layout after implementation** — names other than the manifest can differ if the manifest references the actual files correctly:
 
 ```text
 HighlightHub_Lite/
@@ -971,9 +971,9 @@ Use a public page such as **https://books.toscrape.com/**. Do not test selection
 | **AT-5 — Empty selection** | Right-click ordinary page space with no selection; check that no empty item can be created. | The selection-only command may be absent; no blank record is added. Whitespace rejection that cannot be triggered manually stays an automated-only check. |
 | **AT-6 — Restart** | Keep the second item. Close extension DevTools, use Chrome **Menu → Exit**, ensure Chrome has closed, then reopen the same profile and dashboard. | The retained entry is still present. Merely refreshing a tab is not a full restart test. |
 
-**🔸 Important:** Installation success, a rendered dashboard or simulated API tests do not establish that all six tests passed. Record only what you actually did. Do not send a prewritten “all passed” message before completing these steps.
+**💠 Important:** Installation success, a rendered dashboard or simulated API tests do not establish that all six tests passed. Record only what you actually did. Do not send a prewritten “all passed” message before completing these steps.
 
-**🔸 Record results — fill in each placeholder before sending:**
+**💠 Record results — fill in each placeholder before sending:**
 
 ```text
 I performed the following manual tests in Google Chrome on [DATE]:
@@ -1021,24 +1021,24 @@ After an approved fix, use the **Reload** icon on the extension's Chrome card/de
 | **Service worker (Inactive)** only | Try the save/dashboard action. Idle is not by itself an error. [32] |
 | Pro usage limit | Save progress, note the blocked step and resume after the account's displayed reset. Do not claim completion or switch billing automatically. [21][22] |
 
-**🔸 Optional Git explanation, not another lab:** Git records versions locally; GitHub hosts repositories remotely. Code can support both local and cloud workflows, but this exercise intentionally uses one local folder. To show change tracking, inspect the built-in diff. Do not push, publish or initialize an unrelated repository as a side effect. [23]
+**💠 Optional Git explanation, not another lab:** Git records versions locally; GitHub hosts repositories remotely. Code can support both local and cloud workflows, but this exercise intentionally uses one local folder. To show change tracking, inspect the built-in diff. Do not push, publish or initialize an unrelated repository as a side effect. [23]
 
-**🔸 Module complete when:** The approved scope is implemented, the files are present, every required manual test has a recorded result and remaining limitations are explicit. Keep the folder in `Outputs`. Disable the extension after class if appropriate; remove it only after accepting loss of its saved demo entries. This remains a classroom prototype, not a security-reviewed production release.
+**💠 Module complete when:** The approved scope is implemented, the files are present, every required manual test has a recorded result and remaining limitations are explicit. Keep the folder in `Outputs`. Disable the extension after class if appropriate; remove it only after accepting loss of its saved demo entries. This remains a classroom prototype, not a security-reviewed production release.
 
 ---
 
 ## 🔵 Delivery controls and completion check
 
-**🔸 One route per exercise:** Use the three supplied receipts for the live copy demo; larger folders are additional practice. Use the Project task route for Module 4 and a separate **Local** Code folder for Module 6. Do not combine desktop setup, GitHub/cloud onboarding and CLI installation into one beginner demonstration.
+**💠 One route per exercise:** Use the three supplied receipts for the live copy demo; larger folders are additional practice. Use the Project task route for Module 4 and a separate **Local** Code folder for Module 6. Do not combine desktop setup, GitHub/cloud onboarding and CLI installation into one beginner demonstration.
 
-**🔸 When a task stalls:**
+**💠 When a task stalls:**
 
 ```text
 Stop expanding the task. Summarize what is complete, what is blocked and the
 single next step. Preserve current files. Do not invent a completed output.
 ```
 
-**🔸 To resume:**
+**💠 To resume:**
 
 ```text
 Continue the workshop from Module [NUMBER]. Inspect the current supplied files
