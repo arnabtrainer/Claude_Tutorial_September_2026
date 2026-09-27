@@ -702,9 +702,10 @@ from untested hypotheses. Return the updated document, not a second report.
 ### ✅ Prompt 10 — Create a smaller classroom specification
 
 ```text
-Read the attached trainer PRD. Propose a smaller classroom version named
-HighlightHub Lite; explicitly list which original features you are omitting.
-Do not change the original PRD or claim this is its complete implementation.
+Read 04_HighlightHub_Trainer_PRD.md from the current workspace. Propose a smaller
+classroom version named HighlightHub Lite; explicitly list which original features
+you are omitting. Do not change the original PRD or claim this is its complete
+implementation.
 
 Required: capture selected text after an explicit user action; save text,
 source URL and timestamp locally; show a dashboard; open the source URL;
