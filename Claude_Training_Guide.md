@@ -1,5 +1,5 @@
 # 🔰 Claude Pro: Six-Module Hands-on Workshop
-## Trainer and participant guide — final teaching edition
+## Learner's guide — final teaching edition
 
 **Updated:** 27 September 2026. **Audience:** Non-technical office users. **Main setup:** Claude Pro, a Windows computer, Claude Desktop and Google Chrome. Mac users can follow equivalent folder and application controls. This edition retains your six modules and 11 core prompts; short enrichment activities are labelled optional.
 
