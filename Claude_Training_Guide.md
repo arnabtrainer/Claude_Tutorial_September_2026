@@ -1068,7 +1068,7 @@ verified copy-register statuses. State what context or input is unavailable.
 
 **Validation status:** The Markdown structure, module/prompt numbering, references and preserved bill/copy-workflow specifications were checked during this edit. The bill answer figures are retained from your supplied guide; the optional monthly mean is derived from its 646 kWh total. No new review of every original bill or receipt is claimed here. No Claude account settings, Drive files, Skills or extension source were changed. No new live Claude or Chrome acceptance tests were performed for this guide.
 
-**Source attribution:** The original presentation/PRD are teaching references, not guaranteed answer keys. Your fictional 12-bill dataset, reduced application scope, safety/checking rules and replacement websites form the adapted workshop.
+**Source attribution:** The underlying demonstrations and selected receipt/reference files originate in the Codebasics video and trainer archive you supplied. The original presentation/PRD are teaching references, not guaranteed answer keys. Your fictional 12-bill dataset, reduced application scope, safety/checking rules and replacement websites form the adapted workshop. Source video: https://www.youtube.com/watch?v=eHS0WIWNtu0.
 
 ### Official reference index
 
