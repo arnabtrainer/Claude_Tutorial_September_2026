@@ -1170,5 +1170,4 @@ Product/setup references used for the updated Pro, interface, permissions and te
 [33]: https://developer.chrome.com/docs/extensions/reference/permissions-list
 [34]: https://developer.chrome.com/docs/extensions/reference/api/contextMenus
 [35]: https://developer.chrome.com/docs/extensions/reference/api/storage
-
 [36]: https://support.claude.com/en/articles/12138966-release-notes
