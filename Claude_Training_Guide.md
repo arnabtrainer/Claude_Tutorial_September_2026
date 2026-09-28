@@ -58,6 +58,22 @@ Claude_Training_Pack/
 
 **Outputs is not an answer-key folder.** Save downloads there as you finish. `Expenses.xlsx` is the expense source for Module 4. `File_Organization_Register.csv` tracks Drive-copy progress, not spending. Drive copies remain on Drive. In Module 6, Claude writes directly into the selected local folder; confirm the actual files there. Keep obsolete bill PDFs and older guide versions outside the active practice folder.
 
+### ✅ Import ChatGPT Context into Claude
+
+<img width="800" alt="Claude Memory settings showing Start import and Import memory to Claude" src="https://github.com/user-attachments/assets/74ff7736-6bc3-4033-8382-3e30d8a55428" />
+
+**💠 Screen reference:** The screenshot shows the demonstrated route **Settings → Memory → Start import**, followed by **Copy** for the transfer prompt, the results box and **Add to memory**. Interface availability can vary by account or rollout, so follow the current screen if labels differ.
+
+**💠 Important:** This transfers useful memory and context—not all ChatGPT chats as separate Claude conversations. It does not recreate chat history or transfer attachments. [14]
+
+**💠 Steps:**
+1. Open **Settings → Memory**. Inspect **Generate memory from chats**; enable it on the training account only when you agree to saving memory. **Search and reference chats** is a separate control. [5]
+2. Look for **Start import**. Older interfaces may place Memory under **Settings → Capabilities**. If the button is missing, reopen Memory or check the same account on Claude’s website; then use the fallback below if necessary. Enabling memory does not guarantee the import button will appear. [14]
+3. Copy the displayed prompt into ChatGPT. For class, use the fictional example below instead of exporting personal memories.
+4. Review the response and remove sensitive, incorrect or outdated details; do not assume every past conversation is covered.
+5. Paste the approved text into Claude’s import box and select **Add to memory**. Review the entries and run the verification prompt below; imports may be incomplete. [14]
+
+
 ### ✳️ Before class — seven checks
 
 1. Sign in to your own **Claude Pro** account on web and Desktop; check usage and test one attachment and a downloadable file. Check **Settings → Capabilities → Code execution and file creation** if available and needed. [1][21]
@@ -126,7 +142,7 @@ contractual terms. Draft only; do not send. Then list the facts you used
 for verification.
 ```
 
-**Refinement:**
+**Refinement prompt:**
 
 ```text
 Make the tone more collaborative and reduce the body to 60 words without
@@ -193,21 +209,6 @@ Do not substitute our later HighlightHub Lite requirements or write code.
 💠 **Privacy check:** Inspect **Settings → Memory**; chat search and generated memory are separate controls. Review **Settings → Privacy** and the model-improvement preference before using business material. Use redacted copies; never upload credentials. A new chat is not a full reset when memory or Project context applies. Turning off a training preference does not mean zero data retention. [5][25]
 
 💠 **For file-creation labs, use the normal training conversation rather than an incognito workflow.** The current unified-experience documentation lists file/code limitations for incognito. [20]
-
-### ✅ Import ChatGPT Context into Claude
-
-<img width="800" alt="Claude Memory settings showing Start import and Import memory to Claude" src="https://github.com/user-attachments/assets/74ff7736-6bc3-4033-8382-3e30d8a55428" />
-
-**💠 Screen reference:** The screenshot shows the demonstrated route **Settings → Memory → Start import**, followed by **Copy** for the transfer prompt, the results box and **Add to memory**. Interface availability can vary by account or rollout, so follow the current screen if labels differ.
-
-**💠 Important:** This transfers useful memory and context—not all ChatGPT chats as separate Claude conversations. It does not recreate chat history or transfer attachments. [14]
-
-**💠 Steps:**
-1. Open **Settings → Memory**. Inspect **Generate memory from chats**; enable it on the training account only when you agree to saving memory. **Search and reference chats** is a separate control. [5]
-2. Look for **Start import**. Older interfaces may place Memory under **Settings → Capabilities**. If the button is missing, reopen Memory or check the same account on Claude’s website; then use the fallback below if necessary. Enabling memory does not guarantee the import button will appear. [14]
-3. Copy the displayed prompt into ChatGPT. For class, use the fictional example below instead of exporting personal memories.
-4. Review the response and remove sensitive, incorrect or outdated details; do not assume every past conversation is covered.
-5. Paste the approved text into Claude’s import box and select **Add to memory**. Review the entries and run the verification prompt below; imports may be incomplete. [14]
 
 **✅ Classroom prompt — paste in ChatGPT:**
 
