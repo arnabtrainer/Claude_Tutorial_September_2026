@@ -210,9 +210,11 @@ Do not substitute our later HighlightHub Lite requirements or write code.
 
 💠 **For file-creation labs, use the normal training conversation rather than an incognito workflow.** The current unified-experience documentation lists file/code limitations for incognito. [20]
 
-**✅ Classroom prompt — paste the following prompt in ChatGPT new chat:**
+**✅ Classroom prompt — paste the following prompt in ChatGPT new chat (OPTIONAL):**
 
-**Claude Settings → Memory → Start import → ChatGPT prompt → copy ChatGPT's answer → Paste it to Claude Settings import box → Add to memory → new Claude chat → verification prompt.**
+**🔴 Claude Settings → Memory → Start import → ChatGPT prompt → copy ChatGPT's answer → Paste it to Claude Settings import box → Add to memory → new Claude chat → verification prompt.**
+
+**✅ Issue the following prompt on ChatGPT new chat.**
 
 ```text
 Prepare a concise context-transfer note for Claude using only this fictional
@@ -226,7 +228,9 @@ my real saved memories, unrelated chats or personal information. Do not claim
 this is a complete chat-history export.
 ```
 
-**✅ Verification prompt — paste in Claude after import:**
+*💠 Copy the ChatGPT response obtained and paste that to Claude Settings → Memory -> Start import → paste in the import box (second text box) → Add to memory
+
+**✅ Verification prompt — paste in Claude new chat after import:**
 
 ```text
 What workshop preferences were retained from the import? List them briefly and
@@ -237,6 +241,22 @@ ChatGPT conversations were imported.
 **💠 Check:** Compare Claude's memory entries with the approved note. Confirm the audience, writing style and output preference; remove the fictional demo entries after class.
 
 **💠 Fallback:** When import is unavailable, place the reviewed note in the **Claude Workshop** Project instructions. Label this manual context setup, not memory or chat-history migration.
+
+**💠 To delete:** Issue the following two prompts if there is concerned import availability.
+
+```text
+What do you currently remember about my workshop preferences?
+Do you still have the fictional "Office trainer" workshop profile that I
+imported for the classroom demonstration?
+```
+
+*💠 If import entries are available then
+
+```text
+remove the fictional demo entries after class
+```
+
+*💠 If import entries are not available then use the **fallback method** and pasted the fictional profile into: **Claude Workshop → Project instructions**
 
 **💠 Optional — back up ChatGPT history outside class:**
 1. In ChatGPT, open **Profile → Settings → Data controls → Export data → Export → Confirm export**. [15]
