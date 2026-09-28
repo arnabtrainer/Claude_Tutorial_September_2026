@@ -19,12 +19,6 @@
 
 **💠 Trainer use:** Use this visual only as a brief opening discussion prompt about the scale and uneven adoption of advanced AI tools. Treat the figures as contextual material from the supplied training resources, not as a live statistic to be independently extrapolated during the workshop.
 
-### ✳️ Enhance your privacy:
-
-💠 Go to Settings → Privacy
-
-<img width="1291" height="567" alt="image" src="https://github.com/user-attachments/assets/dc859a38-2a21-4c42-b86d-86943f2402ed" />
-
 ### ✳️ Delivery map
 
 | Module | What learners do | Where | Planning time |
@@ -52,7 +46,7 @@ Claude_Training_Pack/
 │   │   └── receipt_march.pdf
 │   ├── 03_Presentation_Reference.pptx
 │   └── 04_HighlightHub_Trainer_PRD.md
-└── Outputs/                   ← Learner-generated results
+└── Outputs/                  ← Learner-generated results
 ```
 
 | Existing input | Use |
@@ -72,6 +66,9 @@ Claude_Training_Pack/
 4. Prepare the Module 3 Drive folders and review connector permissions. Do not make training folders public. Use the local fallback only when required.
 5. Open the two Module 5 practice websites and test browser/screenshot access. Keep personal accounts and sensitive tabs closed; no cookie import is needed for these public sites.
 6. Rehearse the core route once. Use fictional/redacted data, keep approvals enabled and keep already-reviewed outputs as your rehearsal fallback. A fallback is not a successful live execution.
+7. Go to Settings → Privacy → Preferences → Help improve our AI models → OFF
+
+<img width="1291" height="567" alt="image" src="https://github.com/user-attachments/assets/dc859a38-2a21-4c42-b86d-86943f2402ed" />
 
 ### ✳️ Workshop instructions — save once, not before every prompt
 
