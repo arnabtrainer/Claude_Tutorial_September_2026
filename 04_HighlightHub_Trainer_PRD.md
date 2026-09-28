@@ -42,7 +42,7 @@ People read dozens of articles, blog posts, and documentation pages daily. The u
 
 ---
 
-## 3. User Stories (MVP)
+## 3. User Stories for the Minimum Viable Product (MVP)
 
 | ID | User Story | Priority |
 |----|-----------|----------|
