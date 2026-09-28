@@ -100,7 +100,7 @@ Save the combined block in **Module 1 → Project instructions** once in **Claud
 
 **💠 Teach:** Goal → context → constraints → output → verification. Distinguish model choice, thinking/effort, task context, Project knowledge and memory. The displayed model name is not the application version. [3][5][24]
 
-<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/e169da1c-d2d9-4680-bcfc-23f5a3c0ae99" />
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/e169da1c-d2d9-4680-bcfc-23f5a3c0ae99" />
 
 ### 🔴 Claude Pro Models — Quick Guide
 
@@ -108,10 +108,10 @@ Claude Pro provides different models for different levels of speed and capabilit
 
 | Model             | Best suited for                                                                                                                                                                          |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Opus 5.5**      | Most capable general model for **complex analysis, demanding knowledge work, coding, research and ambitious multi-step tasks**. Good choice when quality matters more than efficiency.   |
-| **Sonnet 5**      | Efficient model for **everyday professional work**, such as writing, summarization, document analysis, routine coding and general office tasks. A practical default for many activities. |
-| **Haiku 4.5**     | Fastest option for **quick questions and lightweight tasks** where speed is more important than maximum reasoning capability.                                                            |
-| **Fable 5.1**     | Intended for **especially difficult challenges**, but your screenshot indicates that it **requires usage credits on Pro**; it is included with Max plans.                                |
+| **Opus&nbsp;5.5**     | Most capable general model for **complex analysis, demanding knowledge work, coding, research and ambitious multi-step tasks**. Good choice when quality matters more than efficiency.   |
+| **Sonnet&nbsp;5**     | Efficient model for **everyday professional work**, such as writing, summarization, document analysis, routine coding and general office tasks. A practical default for many activities. |
+| **Haiku&nbsp;4.5**     | Fastest option for **quick questions and lightweight tasks** where speed is more important than maximum reasoning capability.                                                            |
+| **Fable&nbsp;5.1**     | Intended for **especially difficult challenges**, but your screenshot indicates that it **requires usage credits on Pro**; it is included with Max plans.                                |
 
 **Effort:** For supported models, **Effort** controls how much computational effort Claude spends on the task. Use lower effort for straightforward work and higher effort for complex reasoning when needed.
 
