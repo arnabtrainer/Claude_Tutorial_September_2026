@@ -23,12 +23,12 @@
 
 | Module | What learners do | Where | Planning time |
 |---|---|---|---:|
-| [1 — Fundamentals and Projects](#module-1) | Write/refine an email; set context and safety instructions | Claude Workshop Project | 30 min |
-| [2 — Documents, data and Artifacts](#module-2) | Analyze 12 bills; build/test an HTML calculator | New Project conversation | 50 min |
-| [3 — Receipts, Excel and connectors](#module-3) | Create an expense workbook; approve organized Drive copies | New Project conversation + Google Drive | 55 min |
-| [4 — Agentic work, presentations and Skills](#module-4) | Reconcile data; produce/check a deck; package a Skill | Project conversation, Cowork where shown | 50 min |
-| [5 — Research and website review](#module-5) | Research guidance; audit two websites with evidence | Browser-capable Claude task | 45 min |
-| [6 — Claude Code and a small application](#module-6) | Select local folder; plan; build; test in Chrome | Claude Desktop Code → Local | 90 min |
+| [1&nbsp;—&nbsp;Fundamentals&nbsp;and&nbsp;Projects](#module-1) | Write/refine an email; set context and safety instructions | Claude Workshop Project | 30 min |
+| [2&nbsp;—&nbsp;Documents,&nbsp;data&nbsp;and&nbsp;Artifacts](#module-2) | Analyze 12 bills; build/test an HTML calculator | New Project conversation | 50 min |
+| [3&nbsp;—&nbsp;Receipts,&nbsp;Excel&nbsp;and&nbsp;connectors](#module-3) | Create an expense workbook; approve organized Drive copies | New Project conversation + Google Drive | 55 min |
+| [4&nbsp;—&nbsp;Agentic&nbsp;work,&nbsp;presentations&nbsp;and&nbsp;Skills](#module-4) | Reconcile data; produce/check a deck; package a Skill | Project conversation, Cowork where shown | 50 min |
+| [5&nbsp;—&nbsp;Research&nbsp;and&nbsp;website&nbsp;review](#module-5) | Research guidance; audit two websites with evidence | Browser-capable Claude task | 45 min |
+| [6&nbsp;—&nbsp;Claude&nbsp;Code&nbsp;and&nbsp;a&nbsp;small&nbsp;application](#module-6) | Select local folder; plan; build; test in Chrome | Claude Desktop Code → Local | 90 min |
 | **Total guided demonstration** | **Excludes breaks, installations and optional enrichment** | | **320 min / 5 h 20 min** |
 
 These are trainer planning estimates, not product runtimes. Allow additional learner practice time or split delivery into two sessions. For a shorter class, skip optional activities rather than removing verification.
