@@ -58,7 +58,7 @@ Claude_Training_Pack/
 
 **Outputs is not an answer-key folder.** Save downloads there as you finish. `Expenses.xlsx` is the expense source for Module 4. `File_Organization_Register.csv` tracks Drive-copy progress, not spending. Drive copies remain on Drive. In Module 6, Claude writes directly into the selected local folder; confirm the actual files there. Keep obsolete bill PDFs and older guide versions outside the active practice folder.
 
-### ✳️ Before class — six checks
+### ✳️ Before class — seven checks
 
 1. Sign in to your own **Claude Pro** account on web and Desktop; check usage and test one attachment and a downloadable file. Check **Settings → Capabilities → Code execution and file creation** if available and needed. [1][21]
 2. Update/restart Claude Desktop before rehearsal; locate its top-left **`</>`** workspace switch and confirm **Local → No folder / Select folder** appears. Module 6 uses this route, not Customize → Skills → Code. [23]
@@ -812,12 +812,15 @@ Outputs/
 
 1. Open the **installed Claude Desktop application** from the Windows Start menu and sign in to the account showing **Pro**. Pro supports desktop Code; a separate CLI installation is not needed just to use this interface. [21][23]
 2. At the **top of the left sidebar**, click **`</>`**, immediately to the right of the speech-bubble button and above **New**. This location comes from your supplied Desktop screenshot, not a requirement to find a text tab in the top centre.
-3. Do **not** choose **Customize → Skills → Code**. That “Code” heading is a category of skills/plugins, not the workspace.
-4. If the onboarding screen says **Continue with GitHub**, you have reached cloud onboarding. For this local lab, choose **Skip for now** if shown, or return to Desktop's Code home. Continue only when **Local** and a folder picker appear. Do not connect a repository merely to bypass the screen.
-5. Near the **bottom, above the prompt box**, confirm **Local** is selected. Click **No folder** (called **Select folder** in some layouts).
-6. Browse to `Outputs/HighlightHub_Lite` and select that folder only. Confirm its name replaces **No folder**. Do not select the whole drive, Documents or the complete training pack.
-7. In the lower prompt area, inspect the model menu. Use an available model you rehearsed; exact model numbers shown in screenshots are not prerequisites. Check remaining Pro usage before a long build. [22][24]
-8. Open the permission-mode dropdown currently labelled **Auto** or **Accept edits** and select **Manual / Ask permissions** where offered. This is the recommended classroom mode. [31]
+
+<img width="900" height="320" alt="image" src="https://github.com/user-attachments/assets/d3d61c95-8b13-4270-9311-5b203ec1596d" />
+
+4. Do **not** choose **Customize → Skills → Code**. That “Code” heading is a category of skills/plugins, not the workspace.
+5. If the onboarding screen says **Continue with GitHub**, you have reached cloud onboarding. For this local lab, choose **Skip for now** if shown, or return to Desktop's Code home. Continue only when **Local** and a folder picker appear. Do not connect a repository merely to bypass the screen.
+6. Near the **bottom, above the prompt box**, confirm **Local** is selected. Click **No folder** (called **Select folder** in some layouts).
+7. Browse to `Outputs/HighlightHub_Lite` and select that folder only. Confirm its name replaces **No folder**. Do not select the whole drive, Documents or the complete training pack.
+8. In the lower prompt area, inspect the model menu. Use an available model you rehearsed; exact model numbers shown in screenshots are not prerequisites. Check remaining Pro usage before a long build. [22][24]
+9. Open the permission-mode dropdown currently labelled **Auto** or **Accept edits** and select **Manual / Ask permissions** where offered. This is the recommended classroom mode. [31]
 
 **💠 Your screen landmarks:**
 
