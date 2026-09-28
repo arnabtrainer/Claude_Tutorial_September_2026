@@ -7,9 +7,9 @@
 
 ## 🔵 Start here
 
-💠 Use **this one guide** in place of older `Claude_Training_Guide_Synced.md` / `00_START_HERE.md` versions. Keep your six existing practice inputs; the trainer's full archive is not required. No new input files, paid plugins, API key or GitHub connection are required for the core route.
+💠 Use **this guide**. Keep your six existing practice inputs. No new input files, paid plugins, API key or GitHub connection are required for the core route.
 
-**💠 Important interface update:** Anthropic began rolling out a combined Chat/Cowork experience on 16 September 2026. Some Pro accounts still show **Chat / Cowork**; others no longer have this selector. The instructions below cover both. The dedicated **Claude Code** workspace is a separate destination. Do not keep searching for a removed button or create duplicate Projects. [36]
+**💠 Important interface update:** Anthropic began rolling out a combined Chat/Cowork experience on 16 September 2026. Some Pro accounts still show **Chat / Cowork**; others no longer have this selector. [36]
 
 **💠 Pro access:** Pro includes Claude Code, but usage is limited and shared across Claude and Claude Code. Check **Settings → Usage** before class. A Pro subscription does not include separate Console/API usage. Do not enable extra paid usage or switch to API billing for this workshop without a deliberate decision. Feature rollout and available tools can still differ between accounts. [21][22]
 
@@ -18,6 +18,12 @@
 <img width="475" alt="Each dot is approximately 3.2 million people — AI interaction infographic" src="https://github.com/user-attachments/assets/82fec647-8c2d-42f2-9ec3-92222886b133" />
 
 **💠 Trainer use:** Use this visual only as a brief opening discussion prompt about the scale and uneven adoption of advanced AI tools. Treat the figures as contextual material from the supplied training resources, not as a live statistic to be independently extrapolated during the workshop.
+
+### ✳️ Enhance your privacy:
+
+💠 Go to Settings → Privacy
+
+<img width="1291" height="567" alt="image" src="https://github.com/user-attachments/assets/dc859a38-2a21-4c42-b86d-86943f2402ed" />
 
 ### ✳️ Delivery map
 
@@ -37,7 +43,7 @@ These are trainer planning estimates, not product runtimes. Allow additional lea
 
 ```text
 Claude_Training_Pack/
-├── Claude_Training_Guide_Final_With_Images.md  ← Keep this guide open
+├── Claude_Training_Guide.md  ← Keep this guide open
 ├── Practice_Files/
 │   ├── 01_Electricity_Bills_Oct2025_Sep2026.pdf
 │   ├── 02_Receipts/
@@ -46,7 +52,7 @@ Claude_Training_Pack/
 │   │   └── receipt_march.pdf
 │   ├── 03_Presentation_Reference.pptx
 │   └── 04_HighlightHub_Trainer_PRD.md
-└── Outputs/                           ← Learner-generated results
+└── Outputs/                   ← Learner-generated results
 ```
 
 | Existing input | Use |
