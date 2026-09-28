@@ -3,7 +3,7 @@
 
 **💠 Audience:** Non-technical/Technical office users.
 
-**💠 Main setup:** Claude Pro, a Windows computer, Claude Desktop and Google Chrome. Mac users can follow equivalent folder and application controls. This edition retains your six modules and 11 core prompts; short enrichment activities are labelled optional.
+**💠 Main setup:** Claude Pro, a Windows computer, Claude Desktop and Google Chrome. Mac users can follow equivalent folder and application controls. This edition retains your **six modules** and **11 core prompts**; short enrichment activities are labelled optional.
 
 ## 🔵 Start here
 
@@ -84,6 +84,23 @@ Save the combined block in **Module 1 → Project instructions** once in **Claud
 
 **💠 Teach:** Goal → context → constraints → output → verification. Distinguish model choice, thinking/effort, task context, Project knowledge and memory. The displayed model name is not the application version. [3][5][24]
 
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/e169da1c-d2d9-4680-bcfc-23f5a3c0ae99" />
+
+### 🔴 Claude Pro Models — Quick Guide
+
+Claude Pro provides different models for different levels of speed and capability. Select the model from the **model selector** beside the prompt box.
+
+| Model             | Best suited for                                                                                                                                                                          |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Opus 5.5**      | Most capable general model for **complex analysis, demanding knowledge work, coding, research and ambitious multi-step tasks**. Good choice when quality matters more than efficiency.   |
+| **Sonnet 5**      | Efficient model for **everyday professional work**, such as writing, summarization, document analysis, routine coding and general office tasks. A practical default for many activities. |
+| **Haiku 4.5**     | Fastest option for **quick questions and lightweight tasks** where speed is more important than maximum reasoning capability.                                                            |
+| **Fable 5.1**     | Intended for **especially difficult challenges**, but your screenshot indicates that it **requires usage credits on Pro**; it is included with Max plans.                                |
+
+**Effort:** For supported models, **Effort** controls how much computational effort Claude spends on the task. Use lower effort for straightforward work and higher effort for complex reasoning when needed.
+
+**Trainer tip:** For the workshop, **Sonnet 5** is suitable for routine demonstrations, while **Opus 5.5** can be used for more demanding document analysis, Cowork and complex reasoning. There is no need to switch models for every exercise.
+
 **💠 Two-minute interface tour:** Locate **New**, **Projects**, **Artifacts**, **Customize**, the **+** attachment menu and the model/effort menu beside the composer. Show dictation only when available. In your Desktop screenshots, **speech bubbles** open the conversational workspace and **`</>`** opens Code; the “Code” category inside Customize is not the coding workspace.
 
 **💠 Model and thinking:** Use the currently available model you rehearsed; do not require learners to find the screenshot's exact model number. Open the model menu and inspect **Effort**. Start with a suitable default/Medium setting for routine work, raise it only when needed and verify the result. Higher effort uses more time/tokens; some models do not let you turn thinking off. Ask for a concise explanation and evidence, not a guarantee based on a thinking display. [24]
@@ -109,7 +126,12 @@ contractual terms. Draft only; do not send. Then list the facts you used
 for verification.
 ```
 
-**Refinement:** “Make the tone more collaborative and reduce the body to 60 words without changing any fact or removing the request for a revised delivery date.”
+**Refinement:**
+
+```text
+Make the tone more collaborative and reduce the body to 60 words without
+changing any fact or removing the request for a revised delivery date.
+```
 
 **Check:** Correct recipient, supplier, order number, quantity and dates; clear request for an update; no invented explanations or penalties.
 
@@ -147,7 +169,7 @@ or test results. Separate verified findings from assumptions and untested items.
 Create only requested outputs; explain any unavailable capability briefly.
 ```
 
-**💠 Already configured?** If your teaching paragraph is already saved, append only the second, safety paragraph once; keep your personal notes. In new Chat or Cowork sessions within this Project, use the exercise prompt directly. Saved instructions do not replace permission checks or approvals. [17][19]
+**💠 Saved instructions do not replace permission checks or approvals. [17][19]
 
 **💠 Attachments:** Modules 2–3 use exercise-chat attachments. Module 4 uses the validated workbook and reference deck in a fresh Project task, selecting Cowork only where shown. Module 5 uses website URLs. Module 6 uses a separate local Code folder. Do not upload the whole pack to shared Project knowledge. The optional knowledge demo below is an intentional exception for one reusable reference. [19][20]
 
