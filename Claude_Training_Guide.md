@@ -73,6 +73,60 @@ Claude_Training_Pack/
 4. Review the response and remove sensitive, incorrect or outdated details; do not assume every past conversation is covered.
 5. Paste the approved text into Claude’s import box and select **Add to memory**. Review the entries and run the verification prompt below; imports may be incomplete. [14]
 
+**✅ Classroom prompt — paste the following prompt in ChatGPT new chat (OPTIONAL):**
+
+**🔴 Claude Settings → Memory → Start import → ChatGPT prompt → copy ChatGPT's answer → Paste it to Claude Settings import box → Add to memory → new Claude chat → verification prompt.**
+
+**✅ Issue the following prompt on ChatGPT new chat.**
+
+```text
+Prepare a concise context-transfer note for Claude using only this fictional
+workshop profile:
+Role: Office trainer. Audience: Non-technical office users.
+Preferred style: Plain English, short explanations and detailed practical prompts.
+Preferred outputs: Editable files with one verification check per exercise.
+
+Return one copyable block titled 'Fictional workshop preferences'. Do not use
+my real saved memories, unrelated chats or personal information. Do not claim
+this is a complete chat-history export.
+```
+
+💠 Copy the ChatGPT response obtained and paste that to Claude Settings → Memory -> Start import → paste in the import box (second text box) → Add to memory
+
+**✅ Verification prompt — paste in Claude new chat after import:**
+
+```text
+What workshop preferences were retained from the import? List them briefly and
+flag anything missing or uncertain. Do not invent details or claim that all
+ChatGPT conversations were imported.
+```
+
+**💠 Check:** Compare Claude's memory entries with the approved note. Confirm the audience, writing style and output preference; remove the fictional demo entries after class.
+
+**💠 Fallback:** When import is unavailable, place the reviewed note in the **Claude Workshop** Project instructions. Label this manual context setup, not memory or chat-history migration.
+
+**💠 To delete:** Issue the following two prompts if there is concerned import availability.
+
+```text
+What do you currently remember about my workshop preferences?
+Do you still have the fictional "Office trainer" workshop profile that I
+imported for the classroom demonstration?
+```
+
+💠 If import entries are available then
+
+```text
+remove the fictional demo entries after class
+```
+
+💠 If import entries are not available then use the **fallback method** and pasted the fictional profile into: **Claude Workshop → Project instructions**
+
+**✅ Optional — back up ChatGPT history outside class:**
+1. In ChatGPT, open **Profile → Settings → Data controls → Export data → Export → Confirm export**. [15]
+2. Download and securely retain the ZIP when notified. Exports may take time; the download link expires after 24 hours. [15]
+3. Check the exported conversations. This is a backup, not a file that this Claude memory-import workflow restores as chat threads. Do not upload the entire archive for the classroom exercise. [14] [15]
+
+**💠 For an ongoing project:** Separately review and copy its important decisions, open tasks and necessary non-sensitive files into the Claude Project. This is a manual handoff, not a restoration of the original conversation.
 
 ### ✳️ Before class — seven checks
 
@@ -106,12 +160,16 @@ Save the combined block in **Module 1 → Project instructions** once in **Claud
 
 Claude Pro provides different models for different levels of speed and capability. Select the model from the **model selector** beside the prompt box.
 
-| Model             | Best suited for                                                                                                                                                                          |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Opus&nbsp;5.5**     | Most capable general model for **complex analysis, demanding knowledge work, coding, research and ambitious multi-step tasks**. Good choice when quality matters more than efficiency.   |
-| **Sonnet&nbsp;5**     | Efficient model for **everyday professional work**, such as writing, summarization, document analysis, routine coding and general office tasks. A practical default for many activities. |
-| **Haiku&nbsp;4.5**     | Fastest option for **quick questions and lightweight tasks** where speed is more important than maximum reasoning capability.                                                            |
-| **Fable&nbsp;5.1**     | Intended for **especially difficult challenges**, but your screenshot indicates that it **requires usage credits on Pro**; it is included with Max plans.                                |
+| **Claude Model** | **Context Window** | **Primary Use**                 | **Typical Use Case**                                                  |
+| ---------------- | -----------------: | ------------------------------- | --------------------------------------------------------------------- |
+| **Opus 5.5**     |      **1M tokens** | Maximum-depth professional work | Complex research, advanced coding, deep analysis, multi-step projects |
+| **Sonnet 5**     |      **1M tokens** | Balanced everyday work          | Business analysis, writing, documents, coding, presentations          |
+| **Haiku 4.5**    |    **200K tokens** | Speed and efficiency            | Quick Q&A, summarization, simple transformations, lightweight tasks   |
+| **Fable 5.1**    |      **1M tokens** | Very demanding reasoning        | Difficult reasoning, complex challenges, long-running tasks           |
+
+> **Context Window = the maximum amount of information Claude can work with in a conversation at one time.**
+
+**Note:** Context-window size and Pro usage allowance are different things. Claude Pro does not provide a fixed monthly token quota; actual usage depends on the model, prompt/conversation length, files, tools, and effort level.
 
 **Effort:** For supported models, **Effort** controls how much computational effort Claude spends on the task. Use lower effort for straightforward work and higher effort for complex reasoning when needed.
 
@@ -209,61 +267,6 @@ Do not substitute our later HighlightHub Lite requirements or write code.
 💠 **Privacy check:** Inspect **Settings → Memory**; chat search and generated memory are separate controls. Review **Settings → Privacy** and the model-improvement preference before using business material. Use redacted copies; never upload credentials. A new chat is not a full reset when memory or Project context applies. Turning off a training preference does not mean zero data retention. [5][25]
 
 💠 **For file-creation labs, use the normal training conversation rather than an incognito workflow.** The current unified-experience documentation lists file/code limitations for incognito. [20]
-
-**✅ Classroom prompt — paste the following prompt in ChatGPT new chat (OPTIONAL):**
-
-**🔴 Claude Settings → Memory → Start import → ChatGPT prompt → copy ChatGPT's answer → Paste it to Claude Settings import box → Add to memory → new Claude chat → verification prompt.**
-
-**✅ Issue the following prompt on ChatGPT new chat.**
-
-```text
-Prepare a concise context-transfer note for Claude using only this fictional
-workshop profile:
-Role: Office trainer. Audience: Non-technical office users.
-Preferred style: Plain English, short explanations and detailed practical prompts.
-Preferred outputs: Editable files with one verification check per exercise.
-
-Return one copyable block titled 'Fictional workshop preferences'. Do not use
-my real saved memories, unrelated chats or personal information. Do not claim
-this is a complete chat-history export.
-```
-
-*💠 Copy the ChatGPT response obtained and paste that to Claude Settings → Memory -> Start import → paste in the import box (second text box) → Add to memory
-
-**✅ Verification prompt — paste in Claude new chat after import:**
-
-```text
-What workshop preferences were retained from the import? List them briefly and
-flag anything missing or uncertain. Do not invent details or claim that all
-ChatGPT conversations were imported.
-```
-
-**💠 Check:** Compare Claude's memory entries with the approved note. Confirm the audience, writing style and output preference; remove the fictional demo entries after class.
-
-**💠 Fallback:** When import is unavailable, place the reviewed note in the **Claude Workshop** Project instructions. Label this manual context setup, not memory or chat-history migration.
-
-**💠 To delete:** Issue the following two prompts if there is concerned import availability.
-
-```text
-What do you currently remember about my workshop preferences?
-Do you still have the fictional "Office trainer" workshop profile that I
-imported for the classroom demonstration?
-```
-
-*💠 If import entries are available then
-
-```text
-remove the fictional demo entries after class
-```
-
-*💠 If import entries are not available then use the **fallback method** and pasted the fictional profile into: **Claude Workshop → Project instructions**
-
-**💠 Optional — back up ChatGPT history outside class:**
-1. In ChatGPT, open **Profile → Settings → Data controls → Export data → Export → Confirm export**. [15]
-2. Download and securely retain the ZIP when notified. Exports may take time; the download link expires after 24 hours. [15]
-3. Check the exported conversations. This is a backup, not a file that this Claude memory-import workflow restores as chat threads. Do not upload the entire archive for the classroom exercise. [14] [15]
-
-**💠 For an ongoing project:** Separately review and copy its important decisions, open tasks and necessary non-sensitive files into the Claude Project. This is a manual handoff, not a restoration of the original conversation.
 
 ---
 
