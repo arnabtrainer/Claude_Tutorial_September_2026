@@ -210,7 +210,9 @@ Do not substitute our later HighlightHub Lite requirements or write code.
 
 💠 **For file-creation labs, use the normal training conversation rather than an incognito workflow.** The current unified-experience documentation lists file/code limitations for incognito. [20]
 
-**✅ Classroom prompt — paste in ChatGPT:**
+**✅ Classroom prompt — paste the following prompt in ChatGPT new chat:**
+
+**Claude Settings → Memory → Start import → ChatGPT prompt → copy ChatGPT's answer → Paste it to Claude Settings import box → Add to memory → new Claude chat → verification prompt.**
 
 ```text
 Prepare a concise context-transfer note for Claude using only this fictional
