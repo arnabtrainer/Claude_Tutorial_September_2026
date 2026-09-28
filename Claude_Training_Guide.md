@@ -5,8 +5,6 @@
 
 **💠 Main setup:** Claude Pro, a Windows computer, Claude Desktop and Google Chrome. Mac users can follow equivalent folder and application controls. This edition retains your six modules and 11 core prompts; short enrichment activities are labelled optional.
 
-**💠 Basis:** Your latest attached guide supplies the exercises and expected figures. Your screenshots supply the specific screen landmarks. Numbered references support updated product guidance. New teaching activities and changes are identified under **Revision notes** at the end; this is not a claim that every activity has been executed on your account.
-
 ## 🔵 Start here
 
 💠 Use **this one guide** in place of older `Claude_Training_Guide_Synced.md` / `00_START_HERE.md` versions. Keep your six existing practice inputs; the trainer's full archive is not required. No new input files, paid plugins, API key or GitHub connection are required for the core route.
