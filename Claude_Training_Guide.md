@@ -185,7 +185,7 @@ or test results. Separate verified findings from assumptions and untested items.
 Create only requested outputs; explain any unavailable capability briefly.
 ```
 
-**💠 Saved instructions do not replace permission checks or approvals. [17][19]
+**💠 Note:** Saved instructions do not replace permission checks or approvals. [17][19]
 
 **💠 Attachments:** Modules 2–3 use exercise-chat attachments. Module 4 uses the validated workbook and reference deck in a fresh Project task, selecting Cowork only where shown. Module 5 uses website URLs. Module 6 uses a separate local Code folder. Do not upload the whole pack to shared Project knowledge. The optional knowledge demo below is an intentional exception for one reusable reference. [19][20]
 
