@@ -191,7 +191,7 @@ Create only requested outputs; explain any unavailable capability briefly.
 
 ### ✳️ Optional mini-demo — Project knowledge and RAG
 
-1. In the Project's **knowledge/files** area, use **+ / Add content** to add `04_HighlightHub_Trainer_PRD.md` as a reusable reference, not merely a chat attachment. [19]
+1. In the Project's **knowledge/files** area, use **+ / Add content** to add `04_HighlightHub_Trainer_PRD.md`, it is a **Product Requirements Document (PRD)**, as a reusable reference, not merely a chat attachment. [19]
 2. In a new Project conversation, submit the prompt below. Start another conversation and repeat one question without reattaching the file.
 
 ```text
