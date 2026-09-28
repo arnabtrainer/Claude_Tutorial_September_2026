@@ -1,5 +1,5 @@
 # 🔰 Claude Pro: Six-Module Hands-on Workshop
-## 🔵 Learner's guide — final teaching edition
+## 🔵 Learner's guide
 
 **💠 Audience:** Non-technical/Technical office users.
 
