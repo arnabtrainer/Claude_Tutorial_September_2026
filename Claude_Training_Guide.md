@@ -147,6 +147,7 @@ Save the combined block in **Module 1 → Project instructions** once in **Claud
 **Delivery rhythm:** Explain goal → identify inputs → submit one prompt → review actions/results → check the outcome → save the result.
 
 ---
+---
 
 <a id="module-1"></a>
 
@@ -268,6 +269,7 @@ Do not substitute our later HighlightHub Lite requirements or write code.
 
 💠 **For file-creation labs, use the normal training conversation rather than an incognito workflow.** The current unified-experience documentation lists file/code limitations for incognito. [20]
 
+---
 ---
 
 <a id="module-2"></a>
@@ -404,6 +406,7 @@ claim the charts identify appliances. Return the CSV, brief findings and checks.
 
 **Check:** 12 rows; **646 kWh**; **INR 4,240** rounded payable; mean **53.83 kWh/month**. Do not add carry-forward again. Save the optional CSV in `Outputs`. A Python chart is not necessarily an editable Excel chart; make the output distinction explicit.
 
+---
 ---
 
 <a id="module-3"></a>
@@ -851,7 +854,6 @@ The organized PDF copies remain on **Google Drive**.
 Do not add the copied receipts again to `Expenses.xlsx`, because they are copies of the same source transactions.
 
 ---
-
 ---
 
 <a id="module-4"></a>
@@ -967,6 +969,7 @@ claim it is enabled; I will inspect it first.
 **💠 Workflow connection:** Project instructions → fresh workbook → reconciliation → editable presentation → human review → reusable Skill. This is an end-to-end workflow without requiring every Claude feature in one task.
 
 ---
+---
 
 <a id="module-5"></a>
 
@@ -1056,6 +1059,7 @@ from untested hypotheses. Return the updated document, not a second report.
 
 **💠 Browser check:** If Claude says it cannot take screenshots or operate the page, follow the screenshot fallback rather than asking it to invent findings. Keyboard and accessibility-tree checks require the corresponding tools; screenshots alone cannot establish them. For ordinary browser testing, desktop and mobile viewport emulation are checks of those viewports—not proof of behavior on every real device.
 
+---
 ---
 
 <a id="module-6"></a>
