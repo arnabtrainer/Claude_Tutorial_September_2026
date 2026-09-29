@@ -84,7 +84,7 @@ Claude_Training_Pack/
 ### 🔶 Before class — seven checks
 
 1. Sign in to Claude Pro on web and Desktop; check usage and test upload/download. Check **Settings → Capabilities → Code execution and file creation** where shown. [1][21]
-2. Update/restart Desktop; locate its Code workspace and **Local → No folder / Select folder**. Follow Module 6's screenshot landmarks. [23]
+2. Update/restart Desktop (Press F5); locate its Code workspace and **Local → No folder / Select folder**. Follow Module 6's screenshot landmarks. [23]
 3. Check Excel/PowerPoint opening and Chrome's **Load unpacked** permission. Do not bypass administrator restrictions.
 4. Prepare Module 3's **two parent folders only** and Module 4's dedicated local workspace. Test the required tools during rehearsal, not for the first time in class.
 5. Test the two website URLs and screenshot/browser access. Check that all five externally linked images display; the Markdown file needs internet access for them.
@@ -209,6 +209,54 @@ Turn this business task into a prompt with 5–10 clear statements:
 Include the goal, inputs, key actions, constraints, output and a result check.
 Ask only for genuinely missing essentials; do not invent requirements.
 For external changes, include approval and duplicate/original-file protection.
+```
+
+#### 💬 Example — The complete prompt using Task 1
+
+```text
+Turn this business task into a prompt with 5–10 clear statements:
+
+I have a fictional company travel-policy document. I want to create an
+employee FAQ explaining the expenses employees can claim, required approvals
+and supporting documents. Use only the policy, identify the sections supporting
+each answer, and flag questions the document does not answer.
+
+Include the goal, inputs, key actions, constraints, output and a result check.
+Ask only for genuinely missing essentials; do not invent requirements.
+For external changes, include approval and duplicate/original-file protection.
+Write the prompt only; do not perform the task.
+```
+
+#### 💬 Example — The complete prompt using Task 2
+
+```text
+Turn this business task into a prompt with 5–10 clear statements:
+
+I have several receipt PDFs and need an Excel expense register showing the
+date, vendor, category, currency and total for each receipt. Add a summary
+with category totals and an editable chart, keeping different currencies
+separate. Flag unreadable or inconsistent receipts instead of guessing.
+
+Include the goal, inputs, key actions, constraints, output and a result check.
+Ask only for genuinely missing essentials; do not invent requirements.
+For external changes, include approval and duplicate/original-file protection.
+Write the prompt only; do not perform the task.
+```
+
+#### 💬 Example — The complete prompt using Task 3
+
+```text
+Turn this business task into a prompt with 5–10 clear statements:
+
+I have a sales spreadsheet with extra spaces, inconsistent city names,
+different date formats, blank cells and duplicate rows. I need a cleaned
+Excel copy with consistent formatting, highlighted missing values and exact
+duplicate rows removed. Preserve the original file and summarise the changes.
+
+Include the goal, inputs, key actions, constraints, output and a result check.
+Ask only for genuinely missing essentials; do not invent requirements.
+For external changes, include approval and duplicate/original-file protection.
+Write the prompt only; do not perform the task.
 ```
 
 ### 🔶 Optional — Project knowledge and RAG
