@@ -498,13 +498,82 @@ boundary. Report tests actually run; mark browser tests not run as untested.
 
 **🔶 Scope choice:** This calculator remains a smaller classroom alternative to the trainer’s rent-versus-buy simulator. No additional practice file is required.
 
-### 🔶 Optional — Claude Design: energy-saving poster
+### 🔶 Optional — Artifacts: Document, Presentation and Design
 
-**Purpose:** Create and refine a visual layout, not another calculator. Route should be:
+**Purpose:** Explore three ways to communicate the same business topic:
+a written guide, a slide presentation and a visual poster.
 
-> **Claude → Artifacts → Design → enter prompt → Generate → Review → Refine**
+**Open:** Go to **Claude → Artifacts**. Under **Make something new**, select
+**Document**, **Presentation** or **Design**, matching the cards on your screen.
+Paste the corresponding prompt into the **chat/message box that opens** and
+submit it. Review the editable result, then enter the refinement in that same
+conversation. [6][39]
 
-Claude Design is a beta feature on Pro; use its actual canvas, not a generic text response. Use neutral styling; do not upload a company design system for this brief. [39]
+**Prepare:** No additional files or company design system are required.
+Use neutral styling and keep all outputs private. Start each example from its
+own Artifact card; the prompts below are self-contained.
+
+#### 📄 A. Document — Employee energy-saving guide
+
+**Select:** **Claude → Artifacts → Document**
+
+**💬 Prompt:**
+
+```text
+🔹 Create an editable one-page document titled Energy Saving at Work — Employee Guide.
+🔹 Write for office employees using plain English and a professional, friendly tone.
+🔹 Include three sections: Purpose, Five Practical Tips and End-of-Day Checklist.
+🔹 Give five short, practical electricity-saving tips suitable for an office.
+🔹 Include four simple checks employees can perform before leaving work.
+🔹 Keep the document within 250 words, with clear headings and readable spacing.
+🔹 Do not invent company policies, statistics, savings percentages or environmental claims.
+🔹 Create the document in the editable Document workspace; do not publish or share it.
+```
+
+**Refine:** “Shorten the introduction and turn the End-of-Day Checklist into
+four concise checkbox items. Preserve the five tips and do not add claims.”
+
+**Try:** Edit one heading directly in the document, or select a sentence and
+use **Edit with Claude** where available. [6]
+
+**✅ Check:** Three sections, five tips, four checklist items, no invented
+claims and a successful edit.
+
+#### 📊 B. Presentation — Three-slide employee briefing
+
+**Select:** **Claude → Artifacts → Presentation**
+
+**💬 Prompt:**
+
+```text
+🔹 Create an editable presentation titled Energy Saving at Work for office employees.
+🔹 Use exactly three slides with a consistent, neutral corporate style.
+🔹 Slide 1: introduce the purpose of everyday energy-saving habits at work.
+🔹 Slide 2: present five short, practical electricity-saving tips with simple icons.
+🔹 Slide 3: show a four-item end-of-day checklist and a brief closing message.
+🔹 Use large readable text, clear titles and minimal content; avoid decorative clutter.
+🔹 Do not invent statistics, savings percentages, company policies or charts with made-up data.
+🔹 Keep slide text and layout editable rather than using full-slide images; do not publish or share.
+```
+
+**Refine:** “Make Slide 2 easier to scan by shortening each tip and improving
+spacing. Keep all five tips and retain exactly three slides.”
+
+**Try:** Edit one slide title directly and preview the presentation.
+Check that the requested change appears. [6]
+
+**✅ Check:** Exactly three slides, five tips, four checklist items, readable
+text and a successful slide edit.
+
+**Trainer note:** This demonstrates presentation creation from a written
+brief. Module 4 remains the separate Cowork exercise involving local files,
+expense reconciliation, presentation verification and reusable Skills.
+
+#### 🎨 C. Design — Energy-saving poster
+
+**Select:** **Claude → Artifacts → Design**
+
+**💬 Prompt:**
 
 ```text
 🔹 Create a one-page Energy Saving Tips poster using Claude Design.
@@ -515,9 +584,40 @@ Claude Design is a beta feature on Pro; use its actual canvas, not a generic tex
 🔹 Keep the text and layout editable for refinement; do not publish or share it.
 ```
 
-**Refine:** “Change the title to Save Energy at Work and make the five tips easier to scan without adding claims.” Edit one heading directly on the canvas where supported. Use Export only if needed; retain the editable design and optionally save an available PDF/ZIP export in `Outputs`. An exported PDF is not the editable master. [39]
+**Refine:** “Change the title to Save Energy at Work and make the five tips
+easier to scan without adding claims.”
 
-✅ Five tips, readable layout, a successful edit and no invented statistics. Allow **5–7 extra minutes**. If Design is absent, show the concept and label the hands-on not run.
+**Try:** Edit one heading directly on the Design canvas where supported.
+Use the actual visual canvas, not a generic text response. [39]
+
+**✅ Check:** Five tips, readable layout, a successful edit and no invented
+statistics.
+
+#### 🔶 Optional exports and classroom timing
+
+Keep the editable Artifacts as the working versions. Use **Export** only
+when needed, then open and inspect the exported file. Available formats can
+differ by Artifact type. [6][39]
+
+| Artifact | Suggested optional output |
+|---|---|
+| Document | `Outputs/Energy_Saving_Guide.docx` |
+| Presentation | `Outputs/Energy_Saving_Briefing.pptx` |
+| Design | `Outputs/Energy_Saving_Poster.pdf` |
+
+An exported PDF is not the editable master. Check exported page/slide count,
+text and layout rather than assuming they match the preview.
+
+**Timing:** Allow approximately **5–7 extra minutes per example**, or
+**15–20 minutes for all three**; these are teaching estimates, not guaranteed
+generation times. For a shorter class, demonstrate one and assign the others
+as optional practice.
+
+**Fallback:** If a card or editing control is unavailable, demonstrate only
+the available options and mark the remaining activity **Not run**. Do not
+describe an ordinary text response as a completed Artifact demonstration.
+
+**Takeaway:** **Document explains → Presentation briefs → Design attracts attention.**
 
 <details>
 <summary>🔶 Optional — Python/CSV analysis of the same 12 months</summary>
