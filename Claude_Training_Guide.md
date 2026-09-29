@@ -159,14 +159,14 @@ Save the combined block in **Module 1 → Project instructions** once in **Claud
 
 ### 🔴 Claude Pro Models — Quick Guide
 
-Claude Pro provides different models for different levels of speed and capability. Select the model from the **model selector** beside the prompt box.
+Claude Pro provides different models for different levels of speed and capability. Select the model from the **model selector** beside the prompt box. [37]
 
-| **Claude Model** | **Context Window** | **Primary Use**                 | **Typical Use Case**                                                  |
-| ---------------- | -----------------: | ------------------------------- | --------------------------------------------------------------------- |
-| **Opus 5.5**     |      **1M tokens** | Maximum-depth professional work | Complex research, advanced coding, deep analysis, multi-step projects |
-| **Sonnet 5**     |      **1M tokens** | Balanced everyday work          | Business analysis, writing, documents, coding, presentations          |
-| **Haiku 4.5**    |    **200K tokens** | Speed and efficiency            | Quick Q&A, summarization, simple transformations, lightweight tasks   |
-| **Fable 5.1**    |      **1M tokens** | Very demanding reasoning        | Difficult reasoning, complex challenges, long-running tasks           |
+| **Claude Model** | **Context Window** | **Primary Use**                 | **Typical Use Case**                                                      |
+| ---------------- | -----------------: | ------------------------------- | ------------------------------------------------------------------------- |
+| **Opus 5.5**     |      **1M tokens** | Maximum-depth professional work | Complex research, advanced coding, deep analysis, multi-step projects [37]|
+| **Sonnet 5**     |      **1M tokens** | Balanced everyday work          | Business analysis, writing, documents, coding, presentations [37]         |
+| **Haiku 4.5**    |    **200K tokens** | Speed and efficiency            | Quick Q&A, summarization, simple transformations, lightweight tasks [37]  |
+| **Fable 5.1**    |      **1M tokens** | Very demanding reasoning        | Difficult reasoning, complex challenges, long-running tasks [37]          |
 
 > **Context Window = the maximum amount of information Claude can work with in a conversation at one time.**
 
@@ -1399,3 +1399,4 @@ Product/setup references used for the updated Pro, interface, permissions and te
 [34]: https://developer.chrome.com/docs/extensions/reference/api/contextMenus
 [35]: https://developer.chrome.com/docs/extensions/reference/api/storage
 [36]: https://support.claude.com/en/articles/12138966-release-notes
+[37]: https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans?utm_source=chatgpt.com
