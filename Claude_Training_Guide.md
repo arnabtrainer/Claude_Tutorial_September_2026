@@ -1,4 +1,7 @@
 # 🔰 Claude Pro: Six-Module Hands-on Workshop
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/b5334ec1-ea58-4a71-8955-2724b37379f7" />
+
 ## Learner Guide
 
 **✴️ Audience:** Technical and non-technical office users. <br>
@@ -35,6 +38,8 @@ Use this retained infographic for a brief discussion, not as verified current ad
 | Supporting features | Dictation/mobile continuity, interactive connectors, computer use and schedules | Brief/optional notes; [17][41][42][43] |
 
 ### 🔶 Delivery map
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/f0412853-88b1-42f8-a859-e2c9f027fedf" />
 
 | Module | Core result | Where | Minutes |
 |---|---|---|---:|
@@ -94,9 +99,13 @@ Claude_Training_Pack/
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/754f8d6a-0706-41a7-a110-fadbd67a4d8b" />
+
 <a id="module-1"></a>
 
 ## 🔵 Module 1 — Prompting, Privacy and Context
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/671bdff2-ca71-45ce-a656-676e7c05c413" />
 
 **Teach:** Goal → context → constraints → output → verification. Models, effort, Project instructions, Project knowledge and memory have different roles.
 
@@ -263,9 +272,13 @@ real and fictional information, ask before removing it. Report what changed.
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/8ffdd9e8-66f7-428b-89ec-f933cfba5954" />
+
 <a id="module-2"></a>
 
 ## 🔵 Module 2 — Document Analysis and Interactive Artifacts
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/ffb8931b-8f52-4ee4-80fd-d4471358bff3" />
 
 **Teach:** Evidence-based extraction, month-to-month comparison, rates/rebates/rounding and interactive-output testing.
 
@@ -475,9 +488,13 @@ Python actually ran. Do not forecast or infer appliances from these examples.
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/68f34863-0d61-4892-a4e1-94ae062f6e62" />
+
 <a id="module-3"></a>
 
 ## 🔵 Module 3 — Receipts, Excel and Connectors
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/843a6319-8e99-4b4b-87d9-43c76465fadd" />
 
 **Teach:** Read content, not filenames; extract traceable records; classify documents; plan before acting; verify originals and copies.
 
@@ -761,9 +778,13 @@ not Microsoft Copilot. No add-in installation is required for the workshop. [1][
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/754f8d6a-0706-41a7-a110-fadbd67a4d8b" />
+
 <a id="module-4"></a>
 
 ## 🔵 Module 4 — Cowork, Presentations and Reusable Skills
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/2f9dbd18-0c43-4d83-bdfd-cbe231de91d8" />
 
 ### 🔶 What Claude Cowork is for
 
@@ -939,9 +960,13 @@ path and contents summary. Do not install the Skill or claim it is enabled.
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/8ffdd9e8-66f7-428b-89ec-f933cfba5954" />
+
 <a id="module-5"></a>
 
 ## 🔵 Module 5 — Research and UI/UX/Accessibility Audit
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/6ca6e2ea-027d-4dea-9a7a-b8a55e03792e" />
 
 **Teach:** UI = interface; UX = usability; accessibility = use by people with different abilities. Search supplies sources; browser interaction supplies observed evidence. This is a preliminary review, not a security test or accessibility certification.
 
@@ -1081,9 +1106,13 @@ from untested hypotheses. Return the updated document, not a second report.
 
 ---
 
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/68f34863-0d61-4892-a4e1-94ae062f6e62" />
+
 <a id="module-6"></a>
 
 ## 🔵 Module 6 — Claude Code and a Small Application
+
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/9181d038-c287-46ee-975e-fca9f9101a6a" />
 
 **Teach:** A PRD defines the product; `CLAUDE.md` can guide the coding workspace. Plan → approve → implement → inspect → test in real Chrome → fix/retest. This local Code session is separate from the Claude Workshop Project. [12][23]
 
