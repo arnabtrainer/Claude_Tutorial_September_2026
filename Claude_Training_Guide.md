@@ -500,7 +500,11 @@ boundary. Report tests actually run; mark browser tests not run as untested.
 
 ### 🔶 Optional — Claude Design: energy-saving poster
 
-**Purpose:** Create and refine a visual layout, not another calculator. In a new Project conversation choose **Output → Design**, or **Artifacts → Design** where shown. Claude Design is a beta feature on Pro; use its actual canvas, not a generic text response. Use neutral styling; do not upload a company design system for this brief. [39]
+**Purpose:** Create and refine a visual layout, not another calculator. Route should be:
+
+> **Claude → Artifacts → Design → enter prompt → Generate → Review → Refine**
+
+Claude Design is a beta feature on Pro; use its actual canvas, not a generic text response. Use neutral styling; do not upload a company design system for this brief. [39]
 
 ```text
 🔹 Create a one-page Energy Saving Tips poster using Claude Design.
