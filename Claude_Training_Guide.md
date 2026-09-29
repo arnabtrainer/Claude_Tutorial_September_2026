@@ -1399,4 +1399,4 @@ Product/setup references used for the updated Pro, interface, permissions and te
 [34]: https://developer.chrome.com/docs/extensions/reference/api/contextMenus
 [35]: https://developer.chrome.com/docs/extensions/reference/api/storage
 [36]: https://support.claude.com/en/articles/12138966-release-notes
-[37]: https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans?utm_source=chatgpt.com
+[37]: https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans
