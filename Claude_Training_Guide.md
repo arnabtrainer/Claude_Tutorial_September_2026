@@ -1151,6 +1151,8 @@ silently substituting ordinary spreadsheet analysis.
 | Travel | ₹1,500 | ₹1,150 | **−₹350 Favourable** |
 | **Total** | **₹8,500** | **₹8,355** | **−₹145 Favourable** |
 
+> **Plugin = packaged domain method/capability; Claude = applies that capability to the supplied data.**
+
 ##### 🔶 Verify Plugin use
 
 Check the task/activity details and confirm that the Finance Plugin capability
@@ -1169,9 +1171,7 @@ If no Finance Plugin capability was invoked, say:
 
 After class, if the Plugin is no longer required:
 
-**Customize → Plugins → Yours → Finance → Remove**
-
-[27]
+**Customize → Plugins → Yours → Finance → Remove** [27]
 
 **✅ Check:** The analysis uses both the new budget and actual-expense files,
 the expected variances reconcile, and Claude identifies the Finance Plugin
