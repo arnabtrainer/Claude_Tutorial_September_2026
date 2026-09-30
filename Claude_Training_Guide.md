@@ -1188,21 +1188,20 @@ task. The task must match a capability supplied by that Plugin.
 
 #### 🖥️ B. Computer Use — Notepad demonstration
 
-**Purpose:** Show the difference between authorising files and allowing Claude
-to operate a graphical application by clicking and typing.
+**Purpose:** Show how Computer Use lets Claude interact with a desktop
+application by clicking and typing, rather than only reading authorised files.
 
-**Prepare:** Create an empty training folder:
+**Prepare:** Create an empty training folder and copy its full path:
 
 ```text
 Claude_Training_Pack/
 └── Computer_Use_Demo/
 ```
 
-1. Open **Claude Desktop** and start a fresh Cowork task/conversation.
-2. Close personal applications and sensitive windows.
-3. Ask Claude to use **Computer Use** and approve only the required permission
-   when prompted.
-4. Paste:
+1. Open **Claude Desktop** and start a fresh **Cowork** conversation. If your
+   interface is unified, simply start a fresh conversation.
+2. Close personal applications, private documents and other sensitive windows.
+3. Paste the prompt below. **Do not look for a separate Computer Use button first.**
 
 ```text
 Use Computer Use only for this classroom demonstration.
@@ -1217,23 +1216,30 @@ Actions:
 2. Review training-room requirements.
 3. Prepare next week's status update.
 
-Save it as:
-[COMPUTER_USE_DEMO PATH]\Meeting_Notes.txt
+Save the file as:
+[PASTE COMPUTER_USE_DEMO FOLDER PATH]\Meeting_Notes.txt
 
 Do not open other applications, browse the web, access email or modify any
-other file. After saving, verify the result and report the actions performed.
+other file. After saving, verify the file and report what you actually did.
 ```
 
-5. Watch Claude operate Notepad and review permission requests.
+4. If Claude requests permission to **use/control the computer**, review the
+   request and approve only the access required for this demonstration.
+5. Watch Claude **open Notepad, type the text and save the file**. Review any
+   additional permission request before approving it.
 6. Open `Meeting_Notes.txt` yourself and verify the contents.
-7. End Computer Use after the demonstration; do not leave broader access enabled
-   unnecessarily. [41]
+7. End the task after the demonstration; do not leave unnecessary computer
+   access enabled. [41]
 
-**✅ Check:** The file contains the three action items and Claude stayed within
-the approved task.
+**✅ Check:** Claude visibly operated **Notepad**, the saved file contains all
+three action items, and no unrelated application or file was accessed.
 
-**Teaching point:** **Folder access = work with authorised files. Computer
-Use = operate applications through their interface.**
+**⚠️ Important:** If Claude creates the text file directly without visibly
+operating Notepad, explain that this demonstrated **file access**, not
+**Computer Use**.
+
+**Teaching point:** **Folder access = work with authorised files.  
+Computer Use = operate applications through their graphical interface.**
 
 ---
 
