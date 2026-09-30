@@ -277,6 +277,8 @@ List what is available and flag anything missing or uncertain.
 
 ✅ Check the saved role, audience, style and output preference. **No import control?** Append the reviewed note to Project instructions as **manual Project context**, not memory import.
 
+✅ The content being imported into Claude is a manually written summary of selected information from ChatGPT, including your stated instructions and preferences, general career/skill information, project and training-related context, and working-style preferences. It does not transfer your actual ChatGPT memory, complete chat history, hidden context, files, account information, or any other information that is not explicitly included in the text you copy and paste.
+
 **Cleanup:** Inspect **Settings → Memory → Topics** by content; edit/delete only temporary demo data, never genuine overlapping preferences or all memory. Alternatively use the forget prompt below, then inspect memory afresh outside the Project. Nothing retained means nothing to delete. [5]
 
 ```text
