@@ -1231,12 +1231,18 @@ other file. After saving, verify the file and report what you actually did.
 7. End the task after the demonstration; do not leave unnecessary computer
    access enabled. [41]
 
+> **Give task → permission requested → approve → watch Claude operate Notepad → verify result.**
+
 **✅ Check:** Claude visibly operated **Notepad**, the saved file contains all
 three action items, and no unrelated application or file was accessed.
 
 **⚠️ Important:** If Claude creates the text file directly without visibly
 operating Notepad, explain that this demonstrated **file access**, not
 **Computer Use**.
+
+**After the demo:**
+Verify `Meeting_Notes.txt`, end the Cowork task, then return to <br>
+**Settings → System → Computer use → Enable computer use → OFF**.
 
 **Teaching point:** **Folder access = work with authorised files.  
 Computer Use = operate applications through their graphical interface.**
@@ -1369,6 +1375,8 @@ This is an older WCAG 2.0 teaching example, not a complete benchmark for current
   visual audit.
 🔹 Do not submit forms or follow unrelated external links.
 ```
+
+> **Claude Desktop → Projects → Claude Workshop → New conversation → Cowork**
 
 <details>
 <summary>📘 Detailed Prompt 8 — Trainer / Advanced Reference</summary>
