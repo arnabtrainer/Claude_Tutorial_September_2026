@@ -1092,14 +1092,36 @@ path and contents summary. Do not install the Skill or claim it is enabled.
 
 </details>
 
-**Install and test**
+### 🔶 Reuse test — Run the Skill in a fresh Cowork session
 
 1. Inspect the ZIP, then use **Customize → Skills → + Add → Upload skill**, or **+ → Create skill → Upload a skill** where shown. Select the ZIP from the workspace Outputs and enable it. Code execution/file creation must be available. [4]
-2. In a fresh Desktop task, authorise the same workspace and request: **“Use workshop-expense-briefing with Inputs/Expenses.xlsx; save Outputs/Expense_Briefing_Reuse.pptx. Verify the current source and saved output.”** This is an explicit reuse test; keep the first deck.
-3. In a separate fresh task, give no folder/workbook and say: **“Use workshop-expense-briefing. No workbook is supplied; do not retrieve an earlier one. Ask me for the required input.”** It should ask, not invent figures.
+2. **Confirm the Skill is enabled:** Open **Customize → Skills** and check that `workshop-expense-briefing` is installed and switched on. Creating its ZIP alone does not install it. ([Claude Help Center][46])
+3. **Start a fresh session:** In **Claude Desktop → Projects → Claude Workshop**, start a new conversation and select **Cowork** where shown. If your account has the unified interface without a Chat/Cowork selector, use the new conversation directly. ([Claude Help Center][45])
+4. **Confirm local-folder access:** Connect or confirm access to the same **`Module_4_Workspace`** folder. Keep Claude Desktop open while the task needs those local files; typing a file path alone does not grant access. ([Claude Help Center][45])
+5. **Paste this prompt into the Cowork message box**, not the Claude Code workspace or the Artifacts presentation editor:
 
-✅ A ZIP is not an installed Skill. Check fresh-input use and missing-input handling. Update an existing same-name Skill deliberately; do not create duplicates. If import is blocked, keep the procedure as a reusable prompt and label it accordingly.
+```text
+🔹 Use the installed workshop-expense-briefing Skill in the authorised
+   Module_4_Workspace folder.
+🔹 Read Inputs/Expenses.xlsx afresh; do not reuse remembered figures or
+   treat the previous presentation as the data source.
+🔹 Follow the Skill’s procedure to create and verify exactly three
+   editable slides.
+🔹 Save the result as Outputs/Expense_Briefing_Reuse.pptx.
+🔹 Preserve the input workbook and the first deck,
+   Outputs/Expense_Briefing.pptx; ask before overwriting any existing reuse file.
+🔹 Report the saved file path, checks actually performed and any limitations.
+🔹 If the Skill or required local files are unavailable, stop and explain
+   what is missing instead of claiming completion.
+```
 
+**✅ Check:** Open `Expense_Briefing_Reuse.pptx`, compare its figures with the current workbook, and confirm the original `Expense_Briefing.pptx` remains unchanged. Review the task’s tool/activity details for evidence that the Skill was used—a correctly named output alone does not demonstrate Skill reuse.
+
+> **“The Skill remembers how to perform the job, not necessarily what the previous presentation looked like. Our Skill knows that it should inspect the workbook, reconcile the data, create three slides, build an editable category chart, add observations and verify the output. The blue appearance came from a separate style-reference PowerPoint. If we want the same visual style on a future run, we must either provide that reference deck again or deliberately make that styling part of the reusable Skill.”**
+
+> **“Connecting a folder to a Project can make that workspace available to tasks within that Project. But access permission and conversation memory are separate. A new Cowork conversation should still be told which folder/files to use, and Claude may request authorization again when required”.**
+
+---------------------
 ### 🔶 Brief feature tours — optional, not new labs
 
 **Plugins:** Open **Customize → Plugins → Discover**; inspect one relevant package's description, Skills and connector permissions without selecting Add. A package can combine capabilities, but installing it does not remove the need for permission or data checks. [27]
@@ -1635,3 +1657,5 @@ For an ongoing project, manually transfer reviewed decisions, open tasks and ess
 [42]: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork
 [43]: https://support.claude.com/en/articles/13454812-use-interactive-connectors-in-claude
 [44]: https://support.claude.com/en/articles/14116274-organize-your-tasks-with-projects-in-claude-cowork
+[45]: https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile"
+[46]: https://support.claude.com/en/articles/12512180-use-skills-in-claude "https://support.claude.com/en/articles/12512180-use-skills-in-claude"
