@@ -228,7 +228,7 @@ Write the prompt only; do not perform the task.
 | Receipt register | Turn my receipt PDFs into an Excel register with date, vendor, category, currency and total; add category summaries and an editable chart. Keep currencies separate and flag unclear records. |
 | Sales-data cleaning | Clean extra spaces, inconsistent city/date formats and exact duplicate rows in my sales workbook. Highlight missing cells, preserve the original and summarise changes. |
 
-### 🔶 Optional — Project knowledge and RAG
+### 🔶 Optional — Project knowledge and RAG (Retrieval-Augmented Generation)
 
 Add `04_HighlightHub_Trainer_PRD.md`—the trainer's Product Requirements Document—as a reusable **Project knowledge** file, not just a chat attachment. In a new Project conversation ask: [19]
 
@@ -239,7 +239,7 @@ What deployment budget does it specify? Answer Not specified when absent.
 Do not substitute our later HighlightHub Lite requirements or write code.
 ```
 
-Repeat in another Project conversation without reattaching. **RAG** retrieves supporting material; it does not retrain a model. One small file demonstrates reusable context, not proven retrieval-engine activation. Project knowledge does not copy files into local Code. [3]
+Repeat in another Project conversation without reattaching. **RAG (Retrieval-Augmented Generation)** retrieves supporting material; it does not retrain a model. One small file demonstrates reusable context, not proven retrieval-engine activation. Project knowledge does not copy files into local Code. [3]
 
 ### 🔶 Privacy and memory
 
