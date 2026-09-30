@@ -1074,16 +1074,157 @@ Inspect the ZIP, then open **Customize → Skills → + Add → Upload skill**, 
 
 **If the result is wrong:** Old totals suggest the wrong input or hardcoded instructions; a white theme may mean the style reference was omitted/unreadable or its styling was not followed. Check inputs, installed Skill and activity before regenerating. A brief comparison table is enough; no extra report file is needed.
 
-### 🔶 Optional feature tours — no new labs
+### 🔶 Optional hands-on feature demos
 
-**Plugins:** Open **Customize → Plugins → Discover** where offered; inspect one package and its permissions without installing. [27]
+These short demonstrations show three additional Claude capabilities. Use only
+fictional training data and review permissions before enabling external actions.
 
-**Computer Use:** Supported Desktop builds can click/type in applications. This is broader than folder access and needs separate permission; do not enable it for this file-only lab. [41]
+#### 🧩 A. Plugins — Finance Plugin
 
-**Scheduled tasks:** Inspect **Scheduled**, cadence, time zone and approvals; cancel before saving. Example: “Describe a Monday 9 AM Asia/Kolkata expense-review reminder; do not create or enable it.” Cloud execution does not make local files permanently reachable: any local-file task needs the authorised Desktop connection open. Do not promise unattended access when the computer/app is unavailable. [17][42]
+**Purpose:** Show how a Plugin adds packaged, reusable capabilities to Claude.
 
-**Takeaway:** The reusable method stays; the data changes; the supplied reference controls the visual direction.
+1. Open **Customize → Plugins → Discover**.
+2. Find **Finance — by Anthropic** and inspect its description and requested
+   capabilities before installing.
+3. Click **+ Add**. Then open **Plugins → Yours** and confirm **Finance** is enabled.
+4. Start a fresh **Claude Workshop** conversation; use Cowork where shown.
+5. Make the fictional `Expenses_April_2026.xlsx` available to the task.
+6. Open **+** or type `/` and look for a Finance-plugin capability. Select an
+   appropriate analysis capability where available, then use:
 
+```text
+Use the installed Finance plugin where relevant.
+
+Analyse only Expenses_April_2026.xlsx. This is fictional classroom data.
+Summarise receipt count and total expenses, compare spending by category,
+identify the largest category and largest individual expense, and give three
+supported observations.
+
+Do not modify the workbook, forecast from this small dataset, access financial
+accounts or create transactions. State which Finance-plugin capability you
+actually used; do not claim Plugin use if it was not invoked.
+```
+
+7. Review the task/activity details to verify whether the Plugin was actually
+   invoked. A financial-looking answer alone is not proof.
+8. After class, use **Customize → Plugins → Yours → Finance → Remove** if the
+   Plugin is no longer required. [27]
+
+**✅ Check:** Learners can explain that a **Skill** is a reusable procedure,
+while a **Plugin** is a packaged capability that may include Skills,
+Connectors and other components.
+
+---
+
+#### 🖥️ B. Computer Use — Notepad demonstration
+
+**Purpose:** Show the difference between authorising files and allowing Claude
+to operate a graphical application by clicking and typing.
+
+**Prepare:** Create an empty training folder:
+
+```text
+Claude_Training_Pack/
+└── Computer_Use_Demo/
+```
+
+1. Open **Claude Desktop** and start a fresh Cowork task/conversation.
+2. Close personal applications and sensitive windows.
+3. Ask Claude to use **Computer Use** and approve only the required permission
+   when prompted.
+4. Paste:
+
+```text
+Use Computer Use only for this classroom demonstration.
+
+Open Windows Notepad and type:
+
+Project: Office Refresh
+Date: 30 September 2026
+
+Actions:
+1. Confirm furniture delivery date.
+2. Review training-room requirements.
+3. Prepare next week's status update.
+
+Save it as:
+[COMPUTER_USE_DEMO PATH]\Meeting_Notes.txt
+
+Do not open other applications, browse the web, access email or modify any
+other file. After saving, verify the result and report the actions performed.
+```
+
+5. Watch Claude operate Notepad and review permission requests.
+6. Open `Meeting_Notes.txt` yourself and verify the contents.
+7. End Computer Use after the demonstration; do not leave broader access enabled
+   unnecessarily. [41]
+
+**✅ Check:** The file contains the three action items and Claude stayed within
+the approved task.
+
+**Teaching point:** **Folder access = work with authorised files. Computer
+Use = operate applications through their interface.**
+
+---
+
+#### ⏰ C. Scheduled Task — weekly reminder
+
+**Purpose:** Show how Claude can save a task and run it automatically on a
+recurring schedule.
+
+1. Open **Scheduled** from Claude's sidebar. If your Project shows
+   **Scheduled → +**, that route may also be used.
+2. Choose **New task → Create with Claude** where shown.
+3. Enter:
+
+```text
+Every Monday at 9:00 AM Asia/Kolkata, remind me to review the previous
+week's training expenses.
+
+Keep the reminder under 60 words and include:
+- review new expense records,
+- check items requiring attention,
+- verify category totals,
+- prepare required follow-up.
+
+Do not access local files, send messages or change records.
+```
+
+4. Confirm:
+   - **Frequency:** Weekly
+   - **Day:** Monday
+   - **Time:** 9:00 AM
+   - **Time zone:** Asia/Kolkata
+5. Review the task name, prompt and schedule, then select **Schedule**.
+6. Return to **Scheduled** and confirm that the task appears.
+7. Where available, use **Run now** once and review the generated reminder. [42]
+
+##### Pause, resume or delete
+
+- **Pause:** Open **Scheduled → task → Pause** to stop future automatic runs
+  while keeping the task.
+- **Resume:** Open the paused task and choose **Resume**.
+- **Delete:** Open the task and choose **Delete**, then confirm, when it is no
+  longer required.
+
+**✅ Check:** The task shows the intended Monday 9:00 AM schedule and is
+**Paused or Deleted after class**.
+
+**Important:** Keep this demo self-contained. Do not make it depend on
+`Module_4_Workspace`; scheduled cloud tasks should not be presented as having
+permanent access to arbitrary folders on the learner's computer. [42]
+
+---
+
+### 🔶 Remember the difference
+
+| Feature | Main idea | This demonstration |
+|---|---|---|
+| **Plugin** | Add packaged capabilities | Finance analysis |
+| **Computer Use** | Operate applications visually | Notepad |
+| **Scheduled Task** | Run work later or repeatedly | Weekly reminder |
+
+**Takeaway:** **Plugin extends → Computer Use operates → Scheduled Task automates over time.**
 ---
 
 <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/8ffdd9e8-66f7-428b-89ec-f933cfba5954" />
