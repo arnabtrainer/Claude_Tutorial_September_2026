@@ -1079,40 +1079,110 @@ Inspect the ZIP, then open **Customize → Skills → + Add → Upload skill**, 
 These short demonstrations show three additional Claude capabilities. Use only
 fictional training data and review permissions before enabling external actions.
 
-#### 🧩 A. Plugins — Finance Plugin
+#### 🧩 A. Plugins — Finance Plugin: Budget vs Actual
 
-**Purpose:** Show how a Plugin adds packaged, reusable capabilities to Claude.
+**Purpose:** Demonstrate that a Plugin provides packaged domain capabilities
+beyond ordinary prompting. Here we use the **Finance — by Anthropic** Plugin
+for a fictional Budget-vs-Actual variance analysis.
 
-1. Open **Customize → Plugins → Discover**.
-2. Find **Finance — by Anthropic** and inspect its description and requested
-   capabilities before installing.
-3. Click **+ Add**. Then open **Plugins → Yours** and confirm **Finance** is enabled.
-4. Start a fresh **Claude Workshop** conversation; use Cowork where shown.
-5. Make the fictional `Expenses_April_2026.xlsx` available to the task.
-6. Open **+** or type `/` and look for a Finance-plugin capability. Select an
-   appropriate analysis capability where available, then use:
+**Prepare:** Keep these two fictional files available:
 
 ```text
-Use the installed Finance plugin where relevant.
-
-Analyse only Expenses_April_2026.xlsx. This is fictional classroom data.
-Summarise receipt count and total expenses, compare spending by category,
-identify the largest category and largest individual expense, and give three
-supported observations.
-
-Do not modify the workbook, forecast from this small dataset, access financial
-accounts or create transactions. State which Finance-plugin capability you
-actually used; do not claim Plugin use if it was not invoked.
+Module_4_Workspace/
+└── Inputs/
+    ├── Expenses_April_2026.xlsx    ← Actual expenses
+    └── April_2026_Budget.xlsx      ← Approved budget
 ```
 
-7. Review the task/activity details to verify whether the Plugin was actually
-   invoked. A financial-looking answer alone is not proof.
-8. After class, use **Customize → Plugins → Yours → Finance → Remove** if the
-   Plugin is no longer required. [27]
+##### 🔶 Install and inspect the Plugin
 
-**✅ Check:** Learners can explain that a **Skill** is a reusable procedure,
-while a **Plugin** is a packaged capability that may include Skills,
-Connectors and other components.
+1. Open **Customize → Plugins → Discover**.
+2. Find **Finance — by Anthropic** and inspect its description and capabilities.
+3. Click **+ Add**.
+4. Open **Plugins → Yours** and confirm **Finance** is enabled.
+5. Start a fresh **Claude Workshop** conversation; use Cowork where shown.
+6. Authorise the training workspace/files if required.
+
+##### 🔶 Select the Finance capability
+
+Open **+** or type `/` in the message box and inspect the capabilities supplied
+by the Finance Plugin.
+
+Select its **Variance Analysis / Budget vs Actual** capability where available.
+Use the capability Claude actually exposes rather than relying only on its name.
+
+Then enter:
+
+```text
+Use the Finance Plugin's variance-analysis capability for this exercise.
+
+Compare these fictional training files:
+- Inputs/April_2026_Budget.xlsx — approved April budget
+- Inputs/Expenses_April_2026.xlsx — actual April expenses
+
+For each category show:
+- Budget
+- Actual
+- Variance in INR using Actual minus Budget
+- Variance percentage
+- Favourable or Unfavourable result
+
+Then show the total variance and give three concise observations supported
+by the files.
+
+For expense categories, treat Actual above Budget as Unfavourable and Actual
+below Budget as Favourable.
+
+Do not modify either workbook, forecast future spending, access financial
+accounts or create transactions.
+
+Finally, state the exact Finance Plugin capability actually invoked.
+If the Plugin capability cannot be used, stop and explain why instead of
+silently substituting ordinary spreadsheet analysis.
+```
+
+##### ✅ Expected data check
+
+| Category | Budget | Actual | Variance |
+|---|---:|---:|---:|
+| Software | ₹2,500 | ₹2,925 | **+₹425 Unfavourable** |
+| Office Supplies | ₹3,000 | ₹2,600 | **−₹400 Favourable** |
+| Food | ₹1,500 | ₹1,680 | **+₹180 Unfavourable** |
+| Travel | ₹1,500 | ₹1,150 | **−₹350 Favourable** |
+| **Total** | **₹8,500** | **₹8,355** | **−₹145 Favourable** |
+
+##### 🔶 Verify Plugin use
+
+Check the task/activity details and confirm that the Finance Plugin capability
+was actually invoked. A correct financial answer alone does not prove Plugin use.
+
+If required, ask:
+
+```text
+Which Finance Plugin capability did you actually invoke?
+Give its exact name and briefly state what it contributed.
+If no Finance Plugin capability was invoked, say:
+"Finance Plugin not invoked."
+```
+
+##### 🔶 Clean up
+
+After class, if the Plugin is no longer required:
+
+**Customize → Plugins → Yours → Finance → Remove**
+
+[27]
+
+**✅ Check:** The analysis uses both the new budget and actual-expense files,
+the expected variances reconcile, and Claude identifies the Finance Plugin
+capability that was actually used.
+
+**Teaching point:** Installing a Plugin does not mean Claude uses it for every
+task. The task must match a capability supplied by that Plugin.
+
+> **Ordinary Claude:** can summarise a spreadsheet.  
+> **Finance Plugin:** supplies reusable finance-specific workflows such as
+> variance analysis when the required financial inputs are available.
 
 ---
 
