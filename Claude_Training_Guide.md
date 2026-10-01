@@ -171,7 +171,12 @@ for verification.
 
 </details>
 
-**Refinement:** “Make the tone more collaborative and reduce the body to 60 words without changing any fact or removing the request for a revised delivery date.”
+**Refinement:** 
+
+```text
+Make the tone more collaborative and reduce the body to 60 words without
+changing any fact or removing the request for a revised delivery date.
+```
 
 ✅ **Check:** Recipient, PO number, quantity and dates are correct; no invented reason, penalty or sent email.
 
@@ -227,6 +232,7 @@ Write the prompt only; do not perform the task.
 | Travel-policy FAQ | Use my fictional travel policy to draft an employee FAQ about claimable expenses, approvals and supporting documents. Cite policy sections and flag unanswered questions. |
 | Receipt register | Turn my receipt PDFs into an Excel register with date, vendor, category, currency and total; add category summaries and an editable chart. Keep currencies separate and flag unclear records. |
 | Sales-data cleaning | Clean extra spaces, inconsistent city/date formats and exact duplicate rows in my sales workbook. Highlight missing cells, preserve the original and summarise changes. |
+| Expense workbook from receipts | From several receipt PDFs and need an Excel expense register showing the date, vendor, category, currency and total for each receipt. Add a summary with category totals and an editable chart, keeping different currencies separate. Flag unreadable or inconsistent receipts instead of guessing. |
 
 ### 🔶 Optional — Project knowledge and RAG (Retrieval-Augmented Generation)
 
@@ -1024,6 +1030,8 @@ Inspect the ZIP. Use **Customize → Skills → + Add → Upload skill** or **+ 
   the Skill or inputs are unavailable.
 ```
 
+> **“Connecting a folder to a Project can make that workspace available to tasks within that Project. But access permission and conversation memory are separate. A new Cowork conversation should still be told which folder/files to use, and Claude may request authorization again when required.”**
+
 **Different data, same input contract:** This Skill handles the specified Register/Summary structure; it is not a promise to interpret every unrelated workbook automatically.
 
 ✅ **Compare the saved decks yourself:**
@@ -1040,6 +1048,14 @@ Inspect the ZIP. Use **Customize → Skills → + Add → Upload skill** or **+ 
 
 **Verify reuse:** Inspect installed `SKILL.md` and loading activity, new totals, Software in the editable chart and reported checks. New figures prove neither Skill activation nor a trend; colours/self-report alone also prove nothing. Without loading evidence, state **activation not independently verified**.
 
+> **“The Skill remembers how to perform the job, not necessarily what the previous presentation looked like. Our Skill knows that it should inspect the workbook, reconcile the data, create three slides, build an editable category chart, add observations and verify the output. The blue appearance came from a separate style-reference PowerPoint. If we want the same visual style on a future run, we must either provide that reference deck again or deliberately make that styling part of the reusable Skill.”**
+
+> **Mmorable formula:** <br>
+> **Skill = HOW** <br>
+> **Workbook = WHAT** <br>
+> **Reference deck = HOW IT SHOULD LOOK** <br>
+> **Skill + new data + same style reference → repeatable workflow with consistent visual direction** <br>
+
 **Missing-input test — optional, fresh session:** “Use workshop-expense-briefing for a new run. No source workbook is identified; do not retrieve an earlier one.” It should ask for the required input. Do not disconnect the folder or delete files just to run this test.
 
 **Wrong result?** Old figures suggest wrong inputs/hardcoding; white slides suggest missing, unreadable or unfollowed styling. Inspect files, installed Skill and activity before regenerating. Compare in chat; no extra report.
@@ -1047,6 +1063,11 @@ Inspect the ZIP. Use **Customize → Skills → + Add → Upload skill** or **+ 
 ### 🔶 Optional hands-on feature demos
 
 Run only rehearsed demos with fictional data. **Plugin = packaged method; Computer Use = graphical actions; Schedule = later/repeated execution.** Add time separately from the core lesson.
+
+> **Skill = reusable procedure <br>
+> Connector = access to an external service <br>
+> Plugin = packaged capabilities that may combine Skills, Connectors and agents <br>
+> MCP = standard mechanism through which tools/resources can be exposed**
 
 #### 🧩 A. Plugins — Finance Plugin: Budget vs Actual
 
@@ -1074,6 +1095,9 @@ Run only rehearsed demos with fictional data. **Plugin = packaged method; Comput
   unverified checks.
 ```
 
+> **Installing a Plugin does not mean Claude must use it for every task. A Plugin should be invoked when its packaged capability actually fits the business problem. The business task and available inputs must match a capability provided by that Plugin.** <br>
+> **Plugin = packaged domain method/capability; Claude = applies that capability to the supplied data.**
+
 ✅ **Expected check — INR; percentages use Budget as denominator:**
 
 | Category | Budget | Actual | Actual − Budget | Variance % | Result |
@@ -1086,7 +1110,15 @@ Run only rehearsed demos with fictional data. **Plugin = packaged method; Comput
 
 **Verify use:** Inspect available task activity showing the installed Skill/command was loaded. Ask, **“Which Finance capability was loaded, and what did it contribute?”** A correct answer or capability name alone is not proof; say **activation not independently verified** if evidence is unavailable. Inspect defaults such as a 10% threshold before treating them as policy.
 
+> **“Notice that the workbook gave Claude the budget and actual numbers. The Finance Plugin supplied a finance-oriented variance-analysis method, including its review threshold and reporting structure. Claude then calculated the figures from our data according to that method.”** <br>
+
+> **Data → our XLSX files** <br>
+> **Finance methodology → Plugin** <br>
+> **Calculations → Claude/Python**
+
 **Clean up:** **Customize → Plugins → Yours → Finance → Remove** if no longer needed. Installing a plugin does not guarantee its use or replace independent calculation. Ordinary Claude can also calculate variances; this demonstrates reuse of a packaged method. [27]
+
+> **“We didn't write the Finance capability ourselves. We added a packaged Plugin, inspected what it supplied, used it on fictional data, verified whether Claude actually invoked it, and removed it afterward.”**
 
 #### 🖥️ B. Computer Use — Notepad demonstration
 
@@ -1094,6 +1126,8 @@ Run only rehearsed demos with fictional data. **Plugin = packaged method; Comput
 
 1. In the **demonstrated Windows Desktop layout**, open **Settings → System → Computer use → Enable computer use → ON**. Other builds may show it under General/Desktop app; find this exact toggle rather than changing unrelated controls. If absent, mark the demo Not run. [41]
 2. Start a fresh Cowork/task conversation and paste the prompt below. Review any request for application access; approve only Notepad and the required launcher/save dialogs. Keep Desktop open and the computer awake. [41]
+
+> **Settings → General → Enable Computer Use → ON → start Cowork task → paste prompt → approve Notepad → watch demonstration → verify file → Settings → General → Enable Computer Use → OFF**
 
 ```text
 Use Computer Use through visible graphical actions, not a script or direct file write.
@@ -1114,6 +1148,9 @@ to check it, then report actual actions and any limitation. Stop if GUI control 
 
 3. Watch the application interaction; stop the task if it goes outside scope. Open the saved file yourself and check all three actions.
 4. **Disable after the demo:** End the task, then **Settings → System → Computer use → Enable computer use → OFF** in the demonstrated build. Close Notepad. Closing a chat alone is not permission revocation.
+
+> **Give task → Claude recognizes desktop interaction is required → Claude requests permission → You review/approve → Claude operates Notepad → You verify** <br>
+> **Claude actually opens Notepad and visibly interacts with its graphical interface.**
 
 ✅ File saved, three actions present, visible Notepad interaction verified, Computer Use off. A direct file write alone is **file access**, not this GUI demonstration. macOS users need a separately rehearsed text-editor route, not the Windows instructions.
 
