@@ -90,7 +90,7 @@ Claude_Training_Pack/
 ### 🔶 Before class — seven checks
 
 1. Sign in to Claude Pro; check **Settings → Usage** and test an upload/download. Enable **Capabilities → Code execution and file creation** where needed. [1], [21]
-2. Update Desktop, quit and reopen it; locate **Code → Local → No folder / Select folder**. F5 does not update the app. [23]
+2. Open and Update Claude Desktop (Press F5), quit and reopen it; locate **Code → Local → No folder / Select folder**. F5 does not update the app. [23]
 3. Check Excel, PowerPoint and Chrome’s **Load unpacked**; respect administrator restrictions.
 4. Prepare the Drive parent folders and local workspace. Rehearse Skill installation and any optional Finance, Computer Use or scheduled-run controls.
 5. Test both audit websites, browser screenshots and all image links; linked images need internet access.
@@ -1067,7 +1067,7 @@ Run only rehearsed demos with fictional data. **Plugin = packaged method; Comput
 > **Skill = reusable procedure <br>
 > Connector = access to an external service <br>
 > Plugin = packaged capabilities that may combine Skills, Connectors and agents <br>
-> MCP = standard mechanism through which tools/resources can be exposed**
+> MCP (Model Context Protocol) = standard mechanism through which tools/resources can be exposed**
 
 #### 🧩 A. Plugins — Finance Plugin: Budget vs Actual
 
