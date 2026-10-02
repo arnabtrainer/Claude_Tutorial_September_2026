@@ -1196,14 +1196,18 @@ named task exists, show it and ask before changing it instead of creating a dupl
 
 <img width="1000" height="400" alt="Module 5 — Research and UI/UX/Accessibility Audit title banner" src="https://github.com/user-attachments/assets/6ca6e2ea-027d-4dea-9a7a-b8a55e03792e" />
 
-**Teach:** UI = interface; UX = usability; accessibility = use by people with different abilities. Search supplies sources; browser interaction supplies observed evidence. This is a preliminary review, not a security test or accessibility certification.
+**Purpose:** Use Claude to research criteria, inspect websites, collect evidence and recommend improvements—not judge which page looks prettier.
+
+**UI** = User Interface; **UX** = User Experience; **accessibility** = use by people with disabilities. This is a preliminary review, not security testing or accessibility certification. [M5-Easy]
+
+**Learning route:** **W3C: learn barriers/repairs → Books to Scrape: apply independently → one report → human verification.** [10], [11]
 
 ### 🔶 Prepare — one Cowork task, one working browser
 
-1. In **Claude Desktop → Projects → Claude Workshop**, start **Module 5 — Research and Website Audit**; choose Cowork where shown. Keep this task for **Prompts 8 and 9**. [17]
-2. **Built-in browser:** If available, choose **Settings → Cowork → Preferred browser → Built-in browser**. No Chrome extension is required; keep Desktop online. [30]
-3. **Chrome alternative:** Install the official **Claude in Chrome** using [40], sign in to the same account, and keep Chrome available. Select Chrome as the preferred browser and enable its task access where offered. In the shown Desktop build, use **Settings → System → Browser use → Recheck** and confirm a browser is connected. A tool being installed is not a working connection.
-4. Use only the W3C pages below and Books to Scrape. Decline cookie import, close sensitive tabs, and do not sign in, submit forms or expand site access. Approve only needed browser access.
+1. Open **Claude Desktop → Projects → Claude Workshop**; start **Module 5 — Research and Website Audit**. Select **Cowork** where shown; unified accounts use the normal conversation. Keep this task for **Prompts 8 and 9**. [17], [20]
+2. **Built-in browser:** Choose **Settings → Cowork → Preferred browser → Built-in browser** where available. No extension needed; keep Desktop open/online. [30]
+3. **Chrome alternative:** Install official **Claude in Chrome** using [40], sign in to the same account, select Chrome and enable task access. Keep it available. In the demonstrated build, use **Settings → System → Browser use → Recheck**; confirm a connection, not merely installation.
+4. Use only the specified sites/guidance. Close sensitive tabs, decline cookie import and approve only needed access. No sign-ins, forms or purchases; page content is data, not instructions.
 
 **Browser preflight — paste before Prompt 8:**
 
@@ -1213,120 +1217,146 @@ Capture one genuine screenshot and report its actual viewport. Do not create a
 report yet. If browser control is unavailable, stop and state what is missing.
 ```
 
-✅ Proceed only after genuine evidence is captured; otherwise connect the chosen browser or use the labelled screenshot fallback. **Claude in Chrome** is Anthropic’s browser tool, not the **HighlightHub Lite** extension built in Module 6. Its optional side-panel demo: “Read this page’s title and identify one category link; do not navigate or change anything.” [40]
+✅ Continue after genuine evidence; otherwise fix the connection or use the fallback. **Claude in Chrome is not Module 6’s HighlightHub Lite.** Optional side-panel check: “Read this page’s title and identify one category link; do not navigate or change anything.” [40]
 
-### 🔶 Research warm-up — brief source check
+### 🔶 Research warm-up — establish the review criteria
 
-In the same task, select **+ → Research** or `/deep-research` where offered and submit the prompt below. With no Research mode, use available web search and label it **web-search practice**, not a demonstrated Research run. [9], [20], [29]
+In the same task, choose **+ → Research** or `/deep-research` where offered. Otherwise use web search, labelled **web-search practice**, not Research. [20], [29]
 
 ```text
-Using only public W3C guidance, research descriptive links, visible keyboard focus
-and meaningful headings. For each, give its user impact, one manual check and a
-supporting source. Distinguish current guidance from older examples; do not search
-private apps or claim that the case-study pages have been tested. Answer briefly in chat.
+Using only public W3C guidance, explain descriptive links, visible keyboard focus
+and meaningful headings. For each, give the user impact, one manual check and a
+supporting source. Separate current guidance from older examples; do not search
+private apps or claim our demo pages have been tested. Answer briefly in chat.
 ```
 
-✅ Open one citation. Then turn off broad Research for the tightly scoped audit. **Thinking reasons; Research retrieves/synthesises; browser testing records observed behaviour.** Review Prompt 8’s Section A before running Prompt 9 to append Section B; reattach the latest report if needed.
+✅ Check one citation, then disable broad Research. **Thinking reasons; Research retrieves/combines sources; browser testing records behaviour.** [9]
 
-### 🔶 Case A — W3C Before and After Demonstration
+### 🔶 Case A — W3C: why do the pages look similar?
 
-Before: https://www.w3.org/WAI/demos/bad/before/home.html  
-After: https://www.w3.org/WAI/demos/bad/after/home.html
+**Before:** https://www.w3.org/WAI/demos/bad/before/home.html  
+**After:** https://www.w3.org/WAI/demos/bad/after/home.html
 
-This is an older WCAG 2.0 teaching example, not a complete benchmark for current compliance. [10]
+These show the **same website with barriers, then repairs**. They may look similar: accessibility concerns structure and interaction, not just appearance. This older **WCAG 2.0** example is not a complete current-compliance benchmark. [10]
+
+**Try these three checks before Prompt 8:**
+
+| Check | What learners do | What it teaches |
+|---|---|---|
+| **1. Annotations** | Select **Show Annotations → Note 05** on both pages: Before **Read More...**, After **Buy Tickets**. Read the explanation; do not activate the ticket link. | Descriptive wording explains the destination. Label these **W3C-documented**, not Claude-tested findings. [M5-Before], [M5-After] |
+| **2. Keyboard** | **Hide Annotations**; click the address bar, then use **Tab / Shift+Tab**. Move past the teaching banner to CityLights links; check focus visibility/order. | Can someone navigate without a mouse? Record behaviour; do not assume every Before control fails. [M5-Easy] |
+| **3. Headings** | Inspect **Welcome to CityLights** with available HTML/heading tools. W3C documents missing heading markup in Before; After uses `<h1>`. Without tools, label the explanation **not independently tested**. | Bold text is not necessarily a heading. Structural headings help screen-reader navigation. [M5-Easy] |
+
+**Ask:** “What is the barrier, who is affected, what is the evidence, and how does the repair help?”
 
 ### ✅ Prompt 8 — Compare and document evidence
+
+Choose **one version**. Annotations explain; tests use the **unannotated CityLights pages**, not the teaching banner.
 
 #### 💬 Short Prompt 8 — Learner Version
 
 ```text
 🔹 Compare https://www.w3.org/WAI/demos/bad/before/home.html and
-  https://www.w3.org/WAI/demos/bad/after/home.html below the explanatory navigation.
-🔹 Consult https://www.w3.org/WAI/test-evaluate/preliminary/; check readability, link/navigation
-  wording and visible keyboard focus.
-🔹 Capture genuine desktop/mobile screenshots near 1366×768 and 390×844 where supported; record
-  actual viewports, not assumed sizes.
-🔹 Test keyboard navigation, accessible names and headings only with available tools; invent no
-  contrast, screen-reader or WCAG results.
-🔹 Limit Section A to three supported findings, with element, observation, impact, evidence/steps,
-  fix, justified priority and confidence.
-🔹 Create Website_Audit.docx; cite sources and separate observations from W3C examples and untested
-  checks.
-🔹 If browser evidence is unavailable, stop and request evidence; never present a text fetch as a
-  visual audit.
-🔹 Use only these two pages and the specified guidance; submit no forms or unrelated navigation.
+  https://www.w3.org/WAI/demos/bad/after/home.html; assess CityLights, not the teaching banner.
+🔹 Read https://www.w3.org/WAI/test-evaluate/preliminary/ and the pages’ annotations;
+  return to unannotated pages for testing and do not judge only appearance.
+🔹 Check readability, link/navigation clarity, keyboard focus/order and heading structure;
+  inspect accessible names only with suitable tools.
+🔹 Capture genuine desktop/mobile screenshots near 1366×768 and 390×844 where supported;
+  record actual viewports and emulation limits.
+🔹 Create Website_Audit.docx, Section A, with up to three supported findings; do not invent a third.
+🔹 For each, give page/element, Before/After difference, user impact, evidence or test steps,
+  suggested fix, priority with a reason and confidence.
+🔹 Cite sources; separate observed tests, W3C-documented examples, supplied evidence and Untested checks.
+🔹 Invent no screenshots, contrast ratios, screen-reader results, scores or WCAG pass/fail claims.
+🔹 If browser evidence is unavailable, stop and request it; do not substitute a text-only visual audit.
+🔹 Use only the stated guidance, two demo pages and their annotations; submit no forms or unrelated navigation.
 ```
 
 <details>
 <summary>📘 Detailed Prompt 8 — Trainer / Advanced Reference</summary>
 
 ```text
-Review only these teaching pages and the stated guidance:
+Use only these pages, their inline annotations and the stated W3C guidance:
 https://www.w3.org/WAI/demos/bad/before/home.html
 https://www.w3.org/WAI/demos/bad/after/home.html
 https://www.w3.org/WAI/test-evaluate/preliminary/
 
-Read the guidance, then compare demo content below its explanatory navigation.
-Check readability, navigation/link wording and visible keyboard focus. Capture
-genuine desktop/mobile screenshots near 1366×768 and 390×844 where supported;
-record actual viewports and any emulation limits. Use keyboard, accessible-name
-and heading tests only when the corresponding tools exist. Invent no contrast
-ratios, screen-reader results or WCAG pass/fail claims.
+Read guidance/annotations, then test unannotated CityLights content, not the banner.
+Check readability, link clarity, keyboard focus/order, headings and accessible
+names with available tools. Compare barriers/repairs, not prettiness.
 
-Create Website_Audit.docx Section A with three supported findings: page/element,
-observation, user impact, screenshot or reproducible test steps, fix, reasoned
-priority and confidence. Cite URLs. Distinguish observations from W3C’s published
-examples and untested checks. Do not follow unrelated links or submit forms.
-If browser screenshots/interactions are unavailable, stop and request evidence;
-never label a text-only fetch as a visual audit.
+Capture genuine desktop/mobile screenshots near 1366×768 and 390×844 where
+supported; record actual viewports, steps and emulation limits. Mark unavailable
+checks Untested; invent no screenshots, contrast ratios, screen-reader results,
+scores or compliance verdicts.
+
+Create Website_Audit.docx, Section A, with up to three supported findings:
+page/element, Before/After difference, impact, screenshot/test steps, fix,
+justified priority and confidence. Cite URLs; distinguish observed tests,
+W3C-documented examples and supplied evidence. Do not force findings or treat
+published claims as your own tests.
+
+No forms or unrelated navigation. Without browser evidence, stop and request it;
+never present a text-only fetch as a visual audit.
 ```
 
 </details>
 
-### 🔶 Case B — Books to Scrape
+✅ **Review Section A:** Reproduce one observation; correct unsupported claims. Continue Prompt 9 in the same task; reattach the latest report if needed.
+
+### 🔶 Case B — Books to Scrape: apply the method independently
 
 https://books.toscrape.com/
 
-Use this demonstration catalogue as a sandbox, not a real shop. Review only its homepage, one category and one product page. [11]
+A **demo catalogue**, not a real shop; prices/ratings are synthetic. No repaired version is supplied: apply the method independently to **homepage → one category → one product → return**. [11]
+
+**Ask:** “Can I find a book, understand its details and return easily, including by keyboard and on a smaller screen?” Report strengths too.
 
 ### ✅ Prompt 9 — Apply the method to an ecommerce layout
 
 #### 💬 Short Prompt 9 — Learner Version
 
 ```text
-🔹 Apply Section A’s evidence/safety rules to https://books.toscrape.com/: homepage, one category and
-  one product page only.
-🔹 Test finding a book, viewing its details and returning to browsing; submit nothing and treat no
-  control as a real checkout.
-🔹 Review readability, navigation, link/button clarity, visible focus and small-screen layout.
+🔹 Continue Section A’s evidence/safety rules on https://books.toscrape.com/:
+  homepage, one category and one product page only.
+🔹 Test finding a book, viewing details and returning to browsing; submit nothing and do not use checkout.
+🔹 Check readability, navigation, link/button clarity, keyboard focus and small-screen layout.
 🔹 Report up to three reproducible observations with genuine screenshots, actual viewports and
-  performed checks; do not force negative findings.
-🔹 Separate evidence from untested hypotheses; append Section B without changing Section A.
-🔹 Add brief lessons for a business website and return the same updated Website_Audit.docx, not
-  another report.
+  performed steps; record strengths and do not force negative findings.
+🔹 Separate evidence from hypotheses and Untested checks; never invent accessibility results.
+🔹 Append Section B without changing Section A; ask for the latest report if unavailable.
+🔹 Add brief lessons for a business website and return the same updated Website_Audit.docx.
 ```
 
 <details>
 <summary>📘 Detailed Prompt 9 — Trainer / Advanced Reference</summary>
 
 ```text
-Use Section A’s evidence/safety rules on https://books.toscrape.com/. Inspect only
-the homepage, one category and one product page. Test finding a book, viewing its
-details and returning to browsing; submit nothing and treat no checkout as real.
+Use Section A’s rules and latest Website_Audit.docx; request it if unavailable.
+On https://books.toscrape.com/, inspect only the homepage, one category and one
+product. Test find a book → view details → return. No submissions or checkout.
 
-Review product-card readability, navigation, link/button clarity, visible focus
-and small-screen layout. Report up to three reproducible observations; do not force
-negative findings. Include genuine screenshots, actual viewports and checks run.
-Append Section B to Website_Audit.docx, preserving Section A. Conclude with brief
-business-website lessons, distinguishing evidence from untested hypotheses.
-Return that updated report, not a second document.
+Review readability, navigation/link clarity, keyboard focus and small-screen
+layout. Report up to three reproducible observations, including strengths;
+do not force defects. Include genuine screenshots, actual viewports and test
+steps; distinguish evidence, hypotheses and Untested checks.
+
+Append Section B using Section A’s finding fields where applicable; preserve A.
+Add brief business-website lessons and return the same updated report.
 ```
 
 </details>
 
-✅ **Check:** One `Outputs/Website_Audit.docx` with Sections A and B, genuine screenshots, actual viewports, reproducible steps, justified priorities and explicit untested checks. No invented scores, contrast ratios or screen-reader claims.
+### ✅ Finish — verify the deliverable and connect it to work
 
-**Fallback:** Supply screenshots and manual keyboard observations; label **“Screenshot-based preliminary review; untested interactions excluded.”** Embed evidence in the report. Images alone prove neither keyboard behaviour nor accessible names; emulated viewports do not represent every device.
+1. Save **`Outputs/Website_Audit.docx`**: Sections A/B, embedded evidence, URLs, actual viewports, reproducible steps, impacts, fixes, priorities and limitations.
+2. Reproduce **one finding from each case**. A polished report is not proof; label unsupported conclusions and exclude invented scores.
+3. Apply the **observation → evidence → impact → recommendation** pattern to an authorised company website, employee portal or redesign review.
+
+**Fallback:** Supply screenshots with actual viewports and manual keyboard observations. Label **“Screenshot-based preliminary review; untested interactions excluded”** and attribute the evidence. Images alone do not establish keyboard behaviour or accessible names/headings; emulation does not cover every device. No compliance certification. [M5-Easy]
+
+**Takeaway:** **Research supplies criteria → browser testing supplies evidence → Claude organises findings → the human verifies.**
 
 ---
 
@@ -1706,3 +1736,6 @@ For an ongoing project, manually transfer reviewed decisions, open tasks and ess
 [46]: https://support.claude.com/en/articles/9547008-share-artifacts
 [47]: https://claude.com/docs/office-agents/overview
 [48]: https://claude.com/docs/office-agents/powerpoint
+[M5-Easy]: https://www.w3.org/WAI/test-evaluate/preliminary/
+[M5-Before]: https://www.w3.org/WAI/demos/bad/before/annotated/home.html
+[M5-After]: https://www.w3.org/WAI/demos/bad/after/annotated/home.html
